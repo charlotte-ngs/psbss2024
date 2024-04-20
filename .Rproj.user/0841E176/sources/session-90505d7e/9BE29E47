@@ -1,26 +1,26 @@
 {
-    "id": "184F476D",
-    "path": "~/Data/Projects/Github/charlotte-ngs/psbss2023_gh-root/main/psbss2023/README.Rmd",
-    "project_path": null,
-    "type": "r_markdown",
+    "id": "9BE29E47",
+    "path": "~/Data/Projects/Github/charlotte-ngs/psbss2024_gh-root/website/psbss2024/_quarto.yml",
+    "project_path": "_quarto.yml",
+    "type": "yaml",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1713533311599.0,
+    "created": 1713593240635.0,
     "source_on_save": false,
     "relative_order": 3,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "65,0",
-        "scrollLine": "45"
+        "cursorPosition": "12,10",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1678608946,
+    "lastKnownWriteTime": 1713595143,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1678608946,
+    "last_content_update": 1713595143,
     "read_only": false,
     "read_only_alternatives": []
 }
