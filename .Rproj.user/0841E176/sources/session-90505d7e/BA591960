@@ -3,7 +3,7 @@
     "path": "~/Data/Projects/Github/charlotte-ngs/psbss2024_gh-root/website/psbss2024/vignettes/quarto_create_course_website/quarto_create_course_website.Rmd",
     "project_path": "vignettes/quarto_create_course_website/quarto_create_course_website.Rmd",
     "type": "r_markdown",
-    "hash": "1764121169",
+    "hash": "549619959",
     "contents": "",
     "dirty": false,
     "created": 1713532518722.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "53,25",
-        "scrollLine": "36"
+        "cursorPosition": "67,0",
+        "scrollLine": "49"
     },
     "folds": "",
-    "lastKnownWriteTime": 1713533235,
+    "lastKnownWriteTime": 1713593009,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1713533235784,
+    "last_content_update": 1713593009395,
     "read_only": false,
     "read_only_alternatives": []
 }
