@@ -1,0 +1,15 @@
+{
+  "hash": "e81385c957035c5959d060b9f5cc5a63",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Create Course Website Using Quarto\"\ndate: \"Started: 2024-04-19 -- Last Compiled on: 2024-04-20\"\noutput: rmarkdown::html_vignette\nvignette: >\n  %\\VignetteIndexEntry{Create Course Website Using Quarto}\n  %\\VignetteEngine{knitr::rmarkdown}\n  %\\VignetteEncoding{UTF-8}\n---\n\n\n\n\n## Disclaimer\nSteps to create a course website with quarto are documented.\n\n\n## Init\nA quarto website project is created from the commandline with \n\n```bash\nquarto create project website psbss2024\n```\n\n\n## Extension\nWithin the created project some elements are added to have them available for augmented information on the created website.\n\n\n### DESCRIPTION\n\n```r\n# create description\nusethis::use_description()\n# add info to description\nusethis::edit_file(\"DESCRIPTION\")\n```\n\n### News\n\n\n::: {.cell}\n\n```{.r .cell-code}\nusethis::use_news_md()\n```\n:::\n\n\n\n### README\n\n\n::: {.cell}\n\n```{.r .cell-code}\nusethis::use_readme_rmd()\n```\n:::\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

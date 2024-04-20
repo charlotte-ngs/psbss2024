@@ -1,0 +1,14 @@
+{
+  "index.qmd": {
+    "index.html": "05ae6e5a"
+  },
+  "vignettes/quarto_create_course_website/quarto_create_course_website.Rmd": {
+    "quarto_create_course_website.html": "ceaf6d66"
+  },
+  "NEWS.md": {
+    "NEWS.html": "32f0eaac"
+  },
+  "about.qmd": {
+    "about.html": "33c4a5bf"
+  }
+}
