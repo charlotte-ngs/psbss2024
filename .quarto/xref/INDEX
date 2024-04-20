@@ -10,5 +10,14 @@
   },
   "about.qmd": {
     "about.html": "33c4a5bf"
+  },
+  "course_notes.qmd": {
+    "course_notes.html": "879940ea"
+  },
+  "exercises.qmd": {
+    "exercises.html": "bd193764"
+  },
+  "solutions.qmd": {
+    "solutions.html": "cc6b2657"
   }
 }

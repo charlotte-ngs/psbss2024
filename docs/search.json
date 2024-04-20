@@ -32,6 +32,69 @@
     "href": "index.html#license",
     "title": "Welcome to the Website of",
     "section": "License",
-    "text": "License\nThis work is licensed under a Creative Commons Attribution 4.0 International License.\n\nLatest Changes: 2024-04-20 08:40:39 CEST (pvr)"
+    "text": "License\nThis work is licensed under a Creative Commons Attribution 4.0 International License.\n\nLatest Changes: 2024-04-20 08:43:59 CEST (pvr)"
+  },
+  {
+    "objectID": "solutions.html",
+    "href": "solutions.html",
+    "title": "Solutions",
+    "section": "",
+    "text": "Links to solutions of exercises"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Website for course material of breeding part of pig science course in spring semester 2024."
+  },
+  {
+    "objectID": "NEWS.html",
+    "href": "NEWS.html",
+    "title": "psbss2024 0.0.2",
+    "section": "",
+    "text": "psbss2024 0.0.2\n\nAdded subpages for\n\ncourse notes\nexercises\nsolutions\n\n\n\n\npsbss2024 0.0.1\n\nStart with initial version"
+  },
+  {
+    "objectID": "vignettes/quarto_create_course_website/quarto_create_course_website.html",
+    "href": "vignettes/quarto_create_course_website/quarto_create_course_website.html",
+    "title": "Create Course Website Using Quarto",
+    "section": "",
+    "text": "Steps to create a course website with quarto are documented."
+  },
+  {
+    "objectID": "vignettes/quarto_create_course_website/quarto_create_course_website.html#disclaimer",
+    "href": "vignettes/quarto_create_course_website/quarto_create_course_website.html#disclaimer",
+    "title": "Create Course Website Using Quarto",
+    "section": "",
+    "text": "Steps to create a course website with quarto are documented."
+  },
+  {
+    "objectID": "vignettes/quarto_create_course_website/quarto_create_course_website.html#init",
+    "href": "vignettes/quarto_create_course_website/quarto_create_course_website.html#init",
+    "title": "Create Course Website Using Quarto",
+    "section": "Init",
+    "text": "Init\nA quarto website project is created from the commandline with\nquarto create project website psbss2024"
+  },
+  {
+    "objectID": "vignettes/quarto_create_course_website/quarto_create_course_website.html#extension",
+    "href": "vignettes/quarto_create_course_website/quarto_create_course_website.html#extension",
+    "title": "Create Course Website Using Quarto",
+    "section": "Extension",
+    "text": "Extension\nWithin the created project some elements are added to have them available for augmented information on the created website.\n\nDESCRIPTION\n# create description\nusethis::use_description()\n# add info to description\nusethis::edit_file(\"DESCRIPTION\")\n\n\nNews\n\nusethis::use_news_md()\n\n\n\nREADME\n\nusethis::use_readme_rmd()\n\n\n\nGit\nRepository is created on Github. Local repository is initialized and linked to repo on Github\ngit init\necho '_site' &gt;&gt; .gitignore\ngit add .\ngit commit -m\"First commit of course material\"\ngit remote add origin https://github.com/charlotte-ngs/psbss2024.git\ngit push -u origin main"
+  },
+  {
+    "objectID": "course_notes.html",
+    "href": "course_notes.html",
+    "title": "Course Notes",
+    "section": "",
+    "text": "Links to course notes"
+  },
+  {
+    "objectID": "exercises.html",
+    "href": "exercises.html",
+    "title": "Exercises",
+    "section": "",
+    "text": "Links to exercises"
   }
 ]

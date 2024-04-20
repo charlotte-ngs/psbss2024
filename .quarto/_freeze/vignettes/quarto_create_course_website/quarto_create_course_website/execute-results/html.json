@@ -1,9 +1,11 @@
 {
-  "hash": "e81385c957035c5959d060b9f5cc5a63",
+  "hash": "10b0caa3830e033bb8867a6ad06d8f9d",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Create Course Website Using Quarto\"\ndate: \"Started: 2024-04-19 -- Last Compiled on: 2024-04-20\"\noutput: rmarkdown::html_vignette\nvignette: >\n  %\\VignetteIndexEntry{Create Course Website Using Quarto}\n  %\\VignetteEngine{knitr::rmarkdown}\n  %\\VignetteEncoding{UTF-8}\n---\n\n\n\n\n## Disclaimer\nSteps to create a course website with quarto are documented.\n\n\n## Init\nA quarto website project is created from the commandline with \n\n```bash\nquarto create project website psbss2024\n```\n\n\n## Extension\nWithin the created project some elements are added to have them available for augmented information on the created website.\n\n\n### DESCRIPTION\n\n```r\n# create description\nusethis::use_description()\n# add info to description\nusethis::edit_file(\"DESCRIPTION\")\n```\n\n### News\n\n\n::: {.cell}\n\n```{.r .cell-code}\nusethis::use_news_md()\n```\n:::\n\n\n\n### README\n\n\n::: {.cell}\n\n```{.r .cell-code}\nusethis::use_readme_rmd()\n```\n:::\n\n\n",
-    "supporting": [],
+    "markdown": "---\ntitle: \"Create Course Website Using Quarto\"\ndate: \"Started: 2024-04-19 -- Last Compiled on: 2024-04-20\"\noutput: rmarkdown::html_vignette\nvignette: >\n  %\\VignetteIndexEntry{Create Course Website Using Quarto}\n  %\\VignetteEngine{knitr::rmarkdown}\n  %\\VignetteEncoding{UTF-8}\n---\n\n\n\n\n## Disclaimer\nSteps to create a course website with quarto are documented.\n\n\n## Init\nA quarto website project is created from the commandline with \n\n```bash\nquarto create project website psbss2024\n```\n\n\n## Extension\nWithin the created project some elements are added to have them available for augmented information on the created website.\n\n\n### DESCRIPTION\n\n```r\n# create description\nusethis::use_description()\n# add info to description\nusethis::edit_file(\"DESCRIPTION\")\n```\n\n### News\n\n\n::: {.cell}\n\n```{.r .cell-code}\nusethis::use_news_md()\n```\n:::\n\n\n\n### README\n\n\n::: {.cell}\n\n```{.r .cell-code}\nusethis::use_readme_rmd()\n```\n:::\n\n\n\n### Git\nRepository is created on Github. Local repository is initialized and linked to repo on Github\n\n```bash\ngit init\necho '_site' >> .gitignore\ngit add .\ngit commit -m\"First commit of course material\"\ngit remote add origin https://github.com/charlotte-ngs/psbss2024.git\ngit push -u origin main\n```\n\n\n\n\n",
+    "supporting": [
+      "quarto_create_course_website_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
