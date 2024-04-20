@@ -1,3 +1,7 @@
+# psbss2024 0.0.3
+
+* Add rendered output of subpages
+
 # psbss2024 0.0.2
 
 * Added subpages for 

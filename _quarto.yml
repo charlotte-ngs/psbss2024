@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
 website:
-  title: psbss2024 | 0.0.2
+  title: psbss2024 | 0.0.3
   navbar:
     left:
     - href: index.qmd
@@ -13,7 +13,8 @@ website:
       text: Exercises
     - href: solutions.qmd
       text: Solutions
-    - News.md
+    - href: News.html
+      text: News
     - about.qmd
 format:
   html:
