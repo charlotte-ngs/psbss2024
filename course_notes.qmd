@@ -8,7 +8,7 @@ Link to course notes
 #| label: cn_table
 #| echo: false
 #| results: asis
-s_cn_url <- "https://charlotte-ngs.github.io/psbss2024/course_notes"
+s_cn_url <- "https://charlotte-ngs.github.io/psbss2024/course_notes/"
 tbl_cn <- tibble::tibble(Nr = c(1),
                          Date = c("2024-04-24"),
                          Topic = c(
