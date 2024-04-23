@@ -1,3 +1,7 @@
+# psbss2024 0.0.4
+
+* Course notes [Pig Science - Breeding Part](https://charlotte-ngs.github.io/psbss2024/course_notes/Pig-Science---Part-Breeding.pdf)
+
 # psbss2024 0.0.3
 
 * Add rendered output of subpages

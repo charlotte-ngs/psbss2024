@@ -2,4 +2,20 @@
 title: "Course Notes"
 ---
 
-Links to course notes 
+Link to course notes 
+
+```{r}
+#| label: cn_table
+#| echo: false
+#| results: asis
+s_cn_url <- "https://charlotte-ngs.github.io/psbss2024/course_notes"
+tbl_cn <- tibble::tibble(Nr = c(1),
+                         Date = c("2024-04-24"),
+                         Topic = c(
+                           paste0("[Pig Science - Breeding Part](",
+                                  s_cn_url,
+                                  "Pig-Science---Part-Breeding.pdf)",
+                                  collapse = "") ))
+knitr::kable(tbl_cn)
+```
+
