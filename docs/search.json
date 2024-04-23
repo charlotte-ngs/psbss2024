@@ -32,7 +32,7 @@
     "href": "index.html#license",
     "title": "Welcome to the Website of",
     "section": "License",
-    "text": "License\nThis work is licensed under a Creative Commons Attribution 4.0 International License.\n\nLatest Changes: 2024-04-20 08:51:52 CEST (pvr)"
+    "text": "License\nThis work is licensed under a Creative Commons Attribution 4.0 International License.\n\nLatest Changes: 2024-04-23 11:45:21 CEST (pvr)"
   },
   {
     "objectID": "solutions.html",
@@ -51,9 +51,9 @@
   {
     "objectID": "NEWS.html",
     "href": "NEWS.html",
-    "title": "psbss2024 0.0.3",
+    "title": "psbss2024 0.0.4",
     "section": "",
-    "text": "psbss2024 0.0.3\n\nAdd rendered output of subpages\n\n\n\npsbss2024 0.0.2\n\nAdded subpages for\n\ncourse notes\nexercises\nsolutions\n\n\n\n\npsbss2024 0.0.1\n\nStart with initial version"
+    "text": "psbss2024 0.0.4\n\nCourse notes Pig Science - Breeding Part\n\n\n\npsbss2024 0.0.3\n\nAdd rendered output of subpages\n\n\n\npsbss2024 0.0.2\n\nAdded subpages for\n\ncourse notes\nexercises\nsolutions\n\n\n\n\npsbss2024 0.0.1\n\nStart with initial version"
   },
   {
     "objectID": "vignettes/quarto_create_course_website/quarto_create_course_website.html",
@@ -88,7 +88,7 @@
     "href": "course_notes.html",
     "title": "Course Notes",
     "section": "",
-    "text": "Links to course notes"
+    "text": "Link to course notes\n\n\n\nNr\nDate\nTopic\n\n\n\n\n1\n2024-04-24\nPig Science - Breeding Part"
   },
   {
     "objectID": "exercises.html",
