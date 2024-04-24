@@ -34,6 +34,11 @@ writeLines(gsub("'", "", vec_yml, fixed = T), file(s_quarto_yml_file))
 - Website: https://charlotte-ngs.github.io/psbss2024
 
 
+## Exercise Platform
+
+* Webr: [https://webr.r-wasm.org/latest](https://webr.r-wasm.org/latest)
+
+
 ## Questions
 Questions can be asked during the lecture and during the exercise hour or via e-mail: 
 

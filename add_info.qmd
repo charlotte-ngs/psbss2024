@@ -11,16 +11,41 @@ This website provides links to
 #| echo: false
 #| results: asis
 s_sl_url <- "https://charlotte-ngs.github.io/psbss2024/slides/"
-tbl_sl <- tibble::tibble(Nr = c(1),
-                         Date = c("2024-04-24"),
+tbl_sl <- tibble::tibble(Nr = c(1, 2),
+                         Date = c("2024-04-24",
+                                  "2024-04-24"),
                          Topic = c(
                            paste0("[Introduction](", 
                                   s_sl_url, 
                                   "l01_psb_intro.pdf)",
+                                  collapse = ""),
+                           paste0("[Genetic Evaluation](",
+                                  s_sl_url,
+                                  "l02_psb_gen_eval.pdf)",
                                   collapse = "")
                          ))
 knitr::kable(tbl_sl)
 ```
+
+
+## Data
+
+```{r}
+#| label: table-data
+#| echo: false
+#| results: asis
+s_data_url <- "https://charlotte-ngs.github.io/psbss2024/data/"
+tbl_data <- tibble::tibble(Nr = c(1),
+                           Date = c("2024-04-24"),
+                           Topic = c(
+                             paste0("[Model Selection](",
+                                    s_data_url,
+                                    "psb_rand_pred.csv)",
+                                    collapse = "")
+                           ))
+knitr::kable(tbl_data)
+```
+
 
 
 ## Overhead

@@ -1,7 +1,7 @@
 ---
 title: "Genomic Selection for New Trait"
 author: "Peter von Rohr"
-date: "2023-04-19"
+date: "2022-04-24"
 output: beamer_presentation
 ---
 

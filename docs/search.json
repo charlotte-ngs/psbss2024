@@ -32,7 +32,7 @@
     "href": "index.html#license",
     "title": "Welcome to the Website of",
     "section": "License",
-    "text": "License\nThis work is licensed under a Creative Commons Attribution 4.0 International License.\n\nLatest Changes: 2024-04-24 05:16:09 CEST (pvr)"
+    "text": "License\nThis work is licensed under a Creative Commons Attribution 4.0 International License.\n\nLatest Changes: 2024-04-24 07:44:12 CEST (pvr)"
   },
   {
     "objectID": "solutions.html",
@@ -51,9 +51,9 @@
   {
     "objectID": "NEWS.html",
     "href": "NEWS.html",
-    "title": "psbss2024 0.0.5",
+    "title": "psbss2024 0.1.0",
     "section": "",
-    "text": "psbss2024 0.0.5\n\nSlides l01_psb_intro\n\n\n\npsbss2024 0.0.4\n\nCourse notes Pig Science - Breeding Part\n\n\n\npsbss2024 0.0.3\n\nAdd rendered output of subpages\n\n\n\npsbss2024 0.0.2\n\nAdded subpages for\n\ncourse notes\nexercises\nsolutions\n\n\n\n\npsbss2024 0.0.1\n\nStart with initial version"
+    "text": "psbss2024 0.1.0\n\nSlides l02_gen_eval\n\n\n\npsbss2024 0.0.5\n\nSlides l01_psb_intro\n\n\n\npsbss2024 0.0.4\n\nCourse notes Pig Science - Breeding Part\n\n\n\npsbss2024 0.0.3\n\nAdd rendered output of subpages\n\n\n\npsbss2024 0.0.2\n\nAdded subpages for\n\ncourse notes\nexercises\nsolutions\n\n\n\n\npsbss2024 0.0.1\n\nStart with initial version"
   },
   {
     "objectID": "vignettes/quarto_create_course_website/quarto_create_course_website.html",
@@ -200,7 +200,7 @@
     "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#example-dataset",
     "title": "Model Selection and Variance Components",
     "section": "Example Dataset",
-    "text": "Example Dataset\n\n\n\n\n\nAnimal\nBreast Circumference\nBody Weight\nRandPred\n\n\n\n\n1\n176\n471\n177\n\n\n2\n177\n463\n177\n\n\n3\n178\n481\n180\n\n\n4\n179\n470\n178\n\n\n5\n179\n496\n182\n\n\n6\n180\n491\n179\n\n\n7\n181\n518\n180\n\n\n8\n182\n511\n184\n\n\n9\n183\n510\n179\n\n\n10\n184\n541\n176"
+    "text": "Example Dataset\n\n\n\n\n\nAnimal\nBreast Circumference\nBody Weight\nRandPred\n\n\n\n\n1\n176\n471\n180\n\n\n2\n177\n463\n183\n\n\n3\n178\n481\n178\n\n\n4\n179\n470\n180\n\n\n5\n179\n496\n178\n\n\n6\n180\n491\n177\n\n\n7\n181\n518\n179\n\n\n8\n182\n511\n177\n\n\n9\n183\n510\n184\n\n\n10\n184\n541\n179"
   },
   {
     "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#no-relevance-of-predictors",
@@ -221,7 +221,7 @@
     "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#fitting-a-regression-model",
     "title": "Model Selection and Variance Components",
     "section": "Fitting a Regression Model",
-    "text": "Fitting a Regression Model\n\n\n\nCall:\nlm(formula = `Body Weight` ~ RandPred, data = tbl_reg_aug)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-28.481 -19.249  -3.897  13.275  51.209 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)\n(Intercept)  192.299    636.596   0.302    0.770\nRandPred       1.690      3.552   0.476    0.647\n\nResidual standard error: 26.01 on 8 degrees of freedom\nMultiple R-squared:  0.02753,   Adjusted R-squared:  -0.09403 \nF-statistic: 0.2264 on 1 and 8 DF,  p-value: 0.6469"
+    "text": "Fitting a Regression Model\n\n\n\nCall:\nlm(formula = `Body Weight` ~ RandPred, data = tbl_reg_aug)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-24.299 -21.700  -6.215  18.793  44.671 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)\n(Intercept)  900.408    650.582   1.384    0.204\nRandPred      -2.257      3.624  -0.623    0.551\n\nResidual standard error: 25.75 on 8 degrees of freedom\nMultiple R-squared:  0.04626,   Adjusted R-squared:  -0.07296 \nF-statistic: 0.388 on 1 and 8 DF,  p-value: 0.5507"
   },
   {
     "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#fitting-a-regression-model-ii",
@@ -235,7 +235,7 @@
     "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#multiple-regression",
     "title": "Model Selection and Variance Components",
     "section": "Multiple Regression",
-    "text": "Multiple Regression\n\n\n\nCall:\nlm(formula = `Body Weight` ~ `Breast Circumference` + RandPred, \n    data = tbl_reg_aug)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-17.1739  -6.2679  -0.6437   9.4688  13.1283 \n\nCoefficients:\n                        Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)            -1096.580    369.334  -2.969 0.020835 *  \n`Breast Circumference`     8.642      1.536   5.625 0.000795 ***\nRandPred                   0.207      1.638   0.126 0.902980    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 11.83 on 7 degrees of freedom\nMultiple R-squared:  0.8238,    Adjusted R-squared:  0.7735 \nF-statistic: 16.37 on 2 and 7 DF,  p-value: 0.002295"
+    "text": "Multiple Regression\n\n\n\nCall:\nlm(formula = `Body Weight` ~ `Breast Circumference` + RandPred, \n    data = tbl_reg_aug)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-16.5459  -6.0292  -0.7329   8.6718  12.4263 \n\nCoefficients:\n                       Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)            -722.783    377.191  -1.916 0.096866 .  \n`Breast Circumference`    8.598      1.383   6.219 0.000437 ***\nRandPred                 -1.832      1.518  -1.206 0.266837    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 10.78 on 7 degrees of freedom\nMultiple R-squared:  0.8538,    Adjusted R-squared:  0.8121 \nF-statistic: 20.44 on 2 and 7 DF,  p-value: 0.001194"
   },
   {
     "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#which-model-is-better",
@@ -921,13 +921,286 @@
     "href": "add_info.html#slides",
     "title": "Additional Information",
     "section": "Slides",
-    "text": "Slides\n\n\n\nNr\nDate\nTopic\n\n\n\n\n1\n2024-04-24\nIntroduction"
+    "text": "Slides\n\n\n\nNr\nDate\nTopic\n\n\n\n\n1\n2024-04-24\nIntroduction\n\n\n2\n2024-04-24\nGenetic Evaluation"
   },
   {
     "objectID": "add_info.html#overhead",
     "href": "add_info.html#overhead",
     "title": "Additional Information",
     "section": "Overhead",
-    "text": "Overhead\n\nLatest Changes: 2024-04-24 05:15:57 CEST (pvr)"
+    "text": "Overhead\n\nLatest Changes: 2024-04-24 07:44:15 CEST (pvr)"
+  },
+  {
+    "objectID": "index.html#exercise-platform",
+    "href": "index.html#exercise-platform",
+    "title": "Welcome to the Website of",
+    "section": "Exercise Platform",
+    "text": "Exercise Platform\n\nWebr: https://webr.r-wasm.org/latest"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#new-trait",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#new-trait",
+    "title": "Model Selection and Variance Components",
+    "section": "New Trait",
+    "text": "New Trait\n\nNew trait to be considered in breeding program\nWhy? \\(\\rightarrow\\) Trait is of economic importance\nWant to improve average level of trait in a given population\nHow is this done?\nWhat do we have to do?"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#background-and-context",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#background-and-context",
+    "title": "Model Selection and Variance Components",
+    "section": "Background and Context",
+    "text": "Background and Context\n\nFarms/Enterprise use livestock products as base for economic existence\nImprovements of production efficiency improves sustainability\nShort-term:\n\nimprove management and environment\nselect optimal livestock breed / population for given environment\n\nLong-term:\n\nimprove population at genetic level\ndefine breeding goal\nselect parents such that offspring are “closer” to goal compared to parents"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#genetic-improvement",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#genetic-improvement",
+    "title": "Model Selection and Variance Components",
+    "section": "Genetic Improvement",
+    "text": "Genetic Improvement\n\nGenetic improvement happens between parents and offspring\nParents pass random sample of alleles to offspring\nGoal: select parents that have many “good” alleles to pass to offspring\nHow to find parents with “good” alleles without knowing which genes are important?\n\n\\(\\rightarrow\\) Statistical Modeling"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#genotype-and-phenotype",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#genotype-and-phenotype",
+    "title": "Model Selection and Variance Components",
+    "section": "Genotype and Phenotype",
+    "text": "Genotype and Phenotype"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#why-statistical-modelling",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#why-statistical-modelling",
+    "title": "Model Selection and Variance Components",
+    "section": "Why Statistical Modelling?",
+    "text": "Why Statistical Modelling?\nSome people believe, they do not need statistics. For them it is enough to look at a diagram"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#statistical-modelling-because",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#statistical-modelling-because",
+    "title": "Model Selection and Variance Components",
+    "section": "Statistical Modelling Because …",
+    "text": "Statistical Modelling Because …\nTwo types of dependencies between physical quantities\n\ndeterministic\nstochastic"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#deterministic-versus-stochastic",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#deterministic-versus-stochastic",
+    "title": "Model Selection and Variance Components",
+    "section": "Deterministic Versus Stochastic",
+    "text": "Deterministic Versus Stochastic"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#statistical-model",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#statistical-model",
+    "title": "Model Selection and Variance Components",
+    "section": "Statistical Model",
+    "text": "Statistical Model\n\nstochastic systems contains many sources of uncertainty\nstatistical models can handle uncertainty\ncomponents of a statistical model\n\nresponse variable \\(y\\)\npredictor variables \\(x_1, x_2, \\ldots, x_k\\)\nerror term \\(e\\)\nfunction \\(m(x)\\)"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#how-does-a-statistical-model-work",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#how-does-a-statistical-model-work",
+    "title": "Model Selection and Variance Components",
+    "section": "How Does A Statistical Model Work?",
+    "text": "How Does A Statistical Model Work?\n\npredictor variables \\(x_1, x_2, \\ldots, x_k\\) are transformed by function \\(m(x)\\) to explain the response variable \\(y\\)\nuncertainty is captured by error term.\nas a formula, for observation \\(i\\)\n\n\\[y_i = m(x_i) + e_i\\]"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#which-function-mx",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#which-function-mx",
+    "title": "Model Selection and Variance Components",
+    "section": "Which function \\(m(x)\\)?",
+    "text": "Which function \\(m(x)\\)?\n\nclass of functions that can be used as \\(m(x)\\) is infinitely large\nrestrict to linear functions of model parameter (\\(b_0\\) and \\(b_1\\)), e.g.\n\n\\[y_i = b_0 + b_1 * x_i + e_i\\]"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#which-predictor-variables",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#which-predictor-variables",
+    "title": "Model Selection and Variance Components",
+    "section": "Which predictor variables?",
+    "text": "Which predictor variables?\n\nQuestion, about which predictor variables to use is answered by model selection"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#why-model-selection",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#why-model-selection",
+    "title": "Model Selection and Variance Components",
+    "section": "Why Model Selection",
+    "text": "Why Model Selection\n\nMany predictor variables are available\nAre all of them relevant?\nWhat is the meaning of relevant in this context?"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#example-dataset",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#example-dataset",
+    "title": "Model Selection and Variance Components",
+    "section": "Example Dataset",
+    "text": "Example Dataset\n\n\n\n\n\nAnimal\nBreast Circumference\nBody Weight\nRandPred\n\n\n\n\n1\n176\n471\n178\n\n\n2\n177\n463\n177\n\n\n3\n178\n481\n182\n\n\n4\n179\n470\n181\n\n\n5\n179\n496\n184\n\n\n6\n180\n491\n184\n\n\n7\n181\n518\n181\n\n\n8\n182\n511\n182\n\n\n9\n183\n510\n177\n\n\n10\n184\n541\n181"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#no-relevance-of-predictors",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#no-relevance-of-predictors",
+    "title": "Model Selection and Variance Components",
+    "section": "No Relevance of Predictors",
+    "text": "No Relevance of Predictors"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#relevance-of-predictors",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#relevance-of-predictors",
+    "title": "Model Selection and Variance Components",
+    "section": "Relevance of Predictors",
+    "text": "Relevance of Predictors"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#fitting-a-regression-model",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#fitting-a-regression-model",
+    "title": "Model Selection and Variance Components",
+    "section": "Fitting a Regression Model",
+    "text": "Fitting a Regression Model\n\n\n\nCall:\nlm(formula = `Body Weight` ~ RandPred, data = tbl_reg_aug)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-25.867 -17.921  -9.036  19.827  45.133 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)\n(Intercept)   93.511    598.111   0.156    0.880\nRandPred       2.223      3.310   0.672    0.521\n\nResidual standard error: 25.66 on 8 degrees of freedom\nMultiple R-squared:  0.05338,   Adjusted R-squared:  -0.06495 \nF-statistic: 0.4511 on 1 and 8 DF,  p-value: 0.5207"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#fitting-a-regression-model-ii",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#fitting-a-regression-model-ii",
+    "title": "Model Selection and Variance Components",
+    "section": "Fitting a Regression Model II",
+    "text": "Fitting a Regression Model II\n\n\n\nCall:\nlm(formula = `Body Weight` ~ `Breast Circumference`, data = tbl_reg_aug)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-17.3941  -6.5525  -0.0673   9.3707  13.2594 \n\nCoefficients:\n                        Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)            -1065.115    255.483  -4.169 0.003126 ** \n`Breast Circumference`     8.673      1.420   6.108 0.000287 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 11.08 on 8 degrees of freedom\nMultiple R-squared:  0.8234,    Adjusted R-squared:  0.8014 \nF-statistic: 37.31 on 1 and 8 DF,  p-value: 0.000287"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#multiple-regression",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#multiple-regression",
+    "title": "Model Selection and Variance Components",
+    "section": "Multiple Regression",
+    "text": "Multiple Regression\n\n\n\nCall:\nlm(formula = `Body Weight` ~ `Breast Circumference` + RandPred, \n    data = tbl_reg_aug)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-17.817  -6.946  -1.337   9.196  13.118 \n\nCoefficients:\n                         Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)            -1218.2339   352.3805  -3.457 0.010588 *  \n`Breast Circumference`     8.5321     1.4885   5.732 0.000711 ***\nRandPred                   0.9879     1.4983   0.659 0.530785    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 11.5 on 7 degrees of freedom\nMultiple R-squared:  0.8337,    Adjusted R-squared:  0.7862 \nF-statistic: 17.55 on 2 and 7 DF,  p-value: 0.001874"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#which-model-is-better",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#which-model-is-better",
+    "title": "Model Selection and Variance Components",
+    "section": "Which model is better?",
+    "text": "Which model is better?\nWhy not taking all predictors?\n\nAdditional parameters must be estimated from data\nPredictive power decreased with too many predictors (cannot be shown for this data set, because too few data points)\nBias-variance trade-off"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#bias-variance-trade-off",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#bias-variance-trade-off",
+    "title": "Model Selection and Variance Components",
+    "section": "Bias-variance trade-off",
+    "text": "Bias-variance trade-off\n\nAssume, we are looking for optimum prediction\n\n\\[s_i = \\sum_{r=1}^q \\hat{\\beta}_{j_r}x_{ij_r}\\] with \\(q\\) relevant predictor variables\n\nAverage mean squared error of prediction \\(s_i\\)\n\n\\[MSE = n^{-1}\\sum_{i=1}^n E\\left[(m(x_i) - s_i)^2 \\right]\\] where \\(m(.)\\) denotes the linear function of the unknown true model."
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#bias-variance-trade-off-ii",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#bias-variance-trade-off-ii",
+    "title": "Model Selection and Variance Components",
+    "section": "Bias-variance trade-off II",
+    "text": "Bias-variance trade-off II\n\nMSE can be split into two parts\n\n\\[MSE = n^{-1}\\sum_{i=1}^n \\left( E\\left[s_i \\right] - m(x_i) \\right)^2\n  + n^{-1}\\sum_{i=1}^n var(s_i)\n\\]\nwhere \\(n^{-1}\\sum_{i=1}^n \\left( E\\left[s_i \\right] - m(x_i) \\right)^2\\) is called the squared bias\n\nIncreasing \\(q\\) leads to reduced bias but increased variance (\\(var(s_i)\\))\nHence, find \\(s_i\\) such that MSE is minimal\nProblem: cannot compute MSE because \\(m(.)\\) is not known\n\n\\(\\rightarrow\\) estimate MSE"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#mallows-c_p-statistic",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#mallows-c_p-statistic",
+    "title": "Model Selection and Variance Components",
+    "section": "Mallows \\(C_p\\) statistic",
+    "text": "Mallows \\(C_p\\) statistic\n\nFor a given model \\(\\mathcal{M}\\), \\(SSE(\\mathcal{M})\\) stands for the residual sum of squares.\nMSE can be estimated as\n\n\\[\\widehat{MSE} = n^{-1} SSE(\\mathcal{M}) - \\hat{\\sigma}^2 + 2 \\hat{\\sigma}^2 |\\mathcal{M}|/n\\]\nwhere \\(\\hat{\\sigma}^2\\) is the estimate of the error variance of the full model, \\(SSE(\\mathcal{M})\\) is the residual sum of squares of the model \\(\\mathcal{M}\\), \\(n\\) is the number of observations and \\(|\\mathcal{M}|\\) stands for the number of predictors in \\(\\mathcal{M}\\)\n\\[C_p(\\mathcal{M}) = \\frac{SSE(\\mathcal{M})}{\\hat{\\sigma}^2} - n + 2 |\\mathcal{M}|\\]"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#searching-the-best-model",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#searching-the-best-model",
+    "title": "Model Selection and Variance Components",
+    "section": "Searching The Best Model",
+    "text": "Searching The Best Model\n\nExhaustive search over all sub-models might be too expensive\nFor \\(p\\) predictors there are \\(2^p - 1\\) sub-models\nWith \\(p=16\\), we get \\(6.5535\\times 10^{4}\\) sub-models\n\n\\(\\rightarrow\\) step-wise approaches"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#forward-selection",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#forward-selection",
+    "title": "Model Selection and Variance Components",
+    "section": "Forward Selection",
+    "text": "Forward Selection\n\nStart with smallest sub-model \\(\\mathcal{M}_0\\) as current model\nInclude predictor that reduces SSE the most to current model\nRepeat step 2 until all predictors are chosen\n\n\\(\\rightarrow\\) results in sequence \\(\\mathcal{M}_0 \\subseteq \\mathcal{M}_1 \\subseteq \\mathcal{M}_2 \\subseteq \\ldots\\) of sub-models\n\nOut of sequence of sub-models choose the one with minimal \\(C_p\\)"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#backward-selection",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#backward-selection",
+    "title": "Model Selection and Variance Components",
+    "section": "Backward Selection",
+    "text": "Backward Selection\n\nStart with full model \\(\\mathcal{M}_0\\) as the current model\nExclude predictor variable that increases SSE the least from current model\nRepeat step 2 until all predictors are excluded (except for intercept)\n\n\\(\\rightarrow\\) results in sequence \\(\\mathcal{M}_0 \\supseteq \\mathcal{M}_1 \\supseteq \\mathcal{M}_2 \\supseteq \\ldots\\) of sub-models\n\nOut of sequence choose the one with minimal \\(C_p\\)"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#considerations",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#considerations",
+    "title": "Model Selection and Variance Components",
+    "section": "Considerations",
+    "text": "Considerations\n\nWhenever possible, choose backward selection, because it leads to better results\nIf \\(p \\geq n\\), only forward is possible, but then consider LASSO"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#alternative-selection-criteria",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#alternative-selection-criteria",
+    "title": "Model Selection and Variance Components",
+    "section": "Alternative Selection Criteria",
+    "text": "Alternative Selection Criteria\n\nAIC or BIC, requires distributional assumptions.\nAIC is implemented in MASS::stepAIC()\nAdjusted \\(R^2\\) is a measure of goodness of fit, but sometimes is not conclusive when comparing two models\nTry in exercise"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#genetic-variation",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#genetic-variation",
+    "title": "Model Selection and Variance Components",
+    "section": "Genetic Variation",
+    "text": "Genetic Variation\n\nRequirement for trait to be considered in breeding goal\nBreeding means improvement of next generation via selection and mating\nOnly genetic (additive) components are passed to offspring\nSelection should be based on genetic component of trait\nSelection only possible with genetic variation\n\n\\(\\rightarrow\\) genetic variation indicates how good characteristics are passed from parents to offspring\n\\(\\rightarrow\\) measured by heritability \\(h^2 = \\frac{\\sigma_a^2}{\\sigma_p^2}\\)"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#two-traits",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#two-traits",
+    "title": "Model Selection and Variance Components",
+    "section": "Two Traits",
+    "text": "Two Traits"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#problems",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#problems",
+    "title": "Model Selection and Variance Components",
+    "section": "Problems",
+    "text": "Problems\n\nGenetic components cannot be observed or measured\nMust be estimated from data\nData are mostly phenotypic\n\n\\(\\rightarrow\\) topic of variance components estimation\n\nModel based, that means connection between phenotypic measure and genetic component are based on certain model\n\n\\[p = g + e\\]\nwith \\(cov(g,e) = 0\\)\n\nGoal: separate variation due to \\(g\\) (\\(\\sigma_a^2\\)) from phenotypic variation"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#example-of-variance-components-separation",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#example-of-variance-components-separation",
+    "title": "Model Selection and Variance Components",
+    "section": "Example of Variance Components Separation",
+    "text": "Example of Variance Components Separation\n\nEstimation of repeatability\nGiven repeated measurements of same trait at the same animal\nRepeatability means variation of measurements at the same animal is smaller than variation between measurements at different animals"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#repeatability-plot",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#repeatability-plot",
+    "title": "Model Selection and Variance Components",
+    "section": "Repeatability Plot",
+    "text": "Repeatability Plot"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#model",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#model",
+    "title": "Model Selection and Variance Components",
+    "section": "Model",
+    "text": "Model\n\\[\\begin{equation}\ny_{ij} = \\mu + t_i + \\epsilon_{ij} \\notag\n\\end{equation}\\]"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#animal-model",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#animal-model",
+    "title": "Model Selection and Variance Components",
+    "section": "Animal Model",
+    "text": "Animal Model\n\ntrait of interest as response variable (\\(y\\))\nfixed effects (\\(b\\)) as known part of environment\nrandom animal effect, corresponds to breeding values (\\(u\\))\n\n\\[y = Xb + Zu + e\\]\nwith\n\nvector \\(e\\) as random residuals and\nmatrices \\(X\\) and \\(Z\\) as design matrices"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#estimates-and-predictions",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#estimates-and-predictions",
+    "title": "Model Selection and Variance Components",
+    "section": "Estimates and Predictions",
+    "text": "Estimates and Predictions\n\nsolution leading to estimates of fixed effects\n\n\\[\\hat{b} = (X^TV^{-1}X)^{-}X^TV^{-1}y\\]\n\npredictions for random effects\n\n\\[\\hat{u} = GZ^TV^{-1}(y - X\\hat{b})\\]\nwith\n\n\\(G = var(u)\\)\n\\(V = var(y)\\)"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#mixed-model-equations",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#mixed-model-equations",
+    "title": "Model Selection and Variance Components",
+    "section": "Mixed Model Equations",
+    "text": "Mixed Model Equations\nEquivalent solutions are obtained via\n\\[\\left[\n  \\begin{array}{lr}\n  X^T R^{-1} X  &  X^T R^{-1} Z \\\\\n  Z^T R^{-1} X  &  Z^T R^{-1} Z + G^{-1}\n  \\end{array}\n\\right]\n\\left[\n  \\begin{array}{c}\n  \\hat{\\beta} \\\\\n  \\hat{u}\n  \\end{array}\n\\right]\n=\n\\left[\n  \\begin{array}{c}\n  X^T R^{-1} y \\\\\n  Z^T R^{-1} y\n  \\end{array}\n\\right]\\]\nwith\n\n\\(G = A * \\sigma_u^2\\)\n\nwhere \\(A\\) is pedigree-based relationship matrix and \\(\\sigma_u^2\\) the genetic additive variance"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#single-step-genomic-breeding-values",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#single-step-genomic-breeding-values",
+    "title": "Model Selection and Variance Components",
+    "section": "Single-Step Genomic Breeding Values",
+    "text": "Single-Step Genomic Breeding Values\n\nAssume all animals have genotypes\n\n\\[y = Xb + Zu + e\\]\n\\[\\left[\n  \\begin{array}{lr}\n  X^T R^{-1} X  &  X^T R^{-1} Z \\\\\n  Z^T R^{-1} X  &  Z^T R^{-1} Z + H^{-1}\n  \\end{array}\n\\right]\n\\left[\n  \\begin{array}{c}\n  \\hat{\\beta} \\\\\n  \\hat{u}\n  \\end{array}\n\\right]\n=\n\\left[\n  \\begin{array}{c}\n  X^T R^{-1} y \\\\\n  Z^T R^{-1} y\n  \\end{array}\n\\right]\\]\n\n\\(H = A_G * \\sigma_u^2\\)\n\nwhere \\(A_G\\) is the genomic relationship matrix and \\(\\sigma_u^2\\) the genetic additive variance"
+  },
+  {
+    "objectID": "add_info.html#data",
+    "href": "add_info.html#data",
+    "title": "Additional Information",
+    "section": "Data",
+    "text": "Data\n\n\n\nNr\nDate\nTopic\n\n\n\n\n1\n2024-04-24\nModel Selection"
   }
 ]

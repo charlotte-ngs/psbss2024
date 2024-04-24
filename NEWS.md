@@ -1,3 +1,7 @@
+# psbss2024 0.1.0
+
+* Slides [l02_gen_eval](https://charlotte-ngs.github.io/psbss2024/slides/l02_psb_gen_eval.pdf)
+
 # psbss2024 0.0.5
 
 * Slides [l01_psb_intro](https://charlotte-ngs.github.io/psbss2024/slides/l01_psb_intro.pdf)
