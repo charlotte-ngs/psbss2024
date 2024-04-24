@@ -1,0 +1,23 @@
+---
+title: "Genomic Selection for New Trait"
+author: "Peter von Rohr"
+date: "2023-04-19"
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## New Trait
+
+* New trait to be considered in breeding program
+* Why? $\rightarrow$ Trait is of economic importance
+* Want to improve average level of trait in a given population 
+* How is this done?
+* What do we have to do?
+
+
+## Background and Context
+

@@ -1,0 +1,37 @@
+---
+title: "Additional Information"
+---
+
+This website provides links to 
+
+## Slides
+
+```{r}
+#| label: table-slides
+#| echo: false
+#| results: asis
+s_sl_url <- "https://charlotte-ngs.github.io/psbss2024/slides/"
+tbl_sl <- tibble::tibble(Nr = c(1),
+                         Date = c("2024-04-24"),
+                         Topic = c(
+                           paste0("[Introduction](", 
+                                  s_sl_url, 
+                                  "l01_psb_intro.pdf)",
+                                  collapse = "")
+                         ))
+knitr::kable(tbl_sl)
+```
+
+
+## Overhead
+
+
+
+```{r}
+#| label: latest-change
+#| echo: false
+#| results: asis
+cat(rmdhelp::get_latest_change())
+```
+
+

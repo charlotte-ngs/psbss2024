@@ -13,6 +13,8 @@ website:
       text: Exercises
     - href: solutions.qmd
       text: Solutions
+    - href: add_info.qmd
+      text: Additional Information
     - href: News.html
       text: News
     - about.qmd

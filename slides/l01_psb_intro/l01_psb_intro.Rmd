@@ -1,0 +1,236 @@
+---
+title: Pig Science - Breeding
+author: Peter von Rohr
+date: 2024-04-24
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+# rmdhelp::show_knit_hook_call()
+knitr::knit_hooks$set(hook_convert_odg = rmdhelp::hook_convert_odg)
+```
+
+
+
+## Program - Breeding
+
+```{r CourseProgram, echo=FALSE, results='asis'}
+### # header names of tables
+vecTableHeaders <- c("Week", "Date", "Topic")
+# define course start date
+dCourseStart <- as.Date("2023/03/15")
+# set number of weeks in semester
+nNrSemesterWeeks <- 2
+# define columns for weaks, dates, and subjects
+Week <- 1:nNrSemesterWeeks
+#Date <- format(seq(dCourseStart, by = "week", length.out = nNrSemesterWeeks), "%d.%m")
+Date <- c("2023/04/24", "2023/05/15")
+Topic <- vector(mode = "character", length = nNrSemesterWeeks)
+# subjects per week
+Topic <- c("Genomic Selection in Pig Breeding",
+           "Breeding Goal and Aggregate Genotype")
+
+dfCnTable <- data.frame(Week, Date, Topic, stringsAsFactors = FALSE)
+colnames(dfCnTable) <- vecTableHeaders
+knitr::kable(dfCnTable)
+```
+
+
+## Information
+
+- Lecturer: S. Neuenschwander, C. Kasper, G. Bee, P. von Rohr
+- Date: Wednesday 8-10
+- Mode: in person
+- Room: LFW B2
+- Moodle: https://moodle-app2.let.ethz.ch/course/view.php?id=21680
+- Website: https://charlotte-ngs.github.io/psbss2024
+- Questions: during the lecture and during the exercise hour or via e-mail
+    + Peter von Rohr (peter.vonrohr `at` usys.ethz.ch)
+
+
+## Course Objectives
+
+The students 
+
+* understand the theoretical background and the practical application of the prediction of breeding values in a livestock breeding 
+* know how to interpret predicted breeding values.
+
+$\rightarrow$ What is the meaning of a predicted aggregate genotype $-9$ index points
+
+$\rightarrow$ What is the difference between production and breeding
+
+
+## Further Reading
+* Willam und Simianer: Tierzucht - Grundwissen Bachelor (Ulmer, UTB 3526 2011). This book gives an introduction into evolution, livestock production and breeding programs.
+* Falconer and Mackay: Introduction to Quantitative Genetics (Longman). The de-facto standard in the area of quantitative genetics uses many examples from experimental research to illustrate the concepts of quantitative genetics.
+* Mrode: Linear Models for the Prediction of Animal Breeding Values (CABI Publishing, 2005). The main focus is on prediction of breeding values using different models.
+
+
+## Terminology
+
+```{r psb-terminology, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
+#rmdhelp::use_odg_graphic(ps_path = "odg/psb-terminology.odg")
+knitr::include_graphics(path = "odg/psb-terminology.png")
+```
+
+
+## Scientific Definition 
+
+> "Selection and Mating of parents are used such that offspring generations are closer to a defined goal."
+
+* Distinction between 
+    + livestock breeding and production
+    + cattle breeding and milk or beef production
+    + pig breeding and pork production and 
+    + chicken breeding and egg producers
+
+
+## History
+* Formations of breeding organisation (BO)
+* Tasks of BO: herdbooks and certification
+* Crisis at beginning of $20^{th}$ century lead to federal regulations
+* Developments of technologies
+    + Reproduction
+    + Molecular biology
+    + Computer science
+    
+    
+## Breeding Organisations
+
+```{r breedingassociation, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", fig.pos='H', out.width='11cm'}
+#rmddochelper::use_odg_graphic("odg/breedingassociation.odg")
+knitr::include_graphics(path = "odg/breedingassociation.png")
+```
+
+
+## Breeding Programs
+
+```{r bprogdiag, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", fig.pos='H', out.width='11cm'}
+#rmddochelper::use_odg_graphic(ps_path = "odg/bprogdiag.odg")
+knitr::include_graphics(path = "odg/bprogdiag.png")
+```
+
+
+## Parts of Breeding Program
+
+* Applied prediction of breeding values is a part of the breeding program
+* Design and planning of a breeding program requires to answer the questions
+    + What goal do we want to achieve
+    + What measures do we want to use to achieve the goal
+    
+    
+## Types of Breeding Programs
+
+Two types of breeding programs
+
+1. Focus on __selection response__
+    + countries with limited resources
+    + big farms or big companies
+2. Focus on clients and services
+    + cattle and pig breeding of developed countries
+    + economic interest of companies and farms
+
+
+## Breeding Goals
+Types of breeding goals
+
+* economic
+* biological
+* tactical
+* ethical
+
+Breeding goals might be formulated in different ways
+
+* __political__: description of idealized image of future animal. Often conflicting and not verifiable
+* __scientific__: mathematical description of direction of desired change. Measurable via selection response
+
+
+
+## Performance Testing
+
+* Basic question: What trait is measured when for which animals
+* Breeding should be based on data
+* Quality of derived parameters (heritability, predicted breeding values) depend on accuracy of collected data
+* Data collection used for performance testing often started for different reasons
+    + milk sample testing: quality of product
+    + station testing in pigs: correction of environment
+    
+    
+## Classification of Performance Tests
+* Place
+    + Station
+    + Field
+* Relationship between selection candidate and tested animal
+    + own performance record
+    + full-sib
+    + progeny
+* Traits
+    + should have genetic variation
+    + economic importance
+    + measurable better than subjectively observed
+    
+    
+## Examples: Pigs
+
+```{r pigperftest, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width='11cm'}
+#rmddochelper::use_odg_graphic("odg/pigperftest.odg")
+knitr::include_graphics(path = "odg/pigperftest.png")
+```
+
+
+## Examples: Cattle
+
+```{r cattleperftest, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width='11cm'}
+#rmddochelper::use_odg_graphic(ps_path = "odg/cattleperftest.odg")
+knitr::include_graphics(path = "odg/cattleperftest.png")
+```
+
+
+
+## Prediction Of Breeding Values
+* Done in most breeding programs
+* Federal regulation
+* Performance tests much more expensive
+* Different intervals
+    + cattle: three times per year (traditional), every two weeks (genomic)
+    + pigs: nightly or weekly
+    
+    
+## Progress In Technologies
+* Reproduction - AI
+    + disease prevention
+    + number of progeny per sire increased
+    + better comparisons between herds
+    + Future: more development on female side
+* Molecular Biology
+    + cheap and efficient large-scale genotyping
+    + sequencing with more accuracy
+* Computer Science
+    + efficient evaluation of large amounts of data
+    + big data technologies - continuous monitoring
+    
+    
+## Differences Of BP Between Species
+
+Breeding programs (BP) for different species have different structure
+
+* __hierarchical__: pigs and chicken
+* __flat__: cattle and horse
+
+
+## Hierarchical Structure
+
+```{r HierarchischeZuchtstruktur,echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width='11cm'}
+knitr::include_graphics(path = "odg/HierarchischeZuchtstruktur.png")
+```
+
+
+## Monolithic Structure
+
+```{r MonolithicBp, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width='11cm'}
+#rmddochelper::use_odg_graphic("odg/MonolithicBp.odg")
+knitr::include_graphics(path = "odg/MonolithicBp.png")
+```
+
+  
