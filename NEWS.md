@@ -1,5 +1,7 @@
 # psbss2024 0.0.5
 
+* Slides [l01_psb_intro](https://charlotte-ngs.github.io/psbss2024/slides/l01_psb_intro.pdf)
+
 # psbss2024 0.0.4
 
 * Course notes [Pig Science - Breeding Part](https://charlotte-ngs.github.io/psbss2024/course_notes/Pig-Science---Part-Breeding.pdf)
