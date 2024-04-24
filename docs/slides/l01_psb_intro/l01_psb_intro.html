@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Peter von Rohr">
+<meta name="dcterms.date" content="2024-04-24">
 
-<title>psbss2024 | 0.0.4 - Welcome to the Website of</title>
+<title>psbss2024 | 0.0.4 - Pig Science - Breeding</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,8 +69,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -78,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">psbss2024 | 0.0.4</span>
     </a>
   </div>
@@ -89,31 +120,31 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./course_notes.html"> 
+    <a class="nav-link" href="../../course_notes.html"> 
 <span class="menu-text">Course Notes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./exercises.html"> 
+    <a class="nav-link" href="../../exercises.html"> 
 <span class="menu-text">Exercises</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./solutions.html"> 
+    <a class="nav-link" href="../../solutions.html"> 
 <span class="menu-text">Solutions</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./add_info.qmd"> 
+    <a class="nav-link" href="../../add_info.qmd"> 
 <span class="menu-text">Additional Information</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./News.html"> 
+    <a class="nav-link" href="../../News.html"> 
 <span class="menu-text">News</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -132,10 +163,27 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#information" id="toc-information" class="nav-link active" data-scroll-target="#information">Information</a></li>
-  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
-  <li><a href="#lecture-program" id="toc-lecture-program" class="nav-link" data-scroll-target="#lecture-program">Lecture Program</a></li>
-  <li><a href="#license" id="toc-license" class="nav-link" data-scroll-target="#license">License</a></li>
+  <li><a href="#program---breeding" id="toc-program---breeding" class="nav-link active" data-scroll-target="#program---breeding">Program - Breeding</a></li>
+  <li><a href="#information" id="toc-information" class="nav-link" data-scroll-target="#information">Information</a></li>
+  <li><a href="#course-objectives" id="toc-course-objectives" class="nav-link" data-scroll-target="#course-objectives">Course Objectives</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further Reading</a></li>
+  <li><a href="#terminology" id="toc-terminology" class="nav-link" data-scroll-target="#terminology">Terminology</a></li>
+  <li><a href="#scientific-definition" id="toc-scientific-definition" class="nav-link" data-scroll-target="#scientific-definition">Scientific Definition</a></li>
+  <li><a href="#history" id="toc-history" class="nav-link" data-scroll-target="#history">History</a></li>
+  <li><a href="#breeding-organisations" id="toc-breeding-organisations" class="nav-link" data-scroll-target="#breeding-organisations">Breeding Organisations</a></li>
+  <li><a href="#breeding-programs" id="toc-breeding-programs" class="nav-link" data-scroll-target="#breeding-programs">Breeding Programs</a></li>
+  <li><a href="#parts-of-breeding-program" id="toc-parts-of-breeding-program" class="nav-link" data-scroll-target="#parts-of-breeding-program">Parts of Breeding Program</a></li>
+  <li><a href="#types-of-breeding-programs" id="toc-types-of-breeding-programs" class="nav-link" data-scroll-target="#types-of-breeding-programs">Types of Breeding Programs</a></li>
+  <li><a href="#breeding-goals" id="toc-breeding-goals" class="nav-link" data-scroll-target="#breeding-goals">Breeding Goals</a></li>
+  <li><a href="#performance-testing" id="toc-performance-testing" class="nav-link" data-scroll-target="#performance-testing">Performance Testing</a></li>
+  <li><a href="#classification-of-performance-tests" id="toc-classification-of-performance-tests" class="nav-link" data-scroll-target="#classification-of-performance-tests">Classification of Performance Tests</a></li>
+  <li><a href="#examples-pigs" id="toc-examples-pigs" class="nav-link" data-scroll-target="#examples-pigs">Examples: Pigs</a></li>
+  <li><a href="#examples-cattle" id="toc-examples-cattle" class="nav-link" data-scroll-target="#examples-cattle">Examples: Cattle</a></li>
+  <li><a href="#prediction-of-breeding-values" id="toc-prediction-of-breeding-values" class="nav-link" data-scroll-target="#prediction-of-breeding-values">Prediction Of Breeding Values</a></li>
+  <li><a href="#progress-in-technologies" id="toc-progress-in-technologies" class="nav-link" data-scroll-target="#progress-in-technologies">Progress In Technologies</a></li>
+  <li><a href="#differences-of-bp-between-species" id="toc-differences-of-bp-between-species" class="nav-link" data-scroll-target="#differences-of-bp-between-species">Differences Of BP Between Species</a></li>
+  <li><a href="#hierarchical-structure" id="toc-hierarchical-structure" class="nav-link" data-scroll-target="#hierarchical-structure">Hierarchical Structure</a></li>
+  <li><a href="#monolithic-structure" id="toc-monolithic-structure" class="nav-link" data-scroll-target="#monolithic-structure">Monolithic Structure</a></li>
   </ul>
 </nav>
     </div>
@@ -144,14 +192,26 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Welcome to the Website of</h1>
+<h1 class="title">Pig Science - Breeding</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Peter von Rohr </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 24, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -161,26 +221,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=176968&amp;semkez=2024S&amp;ansicht=LEHRVERANSTALTUNGEN&amp;lang=en">751-6602-00L Pig Science</a></p>
-<section id="information" class="level2">
-<h2 class="anchored" data-anchor-id="information">Information</h2>
-<ul>
-<li>Lecturer: S. Neuenschwander, C. Kasper, G. Bee, P. von Rohr</li>
-<li>Date: Wednesday 8-10</li>
-<li>Room: LFW B2</li>
-<li>Moodle: https://moodle-app2.let.ethz.ch/course/view.php?id=21680</li>
-<li>Website: https://charlotte-ngs.github.io/psbss2024</li>
-</ul>
-</section>
-<section id="questions" class="level2">
-<h2 class="anchored" data-anchor-id="questions">Questions</h2>
-<p>Questions can be asked during the lecture and during the exercise hour or via e-mail:</p>
-<ul>
-<li>Peter von Rohr (peter.vonrohr <code>at</code> usys.ethz.ch)</li>
-</ul>
-</section>
-<section id="lecture-program" class="level2">
-<h2 class="anchored" data-anchor-id="lecture-program">Lecture Program</h2>
+<section id="program---breeding" class="level2">
+<h2 class="anchored" data-anchor-id="program---breeding">Program - Breeding</h2>
 <table class="table">
 <thead>
 <tr class="header">
@@ -203,11 +245,271 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
-<section id="license" class="level2">
-<h2 class="anchored" data-anchor-id="license">License</h2>
-<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
-<hr>
-<p><em>Latest Changes: 2024-04-24 05:09:25 CEST (pvr)</em></p>
+<section id="information" class="level2">
+<h2 class="anchored" data-anchor-id="information">Information</h2>
+<ul>
+<li>Lecturer: S. Neuenschwander, C. Kasper, G. Bee, P. von Rohr</li>
+<li>Date: Wednesday 8-10</li>
+<li>Mode: in person</li>
+<li>Room: LFW B2</li>
+<li>Moodle: https://moodle-app2.let.ethz.ch/course/view.php?id=21680</li>
+<li>Website: https://charlotte-ngs.github.io/psbss2024</li>
+<li>Questions: during the lecture and during the exercise hour or via e-mail
+<ul>
+<li>Peter von Rohr (peter.vonrohr <code>at</code> usys.ethz.ch)</li>
+</ul></li>
+</ul>
+</section>
+<section id="course-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="course-objectives">Course Objectives</h2>
+<p>The students</p>
+<ul>
+<li>understand the theoretical background and the practical application of the prediction of breeding values in a livestock breeding</li>
+<li>know how to interpret predicted breeding values.</li>
+</ul>
+<p><span class="math inline">\(\rightarrow\)</span> What is the meaning of a predicted aggregate genotype <span class="math inline">\(-9\)</span> index points</p>
+<p><span class="math inline">\(\rightarrow\)</span> What is the difference between production and breeding</p>
+</section>
+<section id="further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="further-reading">Further Reading</h2>
+<ul>
+<li>Willam und Simianer: Tierzucht - Grundwissen Bachelor (Ulmer, UTB 3526 2011). This book gives an introduction into evolution, livestock production and breeding programs.</li>
+<li>Falconer and Mackay: Introduction to Quantitative Genetics (Longman). The de-facto standard in the area of quantitative genetics uses many examples from experimental research to illustrate the concepts of quantitative genetics.</li>
+<li>Mrode: Linear Models for the Prediction of Animal Breeding Values (CABI Publishing, 2005). The main focus is on prediction of breeding values using different models.</li>
+</ul>
+</section>
+<section id="terminology" class="level2">
+<h2 class="anchored" data-anchor-id="terminology">Terminology</h2>
+<div class="cell" data-hook_convert_odg="true" data-fig_path="odg">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="odg/psb-terminology.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="scientific-definition" class="level2">
+<h2 class="anchored" data-anchor-id="scientific-definition">Scientific Definition</h2>
+<blockquote class="blockquote">
+<p>“Selection and Mating of parents are used such that offspring generations are closer to a defined goal.”</p>
+</blockquote>
+<ul>
+<li>Distinction between
+<ul>
+<li>livestock breeding and production</li>
+<li>cattle breeding and milk or beef production</li>
+<li>pig breeding and pork production and</li>
+<li>chicken breeding and egg producers</li>
+</ul></li>
+</ul>
+</section>
+<section id="history" class="level2">
+<h2 class="anchored" data-anchor-id="history">History</h2>
+<ul>
+<li>Formations of breeding organisation (BO)</li>
+<li>Tasks of BO: herdbooks and certification</li>
+<li>Crisis at beginning of <span class="math inline">\(20^{th}\)</span> century lead to federal regulations</li>
+<li>Developments of technologies
+<ul>
+<li>Reproduction</li>
+<li>Molecular biology</li>
+<li>Computer science</li>
+</ul></li>
+</ul>
+</section>
+<section id="breeding-organisations" class="level2">
+<h2 class="anchored" data-anchor-id="breeding-organisations">Breeding Organisations</h2>
+<div class="cell" data-hook_convert_odg="true" data-fig_path="odg">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="odg/breedingassociation.png" class="img-fluid figure-img" style="width:11cm" data-fig-pos="H"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="breeding-programs" class="level2">
+<h2 class="anchored" data-anchor-id="breeding-programs">Breeding Programs</h2>
+<div class="cell" data-hook_convert_odg="true" data-fig_path="odg">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="odg/bprogdiag.png" class="img-fluid figure-img" style="width:11cm" data-fig-pos="H"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="parts-of-breeding-program" class="level2">
+<h2 class="anchored" data-anchor-id="parts-of-breeding-program">Parts of Breeding Program</h2>
+<ul>
+<li>Applied prediction of breeding values is a part of the breeding program</li>
+<li>Design and planning of a breeding program requires to answer the questions
+<ul>
+<li>What goal do we want to achieve</li>
+<li>What measures do we want to use to achieve the goal</li>
+</ul></li>
+</ul>
+</section>
+<section id="types-of-breeding-programs" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-breeding-programs">Types of Breeding Programs</h2>
+<p>Two types of breeding programs</p>
+<ol type="1">
+<li>Focus on <strong>selection response</strong>
+<ul>
+<li>countries with limited resources</li>
+<li>big farms or big companies</li>
+</ul></li>
+<li>Focus on clients and services
+<ul>
+<li>cattle and pig breeding of developed countries</li>
+<li>economic interest of companies and farms</li>
+</ul></li>
+</ol>
+</section>
+<section id="breeding-goals" class="level2">
+<h2 class="anchored" data-anchor-id="breeding-goals">Breeding Goals</h2>
+<p>Types of breeding goals</p>
+<ul>
+<li>economic</li>
+<li>biological</li>
+<li>tactical</li>
+<li>ethical</li>
+</ul>
+<p>Breeding goals might be formulated in different ways</p>
+<ul>
+<li><strong>political</strong>: description of idealized image of future animal. Often conflicting and not verifiable</li>
+<li><strong>scientific</strong>: mathematical description of direction of desired change. Measurable via selection response</li>
+</ul>
+</section>
+<section id="performance-testing" class="level2">
+<h2 class="anchored" data-anchor-id="performance-testing">Performance Testing</h2>
+<ul>
+<li>Basic question: What trait is measured when for which animals</li>
+<li>Breeding should be based on data</li>
+<li>Quality of derived parameters (heritability, predicted breeding values) depend on accuracy of collected data</li>
+<li>Data collection used for performance testing often started for different reasons
+<ul>
+<li>milk sample testing: quality of product</li>
+<li>station testing in pigs: correction of environment</li>
+</ul></li>
+</ul>
+</section>
+<section id="classification-of-performance-tests" class="level2">
+<h2 class="anchored" data-anchor-id="classification-of-performance-tests">Classification of Performance Tests</h2>
+<ul>
+<li>Place
+<ul>
+<li>Station</li>
+<li>Field</li>
+</ul></li>
+<li>Relationship between selection candidate and tested animal
+<ul>
+<li>own performance record</li>
+<li>full-sib</li>
+<li>progeny</li>
+</ul></li>
+<li>Traits
+<ul>
+<li>should have genetic variation</li>
+<li>economic importance</li>
+<li>measurable better than subjectively observed</li>
+</ul></li>
+</ul>
+</section>
+<section id="examples-pigs" class="level2">
+<h2 class="anchored" data-anchor-id="examples-pigs">Examples: Pigs</h2>
+<div class="cell" data-hook_convert_odg="true" data-fig_path="odg">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="odg/pigperftest.png" class="img-fluid figure-img" style="width:11cm"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="examples-cattle" class="level2">
+<h2 class="anchored" data-anchor-id="examples-cattle">Examples: Cattle</h2>
+<div class="cell" data-hook_convert_odg="true" data-fig_path="odg">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="odg/cattleperftest.png" class="img-fluid figure-img" style="width:11cm"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="prediction-of-breeding-values" class="level2">
+<h2 class="anchored" data-anchor-id="prediction-of-breeding-values">Prediction Of Breeding Values</h2>
+<ul>
+<li>Done in most breeding programs</li>
+<li>Federal regulation</li>
+<li>Performance tests much more expensive</li>
+<li>Different intervals
+<ul>
+<li>cattle: three times per year (traditional), every two weeks (genomic)</li>
+<li>pigs: nightly or weekly</li>
+</ul></li>
+</ul>
+</section>
+<section id="progress-in-technologies" class="level2">
+<h2 class="anchored" data-anchor-id="progress-in-technologies">Progress In Technologies</h2>
+<ul>
+<li>Reproduction - AI
+<ul>
+<li>disease prevention</li>
+<li>number of progeny per sire increased</li>
+<li>better comparisons between herds</li>
+<li>Future: more development on female side</li>
+</ul></li>
+<li>Molecular Biology
+<ul>
+<li>cheap and efficient large-scale genotyping</li>
+<li>sequencing with more accuracy</li>
+</ul></li>
+<li>Computer Science
+<ul>
+<li>efficient evaluation of large amounts of data</li>
+<li>big data technologies - continuous monitoring</li>
+</ul></li>
+</ul>
+</section>
+<section id="differences-of-bp-between-species" class="level2">
+<h2 class="anchored" data-anchor-id="differences-of-bp-between-species">Differences Of BP Between Species</h2>
+<p>Breeding programs (BP) for different species have different structure</p>
+<ul>
+<li><strong>hierarchical</strong>: pigs and chicken</li>
+<li><strong>flat</strong>: cattle and horse</li>
+</ul>
+</section>
+<section id="hierarchical-structure" class="level2">
+<h2 class="anchored" data-anchor-id="hierarchical-structure">Hierarchical Structure</h2>
+<div class="cell" data-hook_convert_odg="true" data-fig_path="odg">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="odg/HierarchischeZuchtstruktur.png" class="img-fluid figure-img" style="width:11cm"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="monolithic-structure" class="level2">
+<h2 class="anchored" data-anchor-id="monolithic-structure">Monolithic Structure</h2>
+<div class="cell" data-hook_convert_odg="true" data-fig_path="odg">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="odg/MonolithicBp.png" class="img-fluid figure-img" style="width:11cm"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
 </section>

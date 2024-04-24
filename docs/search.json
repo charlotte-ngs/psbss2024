@@ -32,7 +32,7 @@
     "href": "index.html#license",
     "title": "Welcome to the Website of",
     "section": "License",
-    "text": "License\nThis work is licensed under a Creative Commons Attribution 4.0 International License.\n\nLatest Changes: 2024-04-23 11:49:45 CEST (pvr)"
+    "text": "License\nThis work is licensed under a Creative Commons Attribution 4.0 International License.\n\nLatest Changes: 2024-04-24 05:09:25 CEST (pvr)"
   },
   {
     "objectID": "solutions.html",
@@ -51,9 +51,9 @@
   {
     "objectID": "NEWS.html",
     "href": "NEWS.html",
-    "title": "psbss2024 0.0.4",
+    "title": "psbss2024 0.0.5",
     "section": "",
-    "text": "psbss2024 0.0.4\n\nCourse notes Pig Science - Breeding Part\n\n\n\npsbss2024 0.0.3\n\nAdd rendered output of subpages\n\n\n\npsbss2024 0.0.2\n\nAdded subpages for\n\ncourse notes\nexercises\nsolutions\n\n\n\n\npsbss2024 0.0.1\n\nStart with initial version"
+    "text": "psbss2024 0.0.5\n\n\npsbss2024 0.0.4\n\nCourse notes Pig Science - Breeding Part\n\n\n\npsbss2024 0.0.3\n\nAdd rendered output of subpages\n\n\n\npsbss2024 0.0.2\n\nAdded subpages for\n\ncourse notes\nexercises\nsolutions\n\n\n\n\npsbss2024 0.0.1\n\nStart with initial version"
   },
   {
     "objectID": "vignettes/quarto_create_course_website/quarto_create_course_website.html",
@@ -96,5 +96,817 @@
     "title": "Exercises",
     "section": "",
     "text": "Links to exercises"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_sel/02_psb_gen_sel.html",
+    "href": "slides/l02_psb_gen_sel/02_psb_gen_sel.html",
+    "title": "Genomic Selection for New Trait",
+    "section": "",
+    "text": "New trait to be considered in breeding program\nWhy? \\(\\rightarrow\\) Trait is of economic importance\nWant to improve average level of trait in a given population\nHow is this done?\nWhat do we have to do?"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_sel/02_psb_gen_sel.html#new-trait",
+    "href": "slides/l02_psb_gen_sel/02_psb_gen_sel.html#new-trait",
+    "title": "Genomic Selection for New Trait",
+    "section": "",
+    "text": "New trait to be considered in breeding program\nWhy? \\(\\rightarrow\\) Trait is of economic importance\nWant to improve average level of trait in a given population\nHow is this done?\nWhat do we have to do?"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_sel/02_psb_gen_sel.html#background-and-context",
+    "href": "slides/l02_psb_gen_sel/02_psb_gen_sel.html#background-and-context",
+    "title": "Genomic Selection for New Trait",
+    "section": "Background and Context",
+    "text": "Background and Context"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#new-trait",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#new-trait",
+    "title": "Model Selection and Variance Components",
+    "section": "New Trait",
+    "text": "New Trait\n\nNew trait to be considered in breeding program\nWhy? \\(\\rightarrow\\) Trait is of economic importance\nWant to improve average level of trait in a given population\nHow is this done?\nWhat do we have to do?"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#background-and-context",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#background-and-context",
+    "title": "Model Selection and Variance Components",
+    "section": "Background and Context",
+    "text": "Background and Context\n\nFarms/Enterprise use livestock products as base for economic existence\nImprovements of production efficiency improves sustainability\nShort-term:\n\nimprove management and environment\nselect optimal livestock breed / population for given environment\n\nLong-term:\n\nimprove population at genetic level\ndefine breeding goal\nselect parents such that offspring are “closer” to goal compared to parents"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#genetic-improvement",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#genetic-improvement",
+    "title": "Model Selection and Variance Components",
+    "section": "Genetic Improvement",
+    "text": "Genetic Improvement\n\nGenetic improvement happens between parents and offspring\nParents pass random sample of alleles to offspring\nGoal: select parents that have many “good” alleles to pass to offspring\nHow to find parents with “good” alleles without knowing which genes are important?\n\n\\(\\rightarrow\\) Statistical Modeling"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#why-statistical-modelling",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#why-statistical-modelling",
+    "title": "Model Selection and Variance Components",
+    "section": "Why Statistical Modelling?",
+    "text": "Why Statistical Modelling?\nSome people believe, they do not need statistics. For them it is enough to look at a diagram"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#statistical-modelling-because",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#statistical-modelling-because",
+    "title": "Model Selection and Variance Components",
+    "section": "Statistical Modelling Because …",
+    "text": "Statistical Modelling Because …\nTwo types of dependencies between physical quantities\n\ndeterministic\nstochastic"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#deterministic-versus-stochastic",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#deterministic-versus-stochastic",
+    "title": "Model Selection and Variance Components",
+    "section": "Deterministic Versus Stochastic",
+    "text": "Deterministic Versus Stochastic"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#statistical-model",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#statistical-model",
+    "title": "Model Selection and Variance Components",
+    "section": "Statistical Model",
+    "text": "Statistical Model\n\nstochastic systems contains many sources of uncertainty\nstatistical models can handle uncertainty\ncomponents of a statistical model\n\nresponse variable \\(y\\)\npredictor variables \\(x_1, x_2, \\ldots, x_k\\)\nerror term \\(e\\)\nfunction \\(m(x)\\)"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#how-does-a-statistical-model-work",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#how-does-a-statistical-model-work",
+    "title": "Model Selection and Variance Components",
+    "section": "How Does A Statistical Model Work?",
+    "text": "How Does A Statistical Model Work?\n\npredictor variables \\(x_1, x_2, \\ldots, x_k\\) are transformed by function \\(m(x)\\) to explain the response variable \\(y\\)\nuncertainty is captured by error term.\nas a formula, for observation \\(i\\)\n\n\\[y_i = m(x_i) + e_i\\]"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#which-function-mx",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#which-function-mx",
+    "title": "Model Selection and Variance Components",
+    "section": "Which function \\(m(x)\\)?",
+    "text": "Which function \\(m(x)\\)?\n\nclass of functions that can be used as \\(m(x)\\) is infinitely large\nrestrict to linear functions of predictor variables"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#which-predictor-variables",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#which-predictor-variables",
+    "title": "Model Selection and Variance Components",
+    "section": "Which predictor variables?",
+    "text": "Which predictor variables?\n\nQuestion, about which predictor variables to use is answered by model selection"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#why-model-selection",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#why-model-selection",
+    "title": "Model Selection and Variance Components",
+    "section": "Why Model Selection",
+    "text": "Why Model Selection\n\nMany predictor variables are available\nAre all of them relevant?\nWhat is the meaning of relevant in this context?"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#example-dataset",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#example-dataset",
+    "title": "Model Selection and Variance Components",
+    "section": "Example Dataset",
+    "text": "Example Dataset\n\n\n\n\n\nAnimal\nBreast Circumference\nBody Weight\nRandPred\n\n\n\n\n1\n176\n471\n177\n\n\n2\n177\n463\n177\n\n\n3\n178\n481\n180\n\n\n4\n179\n470\n178\n\n\n5\n179\n496\n182\n\n\n6\n180\n491\n179\n\n\n7\n181\n518\n180\n\n\n8\n182\n511\n184\n\n\n9\n183\n510\n179\n\n\n10\n184\n541\n176"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#no-relevance-of-predictors",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#no-relevance-of-predictors",
+    "title": "Model Selection and Variance Components",
+    "section": "No Relevance of Predictors",
+    "text": "No Relevance of Predictors"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#relevance-of-predictors",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#relevance-of-predictors",
+    "title": "Model Selection and Variance Components",
+    "section": "Relevance of Predictors",
+    "text": "Relevance of Predictors"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#fitting-a-regression-model",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#fitting-a-regression-model",
+    "title": "Model Selection and Variance Components",
+    "section": "Fitting a Regression Model",
+    "text": "Fitting a Regression Model\n\n\n\nCall:\nlm(formula = `Body Weight` ~ RandPred, data = tbl_reg_aug)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-28.481 -19.249  -3.897  13.275  51.209 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)\n(Intercept)  192.299    636.596   0.302    0.770\nRandPred       1.690      3.552   0.476    0.647\n\nResidual standard error: 26.01 on 8 degrees of freedom\nMultiple R-squared:  0.02753,   Adjusted R-squared:  -0.09403 \nF-statistic: 0.2264 on 1 and 8 DF,  p-value: 0.6469"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#fitting-a-regression-model-ii",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#fitting-a-regression-model-ii",
+    "title": "Model Selection and Variance Components",
+    "section": "Fitting a Regression Model II",
+    "text": "Fitting a Regression Model II\n\n\n\nCall:\nlm(formula = `Body Weight` ~ `Breast Circumference`, data = tbl_reg_aug)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-17.3941  -6.5525  -0.0673   9.3707  13.2594 \n\nCoefficients:\n                        Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)            -1065.115    255.483  -4.169 0.003126 ** \n`Breast Circumference`     8.673      1.420   6.108 0.000287 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 11.08 on 8 degrees of freedom\nMultiple R-squared:  0.8234,    Adjusted R-squared:  0.8014 \nF-statistic: 37.31 on 1 and 8 DF,  p-value: 0.000287"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#multiple-regression",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#multiple-regression",
+    "title": "Model Selection and Variance Components",
+    "section": "Multiple Regression",
+    "text": "Multiple Regression\n\n\n\nCall:\nlm(formula = `Body Weight` ~ `Breast Circumference` + RandPred, \n    data = tbl_reg_aug)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-17.1739  -6.2679  -0.6437   9.4688  13.1283 \n\nCoefficients:\n                        Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)            -1096.580    369.334  -2.969 0.020835 *  \n`Breast Circumference`     8.642      1.536   5.625 0.000795 ***\nRandPred                   0.207      1.638   0.126 0.902980    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 11.83 on 7 degrees of freedom\nMultiple R-squared:  0.8238,    Adjusted R-squared:  0.7735 \nF-statistic: 16.37 on 2 and 7 DF,  p-value: 0.002295"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#which-model-is-better",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#which-model-is-better",
+    "title": "Model Selection and Variance Components",
+    "section": "Which model is better?",
+    "text": "Which model is better?\nWhy not taking all predictors?\n\nAdditional parameters must be estimated from data\nPredictive power decreased with too many predictors (cannot be shown for this data set, because too few data points)\nBias-variance trade-off"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#bias-variance-trade-off",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#bias-variance-trade-off",
+    "title": "Model Selection and Variance Components",
+    "section": "Bias-variance trade-off",
+    "text": "Bias-variance trade-off\n\nAssume, we are looking for optimum prediction\n\n\\[s_i = \\sum_{r=1}^q \\hat{\\beta}_{j_r}x_{ij_r}\\] with \\(q\\) relevant predictor variables\n\nAverage mean squared error of prediction \\(s_i\\)\n\n\\[MSE = n^{-1}\\sum_{i=1}^n E\\left[(m(x_i) - s_i)^2 \\right]\\] where \\(m(.)\\) denotes the linear function of the unknown true model."
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#bias-variance-trade-off-ii",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#bias-variance-trade-off-ii",
+    "title": "Model Selection and Variance Components",
+    "section": "Bias-variance trade-off II",
+    "text": "Bias-variance trade-off II\n\nMSE can be split into two parts\n\n\\[MSE = n^{-1}\\sum_{i=1}^n \\left( E\\left[s_i \\right] - m(x_i) \\right)^2\n  + n^{-1}\\sum_{i=1}^n var(s_i)\n\\]\nwhere \\(n^{-1}\\sum_{i=1}^n \\left( E\\left[s_i \\right] - m(x_i) \\right)^2\\) is called the squared bias\n\nIncreasing \\(q\\) leads to reduced bias but increased variance (\\(var(s_i)\\))\nHence, find \\(s_i\\) such that MSE is minimal\nProblem: cannot compute MSE because \\(m(.)\\) is not known\n\n\\(\\rightarrow\\) estimate MSE"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#mallows-c_p-statistic",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#mallows-c_p-statistic",
+    "title": "Model Selection and Variance Components",
+    "section": "Mallows \\(C_p\\) statistic",
+    "text": "Mallows \\(C_p\\) statistic\n\nFor a given model \\(\\mathcal{M}\\), \\(SSE(\\mathcal{M})\\) stands for the residual sum of squares.\nMSE can be estimated as\n\n\\[\\widehat{MSE} = n^{-1} SSE(\\mathcal{M}) - \\hat{\\sigma}^2 + 2 \\hat{\\sigma}^2 |\\mathcal{M}|/n\\]\nwhere \\(\\hat{\\sigma}^2\\) is the estimate of the error variance of the full model, \\(SSE(\\mathcal{M})\\) is the residual sum of squares of the model \\(\\mathcal{M}\\), \\(n\\) is the number of observations and \\(|\\mathcal{M}|\\) stands for the number of predictors in \\(\\mathcal{M}\\)\n\\[C_p(\\mathcal{M}) = \\frac{SSE(\\mathcal{M})}{\\hat{\\sigma}^2} - n + 2 |\\mathcal{M}|\\]"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#searching-the-best-model",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#searching-the-best-model",
+    "title": "Model Selection and Variance Components",
+    "section": "Searching The Best Model",
+    "text": "Searching The Best Model\n\nExhaustive search over all sub-models might be too expensive\nFor \\(p\\) predictors there are \\(2^p - 1\\) sub-models\nWith \\(p=16\\), we get \\(6.5535\\times 10^{4}\\) sub-models\n\n\\(\\rightarrow\\) step-wise approaches"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#forward-selection",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#forward-selection",
+    "title": "Model Selection and Variance Components",
+    "section": "Forward Selection",
+    "text": "Forward Selection\n\nStart with smallest sub-model \\(\\mathcal{M}_0\\) as current model\nInclude predictor that reduces SSE the most to current model\nRepeat step 2 until all predictors are chosen\n\n\\(\\rightarrow\\) results in sequence \\(\\mathcal{M}_0 \\subseteq \\mathcal{M}_1 \\subseteq \\mathcal{M}_2 \\subseteq \\ldots\\) of sub-models\n\nOut of sequence of sub-models choose the one with minimal \\(C_p\\)"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#backward-selection",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#backward-selection",
+    "title": "Model Selection and Variance Components",
+    "section": "Backward Selection",
+    "text": "Backward Selection\n\nStart with full model \\(\\mathcal{M}_0\\) as the current model\nExclude predictor variable that increases SSE the least from current model\nRepeat step 2 until all predictors are excluded (except for intercept)\n\n\\(\\rightarrow\\) results in sequence \\(\\mathcal{M}_0 \\supseteq \\mathcal{M}_1 \\supseteq \\mathcal{M}_2 \\supseteq \\ldots\\) of sub-models\n\nOut of sequence choose the one with minimal \\(C_p\\)"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#considerations",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#considerations",
+    "title": "Model Selection and Variance Components",
+    "section": "Considerations",
+    "text": "Considerations\n\nWhenever possible, choose backward selection, because it leads to better results\nIf \\(p \\geq n\\), only forward is possible, but then consider LASSO"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#alternative-selection-criteria",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#alternative-selection-criteria",
+    "title": "Model Selection and Variance Components",
+    "section": "Alternative Selection Criteria",
+    "text": "Alternative Selection Criteria\n\nAIC or BIC, requires distributional assumptions.\nAIC is implemented in MASS::stepAIC()\nAdjusted \\(R^2\\) is a measure of goodness of fit, but sometimes is not conclusive when comparing two models\nTry in exercise"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#genetic-variation",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#genetic-variation",
+    "title": "Model Selection and Variance Components",
+    "section": "Genetic Variation",
+    "text": "Genetic Variation\n\nRequirement for trait to be considered in breeding goal\nBreeding means improvement of next generation via selection and mating\nOnly genetic (additive) components are passed to offspring\nSelection should be based on genetic component of trait\nSelection only possible with genetic variation\n\n\\(\\rightarrow\\) genetic variation indicates how good characteristics are passed from parents to offspring\n\\(\\rightarrow\\) measured by heritability \\(h^2 = \\frac{\\sigma_a^2}{\\sigma_p^2}\\)"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#two-traits",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#two-traits",
+    "title": "Model Selection and Variance Components",
+    "section": "Two Traits",
+    "text": "Two Traits"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#problems",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#problems",
+    "title": "Model Selection and Variance Components",
+    "section": "Problems",
+    "text": "Problems\n\nGenetic components cannot be observed or measured\nMust be estimated from data\nData are mostly phenotypic\n\n\\(\\rightarrow\\) topic of variance components estimation\n\nModel based, that means connection between phenotypic measure and genetic component are based on certain model\n\n\\[p = g + e\\]\nwith \\(cov(g,e) = 0\\)\n\nGoal: separate variation due to \\(g\\) (\\(\\sigma_a^2\\)) from phenotypic variation"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#example-of-variance-components-separation",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#example-of-variance-components-separation",
+    "title": "Model Selection and Variance Components",
+    "section": "Example of Variance Components Separation",
+    "text": "Example of Variance Components Separation\n\nEstimation of repeatability\nGiven repeated measurements of same trait at the same animal\nRepeatability means variation of measurements at the same animal is smaller than variation between measurements at different animals"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#repeatability-plot",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#repeatability-plot",
+    "title": "Model Selection and Variance Components",
+    "section": "Repeatability Plot",
+    "text": "Repeatability Plot"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#model",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#model",
+    "title": "Model Selection and Variance Components",
+    "section": "Model",
+    "text": "Model\n\\[\\begin{equation}\ny_{ij} = \\mu + t_i + \\epsilon_{ij} \\notag\n\\end{equation}\\]"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#estimation-of-variance-components",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#estimation-of-variance-components",
+    "title": "Model Selection and Variance Components",
+    "section": "Estimation Of Variance Components",
+    "text": "Estimation Of Variance Components\n\n\\(E(t_i) = 0\\)\n\\(\\sigma_t^2 = E(t_i^2)\\): variance component of total variance (\\(\\sigma_y^2\\)) which can be attributed to the \\(t\\)-effects\n\\(E(\\epsilon_{ij}) = 0\\)\n\\(\\sigma_{\\epsilon}^2 = E(\\epsilon_{ij}^2)\\): variance component attributed to \\(\\epsilon\\)-effects\n\\(\\sigma_y^2 = \\sigma_t^2 + \\sigma_{\\epsilon}^2\\)\nRepeatability \\(w\\) defined as:\n\n\\[\\begin{equation}\nw = \\frac{\\sigma_t^2}{\\sigma_t^2 + \\sigma_{\\epsilon}^2} \\notag\n\\end{equation}\\]\n\\(\\rightarrow\\) estimate of \\(\\sigma_t^2\\) needed"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#analysis-of-variance-anova",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#analysis-of-variance-anova",
+    "title": "Model Selection and Variance Components",
+    "section": "Analysis Of Variance (ANOVA)",
+    "text": "Analysis Of Variance (ANOVA)\nwhere\n\n\\[SSQ(t) = \\left[ {1 \\over n} \\sum_{i=1}^r \\left( \\sum_{j=1}^n y_{ij}\\right)^2 \\right] - \\left(\\sum_{i=1}^r\\sum_{j=1}^{n}y_{ij}\\right)^2 / N\\]\n\\[SSQ(\\epsilon) =  \\sum_{i=1}^r\\sum_{j=1}^{n}y_{ij}^2 - \\left[ {1 \\over n} \\sum_{i=1}^r \\left( \\sum_{j=1}^n y_{ij}\\right)^2 \\right]\\]"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#zahlenbeispiel",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#zahlenbeispiel",
+    "title": "Model Selection and Variance Components",
+    "section": "Zahlenbeispiel",
+    "text": "Zahlenbeispiel\n\n\n            Df Sum Sq Mean Sq F value   Pr(&gt;F)    \nBull         9  286.7   31.85   13.85 8.74e-07 ***\nResiduals   20   46.0    2.30                     \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\nSetting expected values of Mean Sq equal to estimates of variance components\n\\[\\hat{\\sigma}_{\\epsilon}^2 = 2.3 \\text{ and } \\hat{\\sigma}_t^2 = \\frac{31.85 - 2.3}{3} = 9.85\\]\nRepeatability\n\\[\\hat{w} = \\frac{\\hat{\\sigma}_t^2}{\\hat{\\sigma}_t^2 + \\hat{\\sigma}_{\\epsilon}^2} = 0.81\\]"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#same-strategy-for-sire-model",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#same-strategy-for-sire-model",
+    "title": "Model Selection and Variance Components",
+    "section": "Same Strategy for Sire Model",
+    "text": "Same Strategy for Sire Model\n\nSire model is a mixed linear effects model with sire effects \\(s\\) as random components\n\n\\[\\begin{equation}\ny = Xb + Zs + e \\notag\n\\end{equation}\\]\n\nIn case where sires are not related, $var(s) = \\(I * \\sigma_s^2\\)\nFrom \\(\\sigma_s^2\\), we get genetic additive variance as \\(\\sigma_a^2 = 4*\\sigma_s^2\\)"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#anova",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#anova",
+    "title": "Model Selection and Variance Components",
+    "section": "ANOVA",
+    "text": "ANOVA\nwith \\[k = \\frac{1}{r-1} \\left[ N - \\frac{\\sum_{i=1}^{r}n_i^2}{N} \\right]\\]"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#maximum-likelihood-ml",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#maximum-likelihood-ml",
+    "title": "Model Selection and Variance Components",
+    "section": "Maximum Likelihood (ML)",
+    "text": "Maximum Likelihood (ML)\n\nLikelihood\n\n\\[\\begin{equation}\nL(\\theta) = f(y | \\theta) \\notag\n\\end{equation}\\]\n\nNormal distribution\n\n\\[\\begin{equation}\nL(\\theta) = (2\\pi)^{-1/2 n} \\sigma^{-n}|H|^{-1/2} * exp\\left\\{-\\frac{1}{2\\sigma^2}(y-Xb)^T H^{-1} (y-Xb) \\right\\} \\notag\n\\end{equation}\\]\nwith \\(var(y) = H*\\sigma^2\\) and \\(\\theta^T = \\left[\\begin{array}{cc} b  &  \\sigma^2 \\end{array} \\right]\\)"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#maximization-of-likelihood",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#maximization-of-likelihood",
+    "title": "Model Selection and Variance Components",
+    "section": "Maximization of Likelihood",
+    "text": "Maximization of Likelihood\n\nSet \\(\\lambda = log L\\)\nCompute partial derivatives of \\(\\lambda\\) with respect to all unknowns\n\n\\[\\frac{\\partial \\lambda}{\\partial b}\\]\n\\[\\frac{\\partial \\lambda}{\\partial \\sigma^2}\\]\n\nSet partial derivatives to \\(0\\) and solve for unknowns\nUse solutions as estimates"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#restricted-maximum-likelihood-reml",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#restricted-maximum-likelihood-reml",
+    "title": "Model Selection and Variance Components",
+    "section": "Restricted Maximum Likelihood (REML)",
+    "text": "Restricted Maximum Likelihood (REML)\n\nProblem with ML: estimate of \\(\\sigma^2\\) depends on \\(b\\) \\(\\rightarrow\\) undesirable\nDo transformations \\(Sy\\) and \\(Qy\\)\n\n\nThe matrix \\(S\\) has rank \\(n-t\\) and the matrix \\(Q\\) has rank \\(t\\)\nThe result of the two transformations are independent, that means \\(cov(Sy,Qy) = 0\\) which is met when \\(SHQ^T = 0\\)\nThe matrix S is chosen such that \\(E(Sy) = 0\\) which means \\(SX = 0\\)\nThe matrix \\(QX\\) is of rank \\(t\\), so that every linear function of the elements of \\(Qy\\) estimate a linear function of \\(b\\)."
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#reml-ii",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#reml-ii",
+    "title": "Model Selection and Variance Components",
+    "section": "REML II",
+    "text": "REML II\n\nFrom (i) and (ii) it follows that the likelihood \\(L\\) of \\(y\\) is the product of the likelihoods of \\(Sy\\) (\\(L^*\\)) and \\(Qy\\) (\\(L^{**}\\)) that means\n\n\\[\\lambda = \\lambda^* + \\lambda^{**}\\]\n\nVariance components are estimated from \\(\\lambda^*\\) which will then be independent of \\(b\\)"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#bayesian-estimation",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#bayesian-estimation",
+    "title": "Model Selection and Variance Components",
+    "section": "Bayesian Estimation",
+    "text": "Bayesian Estimation\n\nProposed already in the 80’s\nFull implementation only in 1993\nRequirements:\n\ncheap computing and\ngood pseudo-random number generators\n\nBayesian estimation is based on conditional posterior distribution of unknowns given the knowns\nConditional posterior distribution is computed from prior distribution of unknowns times the likelihood"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#model-1",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#model-1",
+    "title": "Model Selection and Variance Components",
+    "section": "Model",
+    "text": "Model\n\nUnivariate Gaussian linear mixed model\n\n\\[y = Xb + Zu + e\\]"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#likelihood",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#likelihood",
+    "title": "Model Selection and Variance Components",
+    "section": "Likelihood",
+    "text": "Likelihood\n\nData generating distribution\n\n\\[y | b, u, \\sigma_e^2 \\sim \\mathcal{N}(Xb + Zu, I * \\sigma_e^2)\\]\nwhere \\(I\\) is a \\(n\\times n\\) identity matrix and \\(\\sigma_e^2\\) is the variance of the random residuals."
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#priors",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#priors",
+    "title": "Model Selection and Variance Components",
+    "section": "Priors",
+    "text": "Priors\n\nPrior distributions must be specified for all unknowns\nUnknowns in our example are: \\(b\\), \\(u\\), \\(\\sigma_e^2\\) and \\(\\sigma_u^2\\)\nPrior distribution for\n\n\\(b\\) is flat, i.e. \\(p(b) \\propto c\\)\n\\(u\\) Normal distribution as \\(u | G, \\sigma_u^2 \\sim N(0, G*\\sigma_u^2)\\)\n\\(\\sigma_e^2\\) scaled inverse \\(\\chi^2\\): \\(p(\\sigma_e^2 | \\nu_e, s_e^2) \\propto (\\sigma_e^2)^{-\\nu_e/2-1} exp(-{1\\over 2}\\nu_e s_e^2 / \\sigma_e^2)\\)\n\\(\\sigma_u^2\\) : \\(p(\\sigma_u^2 | \\nu_u, s_u^2) \\propto (\\sigma_u^2)^{-\\nu_u/2-1} exp(-{1\\over 2}\\nu_u s_u^2 / \\sigma_u^2)\\)\n\n\\(\\nu_e\\), \\(\\nu_s\\), \\(s_e^2\\) and \\(s_u^2\\) are called hyper-parameters and must be determined"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#additional-terms",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#additional-terms",
+    "title": "Model Selection and Variance Components",
+    "section": "Additional Terms",
+    "text": "Additional Terms\n\nLet\n\n\\[\\theta^T = (b^T, u^T) = (\\theta_1, \\theta_2, \\ldots, \\theta_N)\\]\n\\[\\theta_{-i} = (\\theta_1, \\theta_2, \\ldots, \\theta_{i-1}, \\theta_{i+1}, \\ldots, \\theta_N)\\]\n\nFurther, let\n\n\\[s^T = (s_u^2, s_e^2)\\] and\n\\[\\nu^T = (\\nu_u, \\nu_e)\\]"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#joint-posterior-density",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#joint-posterior-density",
+    "title": "Model Selection and Variance Components",
+    "section": "Joint Posterior Density",
+    "text": "Joint Posterior Density\nThe joint posterior distribution can be written as\n\\[p(\\theta, \\sigma_u^2, \\sigma_e^2 | y, s, \\nu) \\propto p(\\theta) * p(\\sigma_u^2 | \\nu_u, s_u^2) * p(\\sigma_e^2 | \\nu_e, s_e^2) * p(y | \\theta, \\sigma_e^2)\\]"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#fully-conditional-posterior-densities-of-theta",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#fully-conditional-posterior-densities-of-theta",
+    "title": "Model Selection and Variance Components",
+    "section": "Fully Conditional Posterior Densities of \\(\\theta\\)",
+    "text": "Fully Conditional Posterior Densities of \\(\\theta\\)\n\nDensity of every single unknown component when setting all other components as known\n\n\\[\\theta_i | y, \\theta_{-i}, \\sigma_u^2, \\sigma_e^2, s, \\nu \\sim \\mathcal{N}(\\tilde{\\theta_i}, \\tilde{v_i}) \\]\nwhere \\(\\tilde{\\theta_i} = (r_i - \\sum_{j=1,j\\ne i}^N w_{ij}\\theta_j)/w_{ii}\\) and \\(\\tilde{v_i} = \\sigma_e^2 / w_{ii}\\).\n\nvector \\(r\\) is the vector of right-hand side of MME\nmatrix \\(W\\) is the coefficient matrix of MME"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#fully-conditional-posterior-densities-of-sigma_e2",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#fully-conditional-posterior-densities-of-sigma_e2",
+    "title": "Model Selection and Variance Components",
+    "section": "Fully Conditional Posterior Densities of \\(\\sigma_e^2\\)",
+    "text": "Fully Conditional Posterior Densities of \\(\\sigma_e^2\\)\n\nscaled inverted chi-square distribution for \\(\\sigma_e^2\\)\n\n\\[\\sigma_e^2 | y, \\theta, \\sigma_u^2, s, \\nu \\sim \\tilde{\\nu_e}\\tilde{s_e}^2\\chi_{\\tilde{\\nu_e}}^{-2}\\]\n\nParameters of the above distribution are defined as\n\n\\[\\tilde{\\nu_e} = n + \\nu_e\\] and\n\\[\\tilde{s_e}^2 = \\left[(y - Xb - Zu)^T(y - Xb - Zu) + \\nu_e s_e^2 \\right] / \\tilde{\\nu_e}\\]"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#fully-conditional-posterior-densities-of-sigma_u2",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#fully-conditional-posterior-densities-of-sigma_u2",
+    "title": "Model Selection and Variance Components",
+    "section": "Fully Conditional Posterior Densities of \\(\\sigma_u^2\\)",
+    "text": "Fully Conditional Posterior Densities of \\(\\sigma_u^2\\)\n\nscaled inverted chi-square distribution for \\(\\sigma_u^2\\)\n\n\\[\\sigma_u^2 | y, \\theta, \\sigma_e^2, s, \\nu \\sim \\tilde{\\nu_u}\\tilde{s_u}^2\\chi_{\\tilde{\\nu_u}}^{-2}\\]\n\nParameters of the above distribution are defined as\n\n\\[\\tilde{\\nu_u} = q + \\nu_u\\] and\n\\[\\tilde{s_u}^2 = \\left[u^TG^{-1}u + \\nu_u s_u^2 \\right] / \\tilde{\\nu_u}\\]"
+  },
+  {
+    "objectID": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#implementation",
+    "href": "slides/l02_psb_modsel_varcomp/l02_psb_modsel_varcomp.html#implementation",
+    "title": "Model Selection and Variance Components",
+    "section": "Implementation",
+    "text": "Implementation\n\nStep 1: set starting values for \\(\\theta\\), \\(\\sigma_e^2\\) and \\(\\sigma_u^2\\)\nStep 2: draw random number for each component \\(\\theta_i\\) of \\(\\theta\\) from fully conditional distribution \\(\\mathcal{N}(\\tilde{\\theta_i}, \\tilde{v_i})\\)\nStep 3: draw random number for \\(\\sigma_e^2\\) from \\(\\tilde{\\nu_e}\\tilde{s_e}^2\\chi_{\\tilde{\\nu_e}}^{-2}\\)\nStep 4: draw random number for \\(\\sigma_u^2\\) from \\(\\tilde{\\nu_u}\\tilde{s_u}^2\\chi_{\\tilde{\\nu_u}}^{-2}\\)\nRepeat steps 2-4 many times and store random numbers\nStep 5: compute means of random numbers to get Bayesian estimates of unknowns \\(\\theta\\), \\(\\sigma_e^2\\) and \\(\\sigma_u^2\\)"
+  },
+  {
+    "objectID": "vignettes/add_info.html",
+    "href": "vignettes/add_info.html",
+    "title": "Additional Information",
+    "section": "",
+    "text": "This website provides links to"
+  },
+  {
+    "objectID": "vignettes/add_info.html#slides",
+    "href": "vignettes/add_info.html#slides",
+    "title": "Additional Information",
+    "section": "Slides",
+    "text": "Slides\n\n\n\nNr\nDate\nTopic\n\n\n\n\n1\n2024-04-24\nIntroduction"
+  },
+  {
+    "objectID": "vignettes/add_info.html#overhead",
+    "href": "vignettes/add_info.html#overhead",
+    "title": "Additional Information",
+    "section": "Overhead",
+    "text": "Overhead\n\nLatest Changes: 2024-04-24 05:09:30 CEST (pvr)"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html",
+    "title": "Prediction of Breeding Values",
+    "section": "",
+    "text": "Capture uncertainty due to stochastic relationship\nComponents:\n\nresponse variable \\(y\\)\npredictor variables \\(x_1, x_2, \\ldots, x_k\\)\nerror term \\(e\\)\nfunction \\(m(x)\\)"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#recap-statistical-modelling",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#recap-statistical-modelling",
+    "title": "Prediction of Breeding Values",
+    "section": "",
+    "text": "Capture uncertainty due to stochastic relationship\nComponents:\n\nresponse variable \\(y\\)\npredictor variables \\(x_1, x_2, \\ldots, x_k\\)\nerror term \\(e\\)\nfunction \\(m(x)\\)"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#model-selection",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#model-selection",
+    "title": "Prediction of Breeding Values",
+    "section": "Model Selection",
+    "text": "Model Selection\n\nFor fixed effects, select relevant predictors via model selection\nRecommended approach: backwards-elimination\n\nstart with full model\ndiscard predictor variable that increases residual sums of squares the least and get current reduced model\nrepeat step 2 until all predictors are eliminated\nfrom above resulting sequence of models, select the one with minimal criterion\n\nCriterion can be Mallow \\(C_p\\), AIC or BIC"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#variation",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#variation",
+    "title": "Prediction of Breeding Values",
+    "section": "Variation",
+    "text": "Variation\n\nAny new trait can only be used for selection, if variation is found in population\nSince change in trait via selection happens between generations, variation must also be at genetic level\nUse mixed linear effects model to estimate genetic variance, often reported as heritability\n\n\\[h^2 = \\frac{\\sigma_u^2}{\\sigma_p^2}\\]"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#selection-criterion",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#selection-criterion",
+    "title": "Prediction of Breeding Values",
+    "section": "Selection Criterion",
+    "text": "Selection Criterion\n\nIf heritability is confirmed\nSelection criterion is needed\nAnimals have to be ranked according to the criterion\nBest animals selected as parents of future generation"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#what-are-breeding-values",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#what-are-breeding-values",
+    "title": "Prediction of Breeding Values",
+    "section": "What are breeding values",
+    "text": "What are breeding values\nDefinition: two times difference between offspring of a given parent from population mean"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#practical-considerations",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#practical-considerations",
+    "title": "Prediction of Breeding Values",
+    "section": "Practical Considerations",
+    "text": "Practical Considerations\n\nDefinition of breeding value is based on biological fact that parent passes half of its alleles to offspring\nIn practice, definition cannot be used\n\nbreeding values depend on population (allele frequencies)\nmost parents do not have enough offspring\nbreeding values are needed before animals have offspring\ndifferent environmental factors not considered"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#solution",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#solution",
+    "title": "Prediction of Breeding Values",
+    "section": "Solution",
+    "text": "Solution\n\nUse genetic model to predict breeding values based on phenotypic observations\nGenetic model decomposes phenotypic observation (\\(y_i\\)) in different components\n\n\\[y_i= \\mu + u_i + d_i + i_i + e_i\\] where \\(\\mu\\) is the general mean, \\(u_i\\) the breeding value, \\(d_i\\) the dominance deviation, \\(i_i\\) the epistasis effect and \\(e_i\\) the random error term."
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#solution-ii",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#solution-ii",
+    "title": "Prediction of Breeding Values",
+    "section": "Solution II",
+    "text": "Solution II\n\nFor predicting breeding values \\(d_i\\) and \\(i_i\\) are often ignored, leading to a simplified version of the genetic model\n\n\\[y_i= \\mu + u_i + e_i\\]\n\nExpected values and variance-covariance matrix\n\n\\[\\begin{align}\nE \\left[\\begin{array}{c} y_i \\\\ u_i \\\\ e_i \\end{array} \\right]   &= \\left[\\begin{array}{c} \\mu \\\\ 0 \\\\ 0 \\end{array} \\right] \\notag \\\\\nvar \\left[\\begin{array}{c} y_i \\\\ u_i \\\\ e_i \\end{array} \\right] &= \\left[\\begin{array}{ccc} \\sigma_y^2  &  \\sigma_u^2   &  \\sigma_e^2 \\\\\n                                                                                             \\sigma_u^2  &  \\sigma_u^2   &  0  \\\\\n                                                                                             \\sigma_e^2  &  0            &  \\sigma_e^2  \\end{array} \\right] \\notag\n\\end{align}\\]"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#how-to-predict-breeding-values",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#how-to-predict-breeding-values",
+    "title": "Prediction of Breeding Values",
+    "section": "How to Predict Breeding Values",
+    "text": "How to Predict Breeding Values\n\nPredicted breeding values (\\(\\hat{u}\\)) are a function of the observed phenotypic data (\\(y\\))\n\n\\(\\rightarrow\\) \\(\\hat{u} = f(y)\\)\n\nWhat should \\(f()\\) look like?\nGoal: Maximize improvement of offspring generation over parents\n\n\\(\\rightarrow\\) \\(\\hat{u}\\) should be conditional expected value of true breeding value \\(u\\) given \\(y\\):\n\\[\\hat{u} = E(u | y)\\]"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#derivation",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#derivation",
+    "title": "Prediction of Breeding Values",
+    "section": "Derivation",
+    "text": "Derivation\n\nAssume: multivariate normality of \\(u\\) and \\(y\\) and \\(E(u) = 0\\), then\n\n\\[\\begin{align}\n\\hat{u} &= E(u | y) = E(u) + cov(u,y^T) * var(y)^{-1} * (y - E(y)) \\notag \\\\\n        &= E(u | y) = cov(u,y^T) * var(y)^{-1} * (y - E(y)) \\notag\n\\end{align}\\]\n\n\\(\\hat{u}\\) consists of two parts\n\n\n\\((y - E(y))\\): phenotypic observations corrected for environmental effects\n\\(cov(u,y^T) * var(y)^{-1}\\): weighting factor of corrected observation"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#unbiasedness",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#unbiasedness",
+    "title": "Prediction of Breeding Values",
+    "section": "Unbiasedness",
+    "text": "Unbiasedness\n\nExpected value (\\(E(\\hat{u})\\))\n\n\\[\\begin{align}\nE(\\hat{u}) &= E(cov(u,y^T) * var(y)^{-1} * (y - E(y))) \\notag \\\\\n           &= cov(u,y^T) * var(y)^{-1} * E(y-E(y)) \\notag \\\\\n           &= cov(u,y^T) * var(y)^{-1} * (E(y) - E(y)) = 0 \\notag\n\\end{align}\\]\n\nWith \\(E(u) = 0\\), it follows \\(E(\\hat{u}) = E(u) = 0\\)"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#variance",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#variance",
+    "title": "Prediction of Breeding Values",
+    "section": "Variance",
+    "text": "Variance\n\n\\(var(\\hat{u})\\) and \\(cov(u, \\hat{u})\\) important for quality of prediction\n\n\\[\\begin{align}\nvar(\\hat{u})    &= var(cov(u,y^T) * var(y)^{-1} * (y - E(y))) \\notag \\\\\n                &= cov(u,y^T) * var(y)^{-1} * var(y - E(y)) \\notag \\\\\n                &  * var(y)^{-1} * cov(y,u^T) \\notag \\\\\n                &= cov(u,y^T) * var(y)^{-1}  * cov(y,u^T) \\notag \\\\\ncov(u, \\hat{u}) &= cov(u, (cov(u,y^T) * var(y)^{-1} * (y - E(y)))^T) \\notag \\\\\n                &= cov(u, (y-E(y))^T) * var(y)^{-1} * cov(y,u^T) \\notag \\\\\n                &= cov(u,y^T)  * var(y)^{-1} * cov(y,u^T) = var(\\hat{u}) \\notag\n\\end{align}\\]"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#accuracy",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#accuracy",
+    "title": "Prediction of Breeding Values",
+    "section": "Accuracy",
+    "text": "Accuracy\n\nMeasured by \\(r_{u,\\hat{u}}\\)\nRecall \\(cov(u, \\hat{u}) = var(\\hat{u})\\)\n\n\\[\\begin{align}\nr_{u,\\hat{u}} &= \\frac{cov(u, \\hat{u})}{\\sqrt{var(u)*var(\\hat{u})}} \\notag \\\\\n              &= \\sqrt{\\frac{var(\\hat{u})}{var(u)}} \\notag\n\\end{align}\\]\n\nReliability (“Bestimmtheitsmass”): \\(B = r_{u,\\hat{u}}^2\\)"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#prediction-error-variance-pev",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#prediction-error-variance-pev",
+    "title": "Prediction of Breeding Values",
+    "section": "Prediction Error Variance (PEV)",
+    "text": "Prediction Error Variance (PEV)\n\nVariability of prediction error: \\(u - \\hat{u}\\)\n\n\\[\\begin{align}\nvar(u - \\hat{u}) &=  var(u) - 2cov(u,\\hat{u}) + var(\\hat{u}) = var(u) - var(\\hat{u}) \\notag \\\\\n                 &= var(u) * \\left[1 - \\frac{var(\\hat{u})}{var(u)} \\right] \\notag \\\\\n                 &= var(u) * \\left[1 - r_{u,\\hat{u}}^2 \\right] \\notag\n\\end{align}\\]\n\nObtained from coefficient matrix of mixed model equations\nUsed to compute reliability"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#conditional-density",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#conditional-density",
+    "title": "Prediction of Breeding Values",
+    "section": "Conditional Density",
+    "text": "Conditional Density\n\nAssessment of risk when using animals with predicted breeding values with different reliabilities quantified by \\(f(u|\\hat{u})\\)\nMultivariate normal density with mean \\(E(u|\\hat{u})\\) and variance \\(var(u|\\hat{u})\\)\n\n\\[\\begin{align}\nE(u |\\hat{u})   &= E(u) + cov(u, \\hat{u}^T) * var(\\hat{u})^{-1} * (\\hat{u} - E(\\hat{u})) = \\hat{u} \\notag \\\\\nvar(u |\\hat{u}) &= var(u) - cov(u, \\hat{u}^T) * var(\\hat{u})^{-1} * cov(\\hat{u}, u^T) \\notag \\\\\n                &= var(u) * \\left[ 1 - \\frac{cov(u, \\hat{u}^T)^2}{var(u) * var(\\hat{u})}\\right] \\notag \\\\\n                &= var(u) * \\left[ 1 - r_{u,\\hat{u}}^2 \\right] \\notag\n\\end{align}\\]"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#confidence-intervals-ci",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#confidence-intervals-ci",
+    "title": "Prediction of Breeding Values",
+    "section": "Confidence Intervals (CI)",
+    "text": "Confidence Intervals (CI)\n\nAssume an error level \\(\\alpha\\), this results in \\(100 * (1-\\alpha)\\%\\)-CI\nTypical values of \\(\\alpha\\) \\(0.05\\) or \\(0.01\\)\nWith \\(\\alpha = 0.05\\), the \\(95\\%\\)-CI gives interval around mean which covers a surface of \\(0.95\\)"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#ci-plot",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#ci-plot",
+    "title": "Prediction of Breeding Values",
+    "section": "CI-Plot",
+    "text": "CI-Plot"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#ci-limits",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#ci-limits",
+    "title": "Prediction of Breeding Values",
+    "section": "CI Limits",
+    "text": "CI Limits\n\nlower limit \\(l\\) and upper limit \\(m\\) are given by\n\n\\[\\begin{align}\nl &= \\hat{u} - z * SEP \\notag \\\\\nm &= \\hat{u} + z * SEP\n\\end{align}\\]\n\n\\(z\\) corresponds to quantile value to cover a surface of \\((1-\\alpha)\\)\nUse R-function qnorm() to get value of \\(z\\)"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#linear-mixed-effects-model",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#linear-mixed-effects-model",
+    "title": "Prediction of Breeding Values",
+    "section": "Linear Mixed Effects Model",
+    "text": "Linear Mixed Effects Model\n\nUse more realistic model for prediction of breeding values\n\n\\[\\begin{equation}\ny = Xb + Zu + e \\notag\n\\end{equation}\\]"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#expected-values-and-variances",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#expected-values-and-variances",
+    "title": "Prediction of Breeding Values",
+    "section": "Expected Values and Variances",
+    "text": "Expected Values and Variances\n\\[\\begin{equation}\nE \\left[\\begin{array}{c} y \\\\ u \\\\ e \\end{array} \\right] = \\left[\\begin{array}{c} Xb \\\\ 0 \\\\ 0 \\end{array} \\right] \\notag\n\\end{equation}\\]\n\\[\\begin{equation}\nvar \\left[\\begin{array}{c} y \\\\ u \\\\ e \\end{array} \\right]\n=\n\\left[\\begin{array}{rrr}\nZGZ^T + R  &  ZG  &  0  \\\\\nGZ^T       &  G   &  0  \\\\\n0          &  0   &  R\n\\end{array} \\right] \\notag\n\\end{equation}\\]"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#solutions",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#solutions",
+    "title": "Prediction of Breeding Values",
+    "section": "Solutions",
+    "text": "Solutions\n\nSame as for simple model\n\n\\[\\begin{equation}\n\\hat{u} = E(u | y) = GZ^TV^{-1}(y - X\\hat{b}) \\notag\n\\end{equation}\\]\nwith\n\\[\\begin{equation}\n\\hat{b} = (X^TV^{-1}X)^{-}X^TV^{-1}y \\notag\n\\end{equation}\\]\ncorresponding to the general least squares solution of \\(b\\)"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#problem",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#problem",
+    "title": "Prediction of Breeding Values",
+    "section": "Problem",
+    "text": "Problem\n\nSolution for \\(\\hat{u}\\) contains \\(V^{-1}\\) which is large and difficult to compute\nUse mixed model equations\n\n\\[\\begin{equation}\n\\left[\n\\begin{array}{lr}\nX^TR^{-1}X  &  X^TR^{-1}Z \\\\\nZ^TR^{-1}X  &  Z^TR^{-1}Z + G^{-1}\n\\end{array}\n\\right]\n\\left[\n\\begin{array}{c}\n\\hat{b} \\\\\n\\hat{u}\n\\end{array}\n\\right]\n=\n\\left[\n\\begin{array}{c}\nX^TR^{-1}y \\\\\nZ^TR^{-1}y\n\\end{array}\n\\right] \\notag\n\\end{equation}\\]"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#sire-model",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#sire-model",
+    "title": "Prediction of Breeding Values",
+    "section": "Sire Model",
+    "text": "Sire Model\n\\[\\begin{equation}\ny = Xb + Zs + e \\notag\n\\end{equation}\\]\nwhere \\(s\\) is a vector of length \\(q_s\\) with all sire effects.\n\\[\\begin{equation}\nvar(s) = A_s * \\sigma_s^2 \\notag\n\\end{equation}\\]\nwhere \\(A_s\\): numerator relationship considering only sires"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#animal-model",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#animal-model",
+    "title": "Prediction of Breeding Values",
+    "section": "Animal Model",
+    "text": "Animal Model\n\\[\\begin{equation}\ny = Xb + Za + e \\notag\n\\end{equation}\\]\nwhere \\(a\\) is a vector of length \\(q_a\\) containing the breeding values\n\\[\\begin{equation}\nvar(a) = A \\sigma_a^2 \\notag\n\\end{equation}\\]\nwhere \\(A\\) is the numerator relationship matrix"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#genomic-blup-gblup",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#genomic-blup-gblup",
+    "title": "Prediction of Breeding Values",
+    "section": "Genomic BLUP (GBLUP)",
+    "text": "Genomic BLUP (GBLUP)\n\nmarker-effect models: SNP-loci as random effects (MEM)\nbreeding value based models: genomic breeding values as random effects (BVM)"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#mem-and-bvm",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#mem-and-bvm",
+    "title": "Prediction of Breeding Values",
+    "section": "MEM and BVM",
+    "text": "MEM and BVM"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#marker-effect-model-mem",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#marker-effect-model-mem",
+    "title": "Prediction of Breeding Values",
+    "section": "Marker Effect Model (MEM)",
+    "text": "Marker Effect Model (MEM)\n\nMarker effects (\\(a\\)) as random in a linear mixed effects model\n\n\\[\\begin{equation}\ny = X \\beta + M a + e \\notag\n\\end{equation}\\]\n\nSolution of marker effects via mixed model equations\n\n\\[\\begin{equation}\n\\left[\n  \\begin{array}{lr}\n  X^TR^{-1}X  &  X^TR^{-1}M \\\\\n  M^TR^{-1}X  &  M^TR^{-1}M + I * \\sigma_a^{-2}\n  \\end{array}\n\\right]\n\\left[\n  \\begin{array}{c}\n  \\hat{\\beta} \\\\\n  \\hat{a}\n  \\end{array}\n\\right]\n=\n\\left[\n  \\begin{array}{c}\n  X^TR^{-1}y \\\\\n  M^TR^{-1}y\n  \\end{array}\n\\right] \\notag\n\\end{equation}\\]\nwhere \\(\\sigma_a^2\\) is the SNP-effect variance component.\n\nGenomic breeding value for animal \\(i\\) is computed as sum over appropriate values of \\(\\hat{a}\\) given by genotype of animal \\(i\\)"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#breeding-value-based-model",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#breeding-value-based-model",
+    "title": "Prediction of Breeding Values",
+    "section": "Breeding Value Based Model",
+    "text": "Breeding Value Based Model\n\nGenomic breeding values (\\(u\\)) as random effects in linear mixed effects model\n\n\\[\\begin{equation}\ny = X \\beta + W u + e \\notag\n\\end{equation}\\]\n\nSolutions\n\n\\[\\begin{equation}\n\\left[\n  \\begin{array}{lr}\n  X^TR^{-1}X  &  X^TR^{-1}W \\\\\n  W^TR^{-1}X  &  W^TR^{-1}W + G^{-1}* \\sigma_u^{-2}\n  \\end{array}\n\\right]\n\\left[\n  \\begin{array}{c}\n  \\hat{\\beta} \\\\\n  \\hat{u}\n  \\end{array}\n\\right]\n=\n\\left[\n  \\begin{array}{c}\n  X^TR^{-1}y \\\\\n  W^TR^{-1}y\n  \\end{array}\n\\right] \\notag\n\\end{equation}\\]\n\nGenomic breeding values correspond to solutions for \\(\\hat{u}\\)"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#how-does-gblup-work",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#how-does-gblup-work",
+    "title": "Prediction of Breeding Values",
+    "section": "How Does GBLUP Work",
+    "text": "How Does GBLUP Work\n\\[\\begin{equation}\n\\begin{bmatrix} X^TX & X^TZ & 0 \\\\Z^TX & Z^TZ + G^{(11)} & G^{(12)} \\\\0 & G^{(21)} & G^{(22)}\\end{bmatrix}\n\\begin{bmatrix} \\hat{b} \\\\\\hat{g}_1 \\\\\\hat{g}_2\\end{bmatrix}\n=\n\\begin{bmatrix} X^Ty \\\\Z^Ty \\\\0\\end{bmatrix} \\notag\n\\end{equation}\\]\n\n\\(G^{(11)}\\): animals with phenotypic observations\n\\(G^{(22)}\\): animals without phenotypic observations\n\n\\[\\begin{equation}\n\\hat{g}_2 = -\\left( G^{22}\\right)^{-1}G^{21}\\hat{g}_1 \\notag\n\\end{equation}\\]"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#summary-for-one-trait",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#summary-for-one-trait",
+    "title": "Prediction of Breeding Values",
+    "section": "Summary for One Trait",
+    "text": "Summary for One Trait\n\nPredicted breeding values with or without genomic information\nAnimals can be ranked according to predicted breeding values\nProblems:\n\nNot only one trait should be improved\nSelection for one trait changes also other traits via correlated selection response\n\n\n\\(\\rightarrow\\) see genetic trends at: https://1-htz.quagzws.com/shiny/users/zws/genTrendHolstein_DE/index.Rmd"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#example-fertility-and-production",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#example-fertility-and-production",
+    "title": "Prediction of Breeding Values",
+    "section": "Example Fertility and Production",
+    "text": "Example Fertility and Production"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#multi-trait-selection",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#multi-trait-selection",
+    "title": "Prediction of Breeding Values",
+    "section": "Multi-Trait Selection",
+    "text": "Multi-Trait Selection"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#types-of-multi-trait-selection",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#types-of-multi-trait-selection",
+    "title": "Prediction of Breeding Values",
+    "section": "Types of Multi-Trait Selection",
+    "text": "Types of Multi-Trait Selection\n\nTandem selection\n\nselect for one trait at the time\nafter goal has been reached change to different trait\n\nIndependent selection limits\n\nselect only animals which fullfill criteria in all traits\n\nSelection according to aggregate genotype\n\ncombine traits into aggregate genotype \\(H\\)\ndefine \\(H\\) as weighted sum of true breeding values and economic values\nuse selection index \\(I\\) to estimate \\(H\\)"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#aggregate-genotype",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#aggregate-genotype",
+    "title": "Prediction of Breeding Values",
+    "section": "Aggregate Genotype",
+    "text": "Aggregate Genotype\nDefinition in vector notation: \\(H = v^T \\cdot u\\)\nwhere\n\n\\(u\\): vector of true breeding values\n\\(v\\) vector of economic values which are marginal changes in profit for a small change in the population mean of the trait\n\nEstimate \\(H\\) via index \\(I\\), hence \\(\\hat{H} = I = b^T x\\)\nwith\n\n\\(x\\): a vector of information sources\n\\(b\\): a vector of unknown weights.\n\nDetermine \\(b\\) such that \\(var(I-H)\\) is minimal."
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#find-b",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#find-b",
+    "title": "Prediction of Breeding Values",
+    "section": "Find \\(b\\) …",
+    "text": "Find \\(b\\) …\n… such that \\(var(I-H)\\)\n\\[\\begin{align}\nvar(I-H) &= var(I) - 2*cov(I,H) + var(H) \\notag \\\\\n         &= var(b^T x) - 2 * cov(b^T x, v^Tu) + var(v^Tu) \\notag \\\\\n         &= b^Tvar(x)b - 2 * b^Tcov(x,u^T)v + v^Tvar(u)v \\notag \\\\\n         &= b^TPb - 2 * b^TCv + v^TGv \\notag\n\\end{align}\\]\nSetting \\(\\frac{\\partial\\ var(I-H)}{\\partial b} = 0\\) leads to\n\\[Pb = Cv\\]\nHence\n\\[b = P^{-1}Cv\\]"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#special-case",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#special-case",
+    "title": "Prediction of Breeding Values",
+    "section": "Special Case",
+    "text": "Special Case\n\nSame traits in \\(H\\) and in \\(I\\)\nUse predicted breeding values \\(\\hat{u}\\) from multivariate BLUP animal model as information source \\(x\\)\nThen it follows\n\n\\[b = P^{-1}Cv = var(\\hat{u})^{-1}\\cdot cov(\\hat{u}, u^T) \\cdot v = v\\]"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html",
+    "title": "Pig Science - Breeding",
+    "section": "",
+    "text": "Week\nDate\nTopic\n\n\n\n\n1\n2023/04/24\nGenomic Selection in Pig Breeding\n\n\n2\n2023/05/15\nBreeding Goal and Aggregate Genotype"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#program---breeding",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#program---breeding",
+    "title": "Pig Science - Breeding",
+    "section": "",
+    "text": "Week\nDate\nTopic\n\n\n\n\n1\n2023/04/24\nGenomic Selection in Pig Breeding\n\n\n2\n2023/05/15\nBreeding Goal and Aggregate Genotype"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#information",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#information",
+    "title": "Pig Science - Breeding",
+    "section": "Information",
+    "text": "Information\n\nLecturer: S. Neuenschwander, C. Kasper, G. Bee, P. von Rohr\nDate: Wednesday 8-10\nMode: in person\nRoom: LFW B2\nMoodle: https://moodle-app2.let.ethz.ch/course/view.php?id=21680\nWebsite: https://charlotte-ngs.github.io/psbss2024\nQuestions: during the lecture and during the exercise hour or via e-mail\n\nPeter von Rohr (peter.vonrohr at usys.ethz.ch)"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#course-objectives",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#course-objectives",
+    "title": "Pig Science - Breeding",
+    "section": "Course Objectives",
+    "text": "Course Objectives\nThe students\n\nunderstand the theoretical background and the practical application of the prediction of breeding values in a livestock breeding\nknow how to interpret predicted breeding values.\n\n\\(\\rightarrow\\) What is the meaning of a predicted aggregate genotype \\(-9\\) index points\n\\(\\rightarrow\\) What is the difference between production and breeding"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#further-reading",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#further-reading",
+    "title": "Pig Science - Breeding",
+    "section": "Further Reading",
+    "text": "Further Reading\n\nWillam und Simianer: Tierzucht - Grundwissen Bachelor (Ulmer, UTB 3526 2011). This book gives an introduction into evolution, livestock production and breeding programs.\nFalconer and Mackay: Introduction to Quantitative Genetics (Longman). The de-facto standard in the area of quantitative genetics uses many examples from experimental research to illustrate the concepts of quantitative genetics.\nMrode: Linear Models for the Prediction of Animal Breeding Values (CABI Publishing, 2005). The main focus is on prediction of breeding values using different models."
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#terminology",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#terminology",
+    "title": "Pig Science - Breeding",
+    "section": "Terminology",
+    "text": "Terminology"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#scientific-definition",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#scientific-definition",
+    "title": "Pig Science - Breeding",
+    "section": "Scientific Definition",
+    "text": "Scientific Definition\n\n“Selection and Mating of parents are used such that offspring generations are closer to a defined goal.”\n\n\nDistinction between\n\nlivestock breeding and production\ncattle breeding and milk or beef production\npig breeding and pork production and\nchicken breeding and egg producers"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#history",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#history",
+    "title": "Pig Science - Breeding",
+    "section": "History",
+    "text": "History\n\nFormations of breeding organisation (BO)\nTasks of BO: herdbooks and certification\nCrisis at beginning of \\(20^{th}\\) century lead to federal regulations\nDevelopments of technologies\n\nReproduction\nMolecular biology\nComputer science"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#breeding-organisations",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#breeding-organisations",
+    "title": "Pig Science - Breeding",
+    "section": "Breeding Organisations",
+    "text": "Breeding Organisations"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#breeding-programs",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#breeding-programs",
+    "title": "Pig Science - Breeding",
+    "section": "Breeding Programs",
+    "text": "Breeding Programs"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#parts-of-breeding-program",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#parts-of-breeding-program",
+    "title": "Pig Science - Breeding",
+    "section": "Parts of Breeding Program",
+    "text": "Parts of Breeding Program\n\nApplied prediction of breeding values is a part of the breeding program\nDesign and planning of a breeding program requires to answer the questions\n\nWhat goal do we want to achieve\nWhat measures do we want to use to achieve the goal"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#types-of-breeding-programs",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#types-of-breeding-programs",
+    "title": "Pig Science - Breeding",
+    "section": "Types of Breeding Programs",
+    "text": "Types of Breeding Programs\nTwo types of breeding programs\n\nFocus on selection response\n\ncountries with limited resources\nbig farms or big companies\n\nFocus on clients and services\n\ncattle and pig breeding of developed countries\neconomic interest of companies and farms"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#breeding-goals",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#breeding-goals",
+    "title": "Pig Science - Breeding",
+    "section": "Breeding Goals",
+    "text": "Breeding Goals\nTypes of breeding goals\n\neconomic\nbiological\ntactical\nethical\n\nBreeding goals might be formulated in different ways\n\npolitical: description of idealized image of future animal. Often conflicting and not verifiable\nscientific: mathematical description of direction of desired change. Measurable via selection response"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#performance-testing",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#performance-testing",
+    "title": "Pig Science - Breeding",
+    "section": "Performance Testing",
+    "text": "Performance Testing\n\nBasic question: What trait is measured when for which animals\nBreeding should be based on data\nQuality of derived parameters (heritability, predicted breeding values) depend on accuracy of collected data\nData collection used for performance testing often started for different reasons\n\nmilk sample testing: quality of product\nstation testing in pigs: correction of environment"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#classification-of-performance-tests",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#classification-of-performance-tests",
+    "title": "Pig Science - Breeding",
+    "section": "Classification of Performance Tests",
+    "text": "Classification of Performance Tests\n\nPlace\n\nStation\nField\n\nRelationship between selection candidate and tested animal\n\nown performance record\nfull-sib\nprogeny\n\nTraits\n\nshould have genetic variation\neconomic importance\nmeasurable better than subjectively observed"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#examples-pigs",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#examples-pigs",
+    "title": "Pig Science - Breeding",
+    "section": "Examples: Pigs",
+    "text": "Examples: Pigs"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#examples-cattle",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#examples-cattle",
+    "title": "Pig Science - Breeding",
+    "section": "Examples: Cattle",
+    "text": "Examples: Cattle"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#prediction-of-breeding-values",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#prediction-of-breeding-values",
+    "title": "Pig Science - Breeding",
+    "section": "Prediction Of Breeding Values",
+    "text": "Prediction Of Breeding Values\n\nDone in most breeding programs\nFederal regulation\nPerformance tests much more expensive\nDifferent intervals\n\ncattle: three times per year (traditional), every two weeks (genomic)\npigs: nightly or weekly"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#progress-in-technologies",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#progress-in-technologies",
+    "title": "Pig Science - Breeding",
+    "section": "Progress In Technologies",
+    "text": "Progress In Technologies\n\nReproduction - AI\n\ndisease prevention\nnumber of progeny per sire increased\nbetter comparisons between herds\nFuture: more development on female side\n\nMolecular Biology\n\ncheap and efficient large-scale genotyping\nsequencing with more accuracy\n\nComputer Science\n\nefficient evaluation of large amounts of data\nbig data technologies - continuous monitoring"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#differences-of-bp-between-species",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#differences-of-bp-between-species",
+    "title": "Pig Science - Breeding",
+    "section": "Differences Of BP Between Species",
+    "text": "Differences Of BP Between Species\nBreeding programs (BP) for different species have different structure\n\nhierarchical: pigs and chicken\nflat: cattle and horse"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#hierarchical-structure",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#hierarchical-structure",
+    "title": "Pig Science - Breeding",
+    "section": "Hierarchical Structure",
+    "text": "Hierarchical Structure"
+  },
+  {
+    "objectID": "slides/l01_psb_intro/l01_psb_intro.html#monolithic-structure",
+    "href": "slides/l01_psb_intro/l01_psb_intro.html#monolithic-structure",
+    "title": "Pig Science - Breeding",
+    "section": "Monolithic Structure",
+    "text": "Monolithic Structure"
   }
 ]
