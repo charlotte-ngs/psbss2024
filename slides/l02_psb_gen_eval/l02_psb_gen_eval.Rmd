@@ -1,7 +1,7 @@
 ---
-title: Model Selection and Variance Components
+title: Genetic Evaluation
 author: Peter von Rohr
-date: "2024-04-24"
+date: "2024-05-15"
 output: beamer_presentation
 ---
 
@@ -47,42 +47,22 @@ knitr::include_graphics(path = "odg/bprogdiag.png")
 * Genetic improvement happens between parents and offspring
 * Parents pass random sample of alleles to offspring
 * Goal: select parents that have many "good" alleles to pass to offspring
+* Value of alleles quantified by breeding value
 * How to find parents with "good" alleles without knowing which genes are important?
 
-$\rightarrow$ __Statistical Modeling__
+$\rightarrow$ Predict breeding value using __Statistical Modeling__
 
 
 ## Genotype and Phenotype
 
-```{r geno_and_pheno, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
+```{r geno_and_pheno, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="80%"}
 #rmdhelp::use_odg_graphic(ps_path = "odg/geno_and_pheno.odg")
 knitr::include_graphics(path = "odg/geno_and_pheno.png")
 ```
 
+* Selection based on phenotypes: in-efficient
+* Instead: use statistical model to predict breeding value
 
-## Why Statistical Modelling?
-
-Some people believe, they do not need statistics. For them it is enough to look at a diagram
-
-```{r no-stat-model-diagram, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.height="7cm"}
-#rmdhelp::use_odg_graphic("odg/no-stat-model-diagram.odg")
-knitr::include_graphics(path = "odg/no-stat-model-diagram.png")
-```
-
-
-## Statistical Modelling Because ...
-Two types of dependencies between physical quantities
-
-1. deterministic
-2. stochastic
-
-
-## Deterministic Versus Stochastic
-
-```{r deter-vs-stoch, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg"}
-#rmdhelp::use_odg_graphic(ps_path = "odg/deter-vs-stoch.odg")
-knitr::include_graphics(path = "odg/deter-vs-stoch.png")
-```
 
 ## Statistical Model
 
@@ -114,7 +94,9 @@ $$y_i = b_0 + b_1 * x_i + e_i$$
 
 ## Which predictor variables?
 
+* In genetic evaluation large variety of information can be used as predictors
 * Question, about which predictor variables to use is answered by model selection
+
 
 ## Why Model Selection
 
@@ -137,8 +119,8 @@ vec_randpred <- runif(n_nr_ani,
                       max = max(tbl_reg$`Breast Circumference`))
 tbl_reg_aug <- bind_cols(tbl_reg, tibble(RandPred = round(vec_randpred, digits = 0)))
 # write data
-# s_data_out <- here::here("docs", "data", "psb_rand_pred.csv")
-# readr::write_delim(tbl_reg_aug, s_data_out, delim = ",")
+s_data_out <- here::here("docs", "data", "psb_rand_pred.csv")
+readr::write_delim(tbl_reg_aug, s_data_out, delim = ",")
 knitr::kable(tbl_reg_aug)
 ```
 
