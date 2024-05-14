@@ -119,8 +119,8 @@ vec_randpred <- runif(n_nr_ani,
                       max = max(tbl_reg$`Breast Circumference`))
 tbl_reg_aug <- bind_cols(tbl_reg, tibble(RandPred = round(vec_randpred, digits = 0)))
 # write data
-s_data_out <- here::here("docs", "data", "psb_rand_pred.csv")
-readr::write_delim(tbl_reg_aug, s_data_out, delim = ",")
+#s_data_out <- here::here("docs", "data", "psb_rand_pred.csv")
+#readr::write_delim(tbl_reg_aug, s_data_out, delim = ",")
 knitr::kable(tbl_reg_aug)
 ```
 
