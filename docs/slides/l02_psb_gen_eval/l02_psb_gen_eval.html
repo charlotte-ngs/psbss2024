@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Peter von Rohr">
-<meta name="dcterms.date" content="2024-04-24">
+<meta name="dcterms.date" content="2024-05-15">
 
-<title>psbss2024 | 0.0.5 - Model Selection and Variance Components</title>
+<title>psbss2024 | 0.2.0 - Genetic Evaluation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -110,7 +110,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">psbss2024 | 0.0.5</span>
+    <span class="navbar-title">psbss2024 | 0.2.0</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -168,9 +168,6 @@ window.Quarto = {
   <li><a href="#background-and-context" id="toc-background-and-context" class="nav-link" data-scroll-target="#background-and-context">Background and Context</a></li>
   <li><a href="#genetic-improvement" id="toc-genetic-improvement" class="nav-link" data-scroll-target="#genetic-improvement">Genetic Improvement</a></li>
   <li><a href="#genotype-and-phenotype" id="toc-genotype-and-phenotype" class="nav-link" data-scroll-target="#genotype-and-phenotype">Genotype and Phenotype</a></li>
-  <li><a href="#why-statistical-modelling" id="toc-why-statistical-modelling" class="nav-link" data-scroll-target="#why-statistical-modelling">Why Statistical Modelling?</a></li>
-  <li><a href="#statistical-modelling-because" id="toc-statistical-modelling-because" class="nav-link" data-scroll-target="#statistical-modelling-because">Statistical Modelling Because …</a></li>
-  <li><a href="#deterministic-versus-stochastic" id="toc-deterministic-versus-stochastic" class="nav-link" data-scroll-target="#deterministic-versus-stochastic">Deterministic Versus Stochastic</a></li>
   <li><a href="#statistical-model" id="toc-statistical-model" class="nav-link" data-scroll-target="#statistical-model">Statistical Model</a></li>
   <li><a href="#how-does-a-statistical-model-work" id="toc-how-does-a-statistical-model-work" class="nav-link" data-scroll-target="#how-does-a-statistical-model-work">How Does A Statistical Model Work?</a></li>
   <li><a href="#which-function-mx" id="toc-which-function-mx" class="nav-link" data-scroll-target="#which-function-mx">Which function <span class="math inline">\(m(x)\)</span>?</a></li>
@@ -209,7 +206,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Model Selection and Variance Components</h1>
+<h1 class="title">Genetic Evaluation</h1>
 </div>
 
 
@@ -226,7 +223,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 24, 2024</p>
+      <p class="date">May 15, 2024</p>
     </div>
   </div>
   
@@ -284,9 +281,10 @@ window.Quarto = {
 <li>Genetic improvement happens between parents and offspring</li>
 <li>Parents pass random sample of alleles to offspring</li>
 <li>Goal: select parents that have many “good” alleles to pass to offspring</li>
+<li>Value of alleles quantified by breeding value</li>
 <li>How to find parents with “good” alleles without knowing which genes are important?</li>
 </ul>
-<p><span class="math inline">\(\rightarrow\)</span> <strong>Statistical Modeling</strong></p>
+<p><span class="math inline">\(\rightarrow\)</span> Predict breeding value using <strong>Statistical Modeling</strong></p>
 </section>
 <section id="genotype-and-phenotype" class="level2">
 <h2 class="anchored" data-anchor-id="genotype-and-phenotype">Genotype and Phenotype</h2>
@@ -294,44 +292,15 @@ window.Quarto = {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="odg/geno_and_pheno.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p><img src="odg/geno_and_pheno.png" class="img-fluid figure-img" style="width:80.0%"></p>
 </figure>
 </div>
 </div>
 </div>
-</section>
-<section id="why-statistical-modelling" class="level2">
-<h2 class="anchored" data-anchor-id="why-statistical-modelling">Why Statistical Modelling?</h2>
-<p>Some people believe, they do not need statistics. For them it is enough to look at a diagram</p>
-<div class="cell" data-hook_convert_odg="true" data-fig_path="odg">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="odg/no-stat-model-diagram.png" style="height:7cm" width="284" class="figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="statistical-modelling-because" class="level2">
-<h2 class="anchored" data-anchor-id="statistical-modelling-because">Statistical Modelling Because …</h2>
-<p>Two types of dependencies between physical quantities</p>
-<ol type="1">
-<li>deterministic</li>
-<li>stochastic</li>
-</ol>
-</section>
-<section id="deterministic-versus-stochastic" class="level2">
-<h2 class="anchored" data-anchor-id="deterministic-versus-stochastic">Deterministic Versus Stochastic</h2>
-<div class="cell" data-hook_convert_odg="true" data-fig_path="odg">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="odg/deter-vs-stoch.png" class="img-fluid figure-img" width="381"></p>
-</figure>
-</div>
-</div>
-</div>
+<ul>
+<li>Selection based on phenotypes: in-efficient</li>
+<li>Instead: use statistical model to predict breeding value</li>
+</ul>
 </section>
 <section id="statistical-model" class="level2">
 <h2 class="anchored" data-anchor-id="statistical-model">Statistical Model</h2>
@@ -367,6 +336,7 @@ window.Quarto = {
 <section id="which-predictor-variables" class="level2">
 <h2 class="anchored" data-anchor-id="which-predictor-variables">Which predictor variables?</h2>
 <ul>
+<li>In genetic evaluation large variety of information can be used as predictors</li>
 <li>Question, about which predictor variables to use is answered by model selection</li>
 </ul>
 </section>

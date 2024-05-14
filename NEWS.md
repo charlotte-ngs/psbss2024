@@ -1,5 +1,7 @@
 # psbss2024 0.2.0
 
+* Data [BW-BC-Regression](https://charlotte-ngs.github.io/psbss2024/data/psb_rand_pred.csv)
+
 # psbss2024 0.1.1
 
 * Overhead [ohp_l01](https://charlotte-ngs.github.io/psbss2024/ohp/20240424_ohp_l01.pdf)
