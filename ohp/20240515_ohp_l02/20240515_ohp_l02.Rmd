@@ -57,10 +57,10 @@ if (file.exists('~/Desktop/IMG_4183.jpg')) fs::file_delete(path = '~/Desktop/IMG
 
 ## OHP Picture 2
 
-```{r ohp-page4228, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
-#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4228.odg', ps_odg_template = 'odg_draw_a4_portrait')
-knitr::include_graphics(path = "odg/ohp-page4228.png")
-if (file.exists('~/Desktop/IMG_4228.jpg')) fs::file_delete(path = '~/Desktop/IMG_4228.jpg')
+```{r ohp-page4184, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
+#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4184.odg', ps_odg_template = 'odg_draw_a4_portrait')
+knitr::include_graphics(path = "odg/ohp-page4184.png")
+if (file.exists('~/Desktop/IMG_4184.jpg')) fs::file_delete(path = '~/Desktop/IMG_4184.jpg')
 ```
 
 
@@ -125,4 +125,4 @@ if (file.exists('~/Desktop/IMG_4190.jpg')) fs::file_delete(path = '~/Desktop/IMG
 knitr::include_graphics(path = "odg/ohp-page4191.png")
 if (file.exists('~/Desktop/IMG_4191.jpg')) fs::file_delete(path = '~/Desktop/IMG_4191.jpg')
 ```
-          
+         
