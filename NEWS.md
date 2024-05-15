@@ -1,5 +1,7 @@
 # psbss2024 0.2.3
 
+* Dataset [psb_bw_mod_sel](https://charlotte-ngs.github.io/psbss2024/data/psb_bw_mod_sel.csv)
+
 # psbss2024 0.2.2
 
 * Dataset [beef_data_blup](https://charlotte-ngs.github.io/psbss2024/data/beef_data_blup.csv)

@@ -40,12 +40,13 @@ knitr::kable(tbl_sl)
 #| echo: false
 #| results: asis
 s_data_url <- "https://charlotte-ngs.github.io/psbss2024/data/"
-tbl_data <- tibble::tibble(Nr = c(1, 2, 3),
+tbl_data <- tibble::tibble(Nr = c(1, 2, 3, 4),
                            Date = c("2024-04-24",
+                                    "2024-05-15",
                                     "2024-05-15",
                                     "2024-05-15"),
                            Topic = c(
-                             paste0("[Model Selection](",
+                             paste0("[Random Predictor](",
                                     s_data_url,
                                     "psb_rand_pred.csv)",
                                     collapse = ""),
@@ -56,6 +57,10 @@ tbl_data <- tibble::tibble(Nr = c(1, 2, 3),
                              paste0("[Genomic Data](",
                                     s_data_url,
                                     "geno_data.csv)",
+                                    collapse = ""),
+                             paste0("[Model Selection](",
+                                    s_data_url,
+                                    "psb_bw_mod_sel.csv)",
                                     collapse = "")
                            ))
 knitr::kable(tbl_data)
