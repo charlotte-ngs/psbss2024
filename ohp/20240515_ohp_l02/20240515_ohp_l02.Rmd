@@ -9,9 +9,9 @@ knitr::knit_hooks$set(hook_convert_odg = rmdhelp::hook_convert_odg)
 
 ```{bash, echo=FALSE, eval=FALSE}
 # remove duplicates
-cd /Users/pvr/Data/Projects/GitHub/charlotte-ngs/psbss2024_gh-root/website/psbss2024
+#cd /Users/pvr/Data/Projects/GitHub/charlotte-ngs/psbss2024_gh-root/website/psbss2024
 # bash - export as jpeg
-ls -1 "/Users/${USER}/ngs.charlotte@gmail.com - Google Drive/My Drive/Vorlesung/PSB/SS2024/OHP-L01"/* | while read p
+ls -1 "/Users/${USER}/ngs.charlotte@gmail.com - Google Drive/My Drive/Vorlesung/PSB/SS2024/OHP-L02"/* | while read p
 do
   CURPICFN=$(basename "$p")
   echo " * Copy $p ..."
@@ -46,83 +46,84 @@ for (pidx in seq_along(vec_pics)){
 ```
 
 
+
 ## OHP Picture 1
 
-```{r ohp-page4183, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
-#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4183.odg', ps_odg_template = 'odg_draw_a4_portrait')
-knitr::include_graphics(path = "odg/ohp-page4183.png")
-if (file.exists('~/Desktop/IMG_4183.jpg')) fs::file_delete(path = '~/Desktop/IMG_4183.jpg')
+```{r ohp-page4229, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
+#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4229.odg', ps_odg_template = 'odg_draw_a4_portrait')
+knitr::include_graphics(path = "odg/ohp-page4229.png")
+if (file.exists('~/Desktop/IMG_4229.jpg')) fs::file_delete(path = '~/Desktop/IMG_4229.jpg')
 ```
 
 
 ## OHP Picture 2
 
-```{r ohp-page4184, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
-#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4184.odg', ps_odg_template = 'odg_draw_a4_portrait')
-knitr::include_graphics(path = "odg/ohp-page4184.png")
-if (file.exists('~/Desktop/IMG_4184.jpg')) fs::file_delete(path = '~/Desktop/IMG_4184.jpg')
+```{r ohp-page4230, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
+#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4230.odg', ps_odg_template = 'odg_draw_a4_portrait')
+knitr::include_graphics(path = "odg/ohp-page4230.png")
+if (file.exists('~/Desktop/IMG_4230.jpg')) fs::file_delete(path = '~/Desktop/IMG_4230.jpg')
 ```
 
 
 ## OHP Picture 3
 
-```{r ohp-page4185, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
-#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4185.odg', ps_odg_template = 'odg_draw_a4_portrait')
-knitr::include_graphics(path = "odg/ohp-page4185.png")
-if (file.exists('~/Desktop/IMG_4185.jpg')) fs::file_delete(path = '~/Desktop/IMG_4185.jpg')
+```{r ohp-page4231, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
+#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4231.odg', ps_odg_template = 'odg_draw_a4_portrait')
+knitr::include_graphics(path = "odg/ohp-page4231.png")
+if (file.exists('~/Desktop/IMG_4231.jpg')) fs::file_delete(path = '~/Desktop/IMG_4231.jpg')
 ```
 
 
 ## OHP Picture 4
 
-```{r ohp-page4186, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
-#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4186.odg', ps_odg_template = 'odg_draw_a4_portrait')
-knitr::include_graphics(path = "odg/ohp-page4186.png")
-if (file.exists('~/Desktop/IMG_4186.jpg')) fs::file_delete(path = '~/Desktop/IMG_4186.jpg')
+```{r ohp-page4232, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
+#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4232.odg', ps_odg_template = 'odg_draw_a4_portrait')
+knitr::include_graphics(path = "odg/ohp-page4232.png")
+if (file.exists('~/Desktop/IMG_4232.jpg')) fs::file_delete(path = '~/Desktop/IMG_4232.jpg')
 ```
 
 
 ## OHP Picture 5
 
-```{r ohp-page4187, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
-#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4187.odg', ps_odg_template = 'odg_draw_a4_portrait')
-knitr::include_graphics(path = "odg/ohp-page4187.png")
-if (file.exists('~/Desktop/IMG_4187.jpg')) fs::file_delete(path = '~/Desktop/IMG_4187.jpg')
+```{r ohp-page4233, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
+#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4233.odg', ps_odg_template = 'odg_draw_a4_portrait')
+knitr::include_graphics(path = "odg/ohp-page4233.png")
+if (file.exists('~/Desktop/IMG_4233.jpg')) fs::file_delete(path = '~/Desktop/IMG_4233.jpg')
 ```
 
 
 ## OHP Picture 6
 
-```{r ohp-page4188, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
-#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4188.odg', ps_odg_template = 'odg_draw_a4_portrait')
-knitr::include_graphics(path = "odg/ohp-page4188.png")
-if (file.exists('~/Desktop/IMG_4188.jpg')) fs::file_delete(path = '~/Desktop/IMG_4188.jpg')
+```{r ohp-page4234, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
+#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4234.odg', ps_odg_template = 'odg_draw_a4_portrait')
+knitr::include_graphics(path = "odg/ohp-page4234.png")
+if (file.exists('~/Desktop/IMG_4234.jpg')) fs::file_delete(path = '~/Desktop/IMG_4234.jpg')
 ```
 
 
 ## OHP Picture 7
 
-```{r ohp-page4189, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
-#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4189.odg', ps_odg_template = 'odg_draw_a4_portrait')
-knitr::include_graphics(path = "odg/ohp-page4189.png")
-if (file.exists('~/Desktop/IMG_4189.jpg')) fs::file_delete(path = '~/Desktop/IMG_4189.jpg')
+```{r ohp-page4235, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
+#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4235.odg', ps_odg_template = 'odg_draw_a4_portrait')
+knitr::include_graphics(path = "odg/ohp-page4235.png")
+if (file.exists('~/Desktop/IMG_4235.jpg')) fs::file_delete(path = '~/Desktop/IMG_4235.jpg')
 ```
 
 
 ## OHP Picture 8
 
-```{r ohp-page4190, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
-#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4190.odg', ps_odg_template = 'odg_draw_a4_portrait')
-knitr::include_graphics(path = "odg/ohp-page4190.png")
-if (file.exists('~/Desktop/IMG_4190.jpg')) fs::file_delete(path = '~/Desktop/IMG_4190.jpg')
+```{r ohp-page4236, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
+#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4236.odg', ps_odg_template = 'odg_draw_a4_portrait')
+knitr::include_graphics(path = "odg/ohp-page4236.png")
+if (file.exists('~/Desktop/IMG_4236.jpg')) fs::file_delete(path = '~/Desktop/IMG_4236.jpg')
 ```
 
 
 ## OHP Picture 9
 
-```{r ohp-page4191, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
-#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4191.odg', ps_odg_template = 'odg_draw_a4_portrait')
-knitr::include_graphics(path = "odg/ohp-page4191.png")
-if (file.exists('~/Desktop/IMG_4191.jpg')) fs::file_delete(path = '~/Desktop/IMG_4191.jpg')
+```{r ohp-page4237, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width="100%"}
+#rmdhelp::use_odg_graphic(ps_path = 'odg/ohp-page4237.odg', ps_odg_template = 'odg_draw_a4_portrait')
+knitr::include_graphics(path = "odg/ohp-page4237.png")
+if (file.exists('~/Desktop/IMG_4237.jpg')) fs::file_delete(path = '~/Desktop/IMG_4237.jpg')
 ```
          

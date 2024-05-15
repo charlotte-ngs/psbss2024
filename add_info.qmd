@@ -75,12 +75,17 @@ knitr::kable(tbl_data)
 #| echo: false
 #| results: asis
 s_ohp_url <- "https://charlotte-ngs.github.io/psbss2024/ohp/"
-tbl_ohp <- tibble::tibble(Nr = c(1),
-                          Date = c("2024-04-24"),
+tbl_ohp <- tibble::tibble(Nr = c(1, 2),
+                          Date = c("2024-04-24",
+                                   "2024-05-15"),
                           Topic = c(
                             paste0("[Introduction](",
                                    s_ohp_url,
                                    "20240424_ohp_l01.pdf)",
+                                   collapse = ""),
+                            paste0("[Genetic Evaluation](",
+                                   s_ohp_url,
+                                   "20240515_ohp_l02.pdf)",
                                    collapse = "")
                           ))
 knitr::kable(tbl_ohp)
