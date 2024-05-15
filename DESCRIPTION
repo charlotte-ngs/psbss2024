@@ -1,6 +1,6 @@
 Package: psbss2024
 Title: Course Website for Pig Science Breeding Spring Semester 2024
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: 
     person("Peter", "von Rohr", , "peter.vonrohr@usys.ethz.ch", role = c("aut", "cre"))
 Description: Material consisting of course notes, slides, exercises and solutions 
