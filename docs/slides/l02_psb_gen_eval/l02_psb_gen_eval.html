@@ -168,6 +168,8 @@ window.Quarto = {
   <li><a href="#background-and-context" id="toc-background-and-context" class="nav-link" data-scroll-target="#background-and-context">Background and Context</a></li>
   <li><a href="#genetic-improvement" id="toc-genetic-improvement" class="nav-link" data-scroll-target="#genetic-improvement">Genetic Improvement</a></li>
   <li><a href="#genotype-and-phenotype" id="toc-genotype-and-phenotype" class="nav-link" data-scroll-target="#genotype-and-phenotype">Genotype and Phenotype</a></li>
+  <li><a href="#selection-criterion" id="toc-selection-criterion" class="nav-link" data-scroll-target="#selection-criterion">Selection Criterion</a></li>
+  <li><a href="#model-based-on-decomposition-of-genotype" id="toc-model-based-on-decomposition-of-genotype" class="nav-link" data-scroll-target="#model-based-on-decomposition-of-genotype">Model Based on Decomposition of Genotype</a></li>
   <li><a href="#statistical-model" id="toc-statistical-model" class="nav-link" data-scroll-target="#statistical-model">Statistical Model</a></li>
   <li><a href="#how-does-a-statistical-model-work" id="toc-how-does-a-statistical-model-work" class="nav-link" data-scroll-target="#how-does-a-statistical-model-work">How Does A Statistical Model Work?</a></li>
   <li><a href="#which-function-mx" id="toc-which-function-mx" class="nav-link" data-scroll-target="#which-function-mx">Which function <span class="math inline">\(m(x)\)</span>?</a></li>
@@ -187,7 +189,7 @@ window.Quarto = {
   <li><a href="#forward-selection" id="toc-forward-selection" class="nav-link" data-scroll-target="#forward-selection">Forward Selection</a></li>
   <li><a href="#backward-selection" id="toc-backward-selection" class="nav-link" data-scroll-target="#backward-selection">Backward Selection</a></li>
   <li><a href="#considerations" id="toc-considerations" class="nav-link" data-scroll-target="#considerations">Considerations</a></li>
-  <li><a href="#alternative-selection-criteria" id="toc-alternative-selection-criteria" class="nav-link" data-scroll-target="#alternative-selection-criteria">Alternative Selection Criteria</a></li>
+  <li><a href="#alternative-model-selection-criteria" id="toc-alternative-model-selection-criteria" class="nav-link" data-scroll-target="#alternative-model-selection-criteria">Alternative Model Selection Criteria</a></li>
   <li><a href="#genetic-variation" id="toc-genetic-variation" class="nav-link" data-scroll-target="#genetic-variation">Genetic Variation</a></li>
   <li><a href="#two-traits" id="toc-two-traits" class="nav-link" data-scroll-target="#two-traits">Two Traits</a></li>
   <li><a href="#problems" id="toc-problems" class="nav-link" data-scroll-target="#problems">Problems</a></li>
@@ -198,6 +200,10 @@ window.Quarto = {
   <li><a href="#estimates-and-predictions" id="toc-estimates-and-predictions" class="nav-link" data-scroll-target="#estimates-and-predictions">Estimates and Predictions</a></li>
   <li><a href="#mixed-model-equations" id="toc-mixed-model-equations" class="nav-link" data-scroll-target="#mixed-model-equations">Mixed Model Equations</a></li>
   <li><a href="#single-step-genomic-breeding-values" id="toc-single-step-genomic-breeding-values" class="nav-link" data-scroll-target="#single-step-genomic-breeding-values">Single-Step Genomic Breeding Values</a></li>
+  <li><a href="#genomic-relationship" id="toc-genomic-relationship" class="nav-link" data-scroll-target="#genomic-relationship">Genomic Relationship</a></li>
+  <li><a href="#desired-properties-of-g" id="toc-desired-properties-of-g" class="nav-link" data-scroll-target="#desired-properties-of-g">Desired Properties of <span class="math inline">\(G\)</span></a></li>
+  <li><a href="#change-of-identity-concept" id="toc-change-of-identity-concept" class="nav-link" data-scroll-target="#change-of-identity-concept">Change of Identity Concept</a></li>
+  <li><a href="#result" id="toc-result" class="nav-link" data-scroll-target="#result">Result</a></li>
   </ul>
 </nav>
     </div>
@@ -302,6 +308,37 @@ window.Quarto = {
 <li>Instead: use statistical model to predict breeding value</li>
 </ul>
 </section>
+<section id="selection-criterion" class="level2">
+<h2 class="anchored" data-anchor-id="selection-criterion">Selection Criterion</h2>
+<ul>
+<li>Quantify value of alleles passed from parent to offspring</li>
+<li>Requires decomposition of effect of genotype on phenotype</li>
+</ul>
+<div class="cell" data-hook_convert_odg="true" data-fig_path="odg">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="odg/basicmodelrearrterm.png" class="img-fluid figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="model-based-on-decomposition-of-genotype" class="level2">
+<h2 class="anchored" data-anchor-id="model-based-on-decomposition-of-genotype">Model Based on Decomposition of Genotype</h2>
+<ul>
+<li>Genotype is decomposed</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="odg/model-based-on-genotype-decomp.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
 <section id="statistical-model" class="level2">
 <h2 class="anchored" data-anchor-id="statistical-model">Statistical Model</h2>
 <ul>
@@ -310,7 +347,7 @@ window.Quarto = {
 <li>components of a statistical model
 <ul>
 <li>response variable <span class="math inline">\(y\)</span></li>
-<li>predictor variables <span class="math inline">\(x_1, x_2, \ldots, x_k\)</span></li>
+<li>predictor variables <span class="math inline">\(x_1, x_2, \ldots, x_k\)</span> (fixed), <span class="math inline">\(u\)</span> (random)</li>
 <li>error term <span class="math inline">\(e\)</span></li>
 <li>function <span class="math inline">\(m(x)\)</span></li>
 </ul></li>
@@ -336,7 +373,7 @@ window.Quarto = {
 <section id="which-predictor-variables" class="level2">
 <h2 class="anchored" data-anchor-id="which-predictor-variables">Which predictor variables?</h2>
 <ul>
-<li>In genetic evaluation large variety of information can be used as predictors</li>
+<li>In genetic evaluation a large variety of information is available which could be used as predictors</li>
 <li>Question, about which predictor variables to use is answered by model selection</li>
 </ul>
 </section>
@@ -433,7 +470,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="l02_psb_gen_eval_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="l02_psb_gen_eval_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -445,7 +482,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="l02_psb_gen_eval_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="l02_psb_gen_eval_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -612,8 +649,8 @@ F-statistic: 17.55 on 2 and 7 DF,  p-value: 0.001874</code></pre>
 <li>If <span class="math inline">\(p \geq n\)</span>, only forward is possible, but then consider LASSO</li>
 </ul>
 </section>
-<section id="alternative-selection-criteria" class="level2">
-<h2 class="anchored" data-anchor-id="alternative-selection-criteria">Alternative Selection Criteria</h2>
+<section id="alternative-model-selection-criteria" class="level2">
+<h2 class="anchored" data-anchor-id="alternative-model-selection-criteria">Alternative Model Selection Criteria</h2>
 <ul>
 <li>AIC or BIC, requires distributional assumptions.</li>
 <li>AIC is implemented in <code>MASS::stepAIC()</code></li>
@@ -624,6 +661,7 @@ F-statistic: 17.55 on 2 and 7 DF,  p-value: 0.001874</code></pre>
 <section id="genetic-variation" class="level2">
 <h2 class="anchored" data-anchor-id="genetic-variation">Genetic Variation</h2>
 <ul>
+<li>Concerns random effects of model, usually given as breeding values</li>
 <li>Requirement for trait to be considered in breeding goal</li>
 <li>Breeding means improvement of next generation via selection and mating</li>
 <li>Only genetic (additive) components are passed to offspring</li>
@@ -711,10 +749,10 @@ y_{ij} = \mu + t_i + \epsilon_{ij} \notag
 <ul>
 <li>predictions for random effects</li>
 </ul>
-<p><span class="math display">\[\hat{u} = GZ^TV^{-1}(y - X\hat{b})\]</span></p>
+<p><span class="math display">\[\hat{u} = UZ^TV^{-1}(y - X\hat{b})\]</span></p>
 <p>with</p>
 <ul>
-<li><span class="math inline">\(G = var(u)\)</span></li>
+<li><span class="math inline">\(U = var(u)\)</span></li>
 <li><span class="math inline">\(V = var(y)\)</span></li>
 </ul>
 </section>
@@ -724,7 +762,7 @@ y_{ij} = \mu + t_i + \epsilon_{ij} \notag
 <p><span class="math display">\[\left[
   \begin{array}{lr}
   X^T R^{-1} X  &amp;  X^T R^{-1} Z \\
-  Z^T R^{-1} X  &amp;  Z^T R^{-1} Z + G^{-1}
+  Z^T R^{-1} X  &amp;  Z^T R^{-1} Z + U^{-1}
   \end{array}
 \right]
 \left[
@@ -742,7 +780,7 @@ y_{ij} = \mu + t_i + \epsilon_{ij} \notag
 \right]\]</span></p>
 <p>with</p>
 <ul>
-<li><span class="math inline">\(G = A * \sigma_u^2\)</span></li>
+<li><span class="math inline">\(U = A * \sigma_u^2\)</span></li>
 </ul>
 <p>where <span class="math inline">\(A\)</span> is pedigree-based relationship matrix and <span class="math inline">\(\sigma_u^2\)</span> the genetic additive variance</p>
 </section>
@@ -751,7 +789,7 @@ y_{ij} = \mu + t_i + \epsilon_{ij} \notag
 <ul>
 <li>Assume all animals have genotypes</li>
 </ul>
-<p><span class="math display">\[y = Xb + Zu + e\]</span></p>
+<p><span class="math display">\[y = Xb + Zg + e\]</span></p>
 <p><span class="math display">\[\left[
   \begin{array}{lr}
   X^T R^{-1} X  &amp;  X^T R^{-1} Z \\
@@ -761,7 +799,7 @@ y_{ij} = \mu + t_i + \epsilon_{ij} \notag
 \left[
   \begin{array}{c}
   \hat{\beta} \\
-  \hat{u}
+  \hat{g}
   \end{array}
 \right]
 =
@@ -772,9 +810,56 @@ y_{ij} = \mu + t_i + \epsilon_{ij} \notag
   \end{array}
 \right]\]</span></p>
 <ul>
-<li><span class="math inline">\(H = A_G * \sigma_u^2\)</span></li>
+<li><span class="math inline">\(H = G * \sigma_u^2\)</span></li>
 </ul>
-<p>where <span class="math inline">\(A_G\)</span> is the genomic relationship matrix and <span class="math inline">\(\sigma_u^2\)</span> the genetic additive variance</p>
+<p>where <span class="math inline">\(G\)</span> is the genomic relationship matrix and <span class="math inline">\(\sigma_u^2\)</span> the genetic additive variance</p>
+</section>
+<section id="genomic-relationship" class="level2">
+<h2 class="anchored" data-anchor-id="genomic-relationship">Genomic Relationship</h2>
+<ul>
+<li>Breeding value model uses genomic breeding values <span class="math inline">\(g\)</span> as random effects</li>
+<li>Variance-covariance matrix of <span class="math inline">\(g\)</span> are proposed to be proportional to matrix <span class="math inline">\(G\)</span></li>
+</ul>
+<p><span class="math display">\[var(g) = H = G * \sigma_g^2\]</span></p>
+<p>where <span class="math inline">\(G\)</span> is called <strong>genomic relationship matrix</strong> (GRM)</p>
+</section>
+<section id="desired-properties-of-g" class="level2">
+<h2 class="anchored" data-anchor-id="desired-properties-of-g">Desired Properties of <span class="math inline">\(G\)</span></h2>
+<ul>
+<li>genomic breeding values <span class="math inline">\(g\)</span> are linear combinations of SNP-effects <span class="math inline">\(q\)</span>: <span class="math inline">\(g = Z_{SNP} \cdot q\)</span></li>
+<li><span class="math inline">\(g\)</span> as deviations, that means <span class="math inline">\(E(g) = 0\)</span></li>
+<li><span class="math inline">\(var(g)\)</span> as product between <span class="math inline">\(G\)</span> and <span class="math inline">\(\sigma_g^2\)</span> where <span class="math inline">\(G\)</span> is the genomic relationship matrix</li>
+<li><span class="math inline">\(G\)</span> should be similar to <span class="math inline">\(A\)</span></li>
+</ul>
+</section>
+<section id="change-of-identity-concept" class="level2">
+<h2 class="anchored" data-anchor-id="change-of-identity-concept">Change of Identity Concept</h2>
+<p><span class="math inline">\(G\)</span> based on IBS, where <span class="math inline">\(A\)</span> is based on IBD</p>
+<div class="cell" data-hook_convert_odg="true" data-fig_path="odg">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="odg/ibdvsibs.png" class="img-fluid figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="result" class="level2">
+<h2 class="anchored" data-anchor-id="result">Result</h2>
+<p>Combining all properties:</p>
+<ul>
+<li>Linear combination</li>
+</ul>
+<p><span class="math display">\[var(g) = var(W \cdot q) = W \cdot var(q) \cdot W^T = WW^T \sigma_q^2 \]</span> with <span class="math inline">\(W = Z_{SNP} - S\)</span> where <span class="math inline">\(S\)</span> contains corrections of <span class="math inline">\(2p-1\)</span> and <span class="math inline">\(p\)</span> is the minor allele frequency</p>
+<ul>
+<li>Genetic variance <span class="math inline">\(var(g)\)</span> explained by marker effects</li>
+</ul>
+<p><span class="math display">\[var(g) = WW^T \sigma_q^2 = G * \sigma_q^2 * \sum_{j=1}^k(1-2p_j(1-p_j)) \]</span></p>
+<ul>
+<li>Solve for <span class="math inline">\(G\)</span></li>
+</ul>
+<p><span class="math display">\[G = \frac{WW^T}{\sum_{j=1}^k(1-2p_j(1-p_j))} \]</span></p>
 
 
 </section>

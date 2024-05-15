@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Peter von Rohr">
-<meta name="dcterms.date" content="2024-04-24">
+<meta name="dcterms.date" content="2024-05-15">
 
-<title>psbss2024 | 0.0.4 - Prediction of Breeding Values</title>
+<title>psbss2024 | 0.2.0 - Prediction of Breeding Values and Aggregate Genotype</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -110,7 +110,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">psbss2024 | 0.0.4</span>
+    <span class="navbar-title">psbss2024 | 0.2.0</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -136,7 +136,7 @@ window.Quarto = {
 <span class="menu-text">Solutions</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../add_info.qmd"> 
+    <a class="nav-link" href="../../add_info.html"> 
 <span class="menu-text">Additional Information</span></a>
   </li>  
   <li class="nav-item">
@@ -163,42 +163,14 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#recap-statistical-modelling" id="toc-recap-statistical-modelling" class="nav-link active" data-scroll-target="#recap-statistical-modelling">Recap Statistical Modelling</a></li>
-  <li><a href="#model-selection" id="toc-model-selection" class="nav-link" data-scroll-target="#model-selection">Model Selection</a></li>
-  <li><a href="#variation" id="toc-variation" class="nav-link" data-scroll-target="#variation">Variation</a></li>
-  <li><a href="#selection-criterion" id="toc-selection-criterion" class="nav-link" data-scroll-target="#selection-criterion">Selection Criterion</a></li>
-  <li><a href="#what-are-breeding-values" id="toc-what-are-breeding-values" class="nav-link" data-scroll-target="#what-are-breeding-values">What are breeding values</a></li>
-  <li><a href="#practical-considerations" id="toc-practical-considerations" class="nav-link" data-scroll-target="#practical-considerations">Practical Considerations</a></li>
-  <li><a href="#solution" id="toc-solution" class="nav-link" data-scroll-target="#solution">Solution</a></li>
-  <li><a href="#solution-ii" id="toc-solution-ii" class="nav-link" data-scroll-target="#solution-ii">Solution II</a></li>
-  <li><a href="#how-to-predict-breeding-values" id="toc-how-to-predict-breeding-values" class="nav-link" data-scroll-target="#how-to-predict-breeding-values">How to Predict Breeding Values</a></li>
-  <li><a href="#derivation" id="toc-derivation" class="nav-link" data-scroll-target="#derivation">Derivation</a></li>
-  <li><a href="#unbiasedness" id="toc-unbiasedness" class="nav-link" data-scroll-target="#unbiasedness">Unbiasedness</a></li>
-  <li><a href="#variance" id="toc-variance" class="nav-link" data-scroll-target="#variance">Variance</a></li>
-  <li><a href="#accuracy" id="toc-accuracy" class="nav-link" data-scroll-target="#accuracy">Accuracy</a></li>
-  <li><a href="#prediction-error-variance-pev" id="toc-prediction-error-variance-pev" class="nav-link" data-scroll-target="#prediction-error-variance-pev">Prediction Error Variance (PEV)</a></li>
-  <li><a href="#conditional-density" id="toc-conditional-density" class="nav-link" data-scroll-target="#conditional-density">Conditional Density</a></li>
-  <li><a href="#confidence-intervals-ci" id="toc-confidence-intervals-ci" class="nav-link" data-scroll-target="#confidence-intervals-ci">Confidence Intervals (CI)</a></li>
-  <li><a href="#ci-plot" id="toc-ci-plot" class="nav-link" data-scroll-target="#ci-plot">CI-Plot</a></li>
-  <li><a href="#ci-limits" id="toc-ci-limits" class="nav-link" data-scroll-target="#ci-limits">CI Limits</a></li>
-  <li><a href="#linear-mixed-effects-model" id="toc-linear-mixed-effects-model" class="nav-link" data-scroll-target="#linear-mixed-effects-model">Linear Mixed Effects Model</a></li>
-  <li><a href="#expected-values-and-variances" id="toc-expected-values-and-variances" class="nav-link" data-scroll-target="#expected-values-and-variances">Expected Values and Variances</a></li>
-  <li><a href="#solutions" id="toc-solutions" class="nav-link" data-scroll-target="#solutions">Solutions</a></li>
-  <li><a href="#problem" id="toc-problem" class="nav-link" data-scroll-target="#problem">Problem</a></li>
-  <li><a href="#sire-model" id="toc-sire-model" class="nav-link" data-scroll-target="#sire-model">Sire Model</a></li>
-  <li><a href="#animal-model" id="toc-animal-model" class="nav-link" data-scroll-target="#animal-model">Animal Model</a></li>
-  <li><a href="#genomic-blup-gblup" id="toc-genomic-blup-gblup" class="nav-link" data-scroll-target="#genomic-blup-gblup">Genomic BLUP (GBLUP)</a></li>
-  <li><a href="#mem-and-bvm" id="toc-mem-and-bvm" class="nav-link" data-scroll-target="#mem-and-bvm">MEM and BVM</a></li>
-  <li><a href="#marker-effect-model-mem" id="toc-marker-effect-model-mem" class="nav-link" data-scroll-target="#marker-effect-model-mem">Marker Effect Model (MEM)</a></li>
-  <li><a href="#breeding-value-based-model" id="toc-breeding-value-based-model" class="nav-link" data-scroll-target="#breeding-value-based-model">Breeding Value Based Model</a></li>
-  <li><a href="#how-does-gblup-work" id="toc-how-does-gblup-work" class="nav-link" data-scroll-target="#how-does-gblup-work">How Does GBLUP Work</a></li>
-  <li><a href="#summary-for-one-trait" id="toc-summary-for-one-trait" class="nav-link" data-scroll-target="#summary-for-one-trait">Summary for One Trait</a></li>
+  <li><a href="#summary-for-one-trait" id="toc-summary-for-one-trait" class="nav-link active" data-scroll-target="#summary-for-one-trait">Summary for One Trait</a></li>
   <li><a href="#example-fertility-and-production" id="toc-example-fertility-and-production" class="nav-link" data-scroll-target="#example-fertility-and-production">Example Fertility and Production</a></li>
   <li><a href="#multi-trait-selection" id="toc-multi-trait-selection" class="nav-link" data-scroll-target="#multi-trait-selection">Multi-Trait Selection</a></li>
   <li><a href="#types-of-multi-trait-selection" id="toc-types-of-multi-trait-selection" class="nav-link" data-scroll-target="#types-of-multi-trait-selection">Types of Multi-Trait Selection</a></li>
   <li><a href="#aggregate-genotype" id="toc-aggregate-genotype" class="nav-link" data-scroll-target="#aggregate-genotype">Aggregate Genotype</a></li>
   <li><a href="#find-b" id="toc-find-b" class="nav-link" data-scroll-target="#find-b">Find <span class="math inline">\(b\)</span> …</a></li>
   <li><a href="#special-case" id="toc-special-case" class="nav-link" data-scroll-target="#special-case">Special Case</a></li>
+  <li><a href="#method-works" id="toc-method-works" class="nav-link" data-scroll-target="#method-works">Method Works …</a></li>
   </ul>
 </nav>
     </div>
@@ -207,7 +179,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Prediction of Breeding Values</h1>
+<h1 class="title">Prediction of Breeding Values and Aggregate Genotype</h1>
 </div>
 
 
@@ -224,7 +196,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 24, 2024</p>
+      <p class="date">May 15, 2024</p>
     </div>
   </div>
   
@@ -236,432 +208,6 @@ window.Quarto = {
 </header>
 
 
-<section id="recap-statistical-modelling" class="level2">
-<h2 class="anchored" data-anchor-id="recap-statistical-modelling">Recap Statistical Modelling</h2>
-<ul>
-<li>Capture uncertainty due to stochastic relationship</li>
-<li>Components:
-<ul>
-<li>response variable <span class="math inline">\(y\)</span></li>
-<li>predictor variables <span class="math inline">\(x_1, x_2, \ldots, x_k\)</span></li>
-<li>error term <span class="math inline">\(e\)</span></li>
-<li>function <span class="math inline">\(m(x)\)</span></li>
-</ul></li>
-</ul>
-</section>
-<section id="model-selection" class="level2">
-<h2 class="anchored" data-anchor-id="model-selection">Model Selection</h2>
-<ul>
-<li>For fixed effects, select relevant predictors via model selection</li>
-<li>Recommended approach: <strong>backwards-elimination</strong>
-<ol type="1">
-<li>start with full model</li>
-<li>discard predictor variable that increases residual sums of squares the least and get current reduced model</li>
-<li>repeat step 2 until all predictors are eliminated</li>
-<li>from above resulting sequence of models, select the one with minimal criterion</li>
-</ol></li>
-<li>Criterion can be Mallow <span class="math inline">\(C_p\)</span>, AIC or BIC</li>
-</ul>
-</section>
-<section id="variation" class="level2">
-<h2 class="anchored" data-anchor-id="variation">Variation</h2>
-<ul>
-<li>Any new trait can only be used for selection, if variation is found in population</li>
-<li>Since change in trait via selection happens between generations, variation must also be at genetic level</li>
-<li>Use mixed linear effects model to estimate genetic variance, often reported as <strong>heritability</strong></li>
-</ul>
-<p><span class="math display">\[h^2 = \frac{\sigma_u^2}{\sigma_p^2}\]</span></p>
-</section>
-<section id="selection-criterion" class="level2">
-<h2 class="anchored" data-anchor-id="selection-criterion">Selection Criterion</h2>
-<ul>
-<li>If heritability is confirmed</li>
-<li>Selection criterion is needed</li>
-<li>Animals have to be ranked according to the criterion</li>
-<li>Best animals selected as parents of future generation</li>
-</ul>
-</section>
-<section id="what-are-breeding-values" class="level2">
-<h2 class="anchored" data-anchor-id="what-are-breeding-values">What are breeding values</h2>
-<p>Definition: two times difference between offspring of a given parent from population mean</p>
-<div class="cell" data-layout-align="center" data-hook_convert_odg="true" data-fig_path="odg">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="odg/def-breeding-value.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:8cm"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="practical-considerations" class="level2">
-<h2 class="anchored" data-anchor-id="practical-considerations">Practical Considerations</h2>
-<ul>
-<li>Definition of breeding value is based on biological fact that parent passes half of its alleles to offspring</li>
-<li>In practice, definition cannot be used
-<ul>
-<li>breeding values depend on population (allele frequencies)</li>
-<li>most parents do not have enough offspring</li>
-<li>breeding values are needed before animals have offspring</li>
-<li>different environmental factors not considered</li>
-</ul></li>
-</ul>
-</section>
-<section id="solution" class="level2">
-<h2 class="anchored" data-anchor-id="solution">Solution</h2>
-<ul>
-<li>Use genetic model to predict breeding values based on phenotypic observations</li>
-<li>Genetic model decomposes phenotypic observation (<span class="math inline">\(y_i\)</span>) in different components</li>
-</ul>
-<p><span class="math display">\[y_i= \mu + u_i + d_i + i_i + e_i\]</span> where <span class="math inline">\(\mu\)</span> is the general mean, <span class="math inline">\(u_i\)</span> the breeding value, <span class="math inline">\(d_i\)</span> the dominance deviation, <span class="math inline">\(i_i\)</span> the epistasis effect and <span class="math inline">\(e_i\)</span> the random error term.</p>
-</section>
-<section id="solution-ii" class="level2">
-<h2 class="anchored" data-anchor-id="solution-ii">Solution II</h2>
-<ul>
-<li>For predicting breeding values <span class="math inline">\(d_i\)</span> and <span class="math inline">\(i_i\)</span> are often ignored, leading to a simplified version of the genetic model</li>
-</ul>
-<p><span class="math display">\[y_i= \mu + u_i + e_i\]</span></p>
-<ul>
-<li>Expected values and variance-covariance matrix</li>
-</ul>
-<span class="math display">\[\begin{align}
-E \left[\begin{array}{c} y_i \\ u_i \\ e_i \end{array} \right]   &amp;= \left[\begin{array}{c} \mu \\ 0 \\ 0 \end{array} \right] \notag \\
-var \left[\begin{array}{c} y_i \\ u_i \\ e_i \end{array} \right] &amp;= \left[\begin{array}{ccc} \sigma_y^2  &amp;  \sigma_u^2   &amp;  \sigma_e^2 \\
-                                                                                             \sigma_u^2  &amp;  \sigma_u^2   &amp;  0  \\
-                                                                                             \sigma_e^2  &amp;  0            &amp;  \sigma_e^2  \end{array} \right] \notag
-\end{align}\]</span>
-</section>
-<section id="how-to-predict-breeding-values" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-predict-breeding-values">How to Predict Breeding Values</h2>
-<ul>
-<li>Predicted breeding values (<span class="math inline">\(\hat{u}\)</span>) are a function of the observed phenotypic data (<span class="math inline">\(y\)</span>)</li>
-</ul>
-<p><span class="math inline">\(\rightarrow\)</span> <span class="math inline">\(\hat{u} = f(y)\)</span></p>
-<ul>
-<li>What should <span class="math inline">\(f()\)</span> look like?</li>
-<li>Goal: Maximize improvement of offspring generation over parents</li>
-</ul>
-<p><span class="math inline">\(\rightarrow\)</span> <span class="math inline">\(\hat{u}\)</span> should be conditional expected value of true breeding value <span class="math inline">\(u\)</span> given <span class="math inline">\(y\)</span>:</p>
-<p><span class="math display">\[\hat{u} = E(u | y)\]</span></p>
-</section>
-<section id="derivation" class="level2">
-<h2 class="anchored" data-anchor-id="derivation">Derivation</h2>
-<ul>
-<li>Assume: multivariate normality of <span class="math inline">\(u\)</span> and <span class="math inline">\(y\)</span> and <span class="math inline">\(E(u) = 0\)</span>, then</li>
-</ul>
-<span class="math display">\[\begin{align}
-\hat{u} &amp;= E(u | y) = E(u) + cov(u,y^T) * var(y)^{-1} * (y - E(y)) \notag \\
-        &amp;= E(u | y) = cov(u,y^T) * var(y)^{-1} * (y - E(y)) \notag
-\end{align}\]</span>
-<ul>
-<li><span class="math inline">\(\hat{u}\)</span> consists of two parts</li>
-</ul>
-<ol type="1">
-<li><span class="math inline">\((y - E(y))\)</span>: phenotypic observations corrected for environmental effects</li>
-<li><span class="math inline">\(cov(u,y^T) * var(y)^{-1}\)</span>: weighting factor of corrected observation</li>
-</ol>
-</section>
-<section id="unbiasedness" class="level2">
-<h2 class="anchored" data-anchor-id="unbiasedness">Unbiasedness</h2>
-<ul>
-<li>Expected value (<span class="math inline">\(E(\hat{u})\)</span>)</li>
-</ul>
-<span class="math display">\[\begin{align}
-E(\hat{u}) &amp;= E(cov(u,y^T) * var(y)^{-1} * (y - E(y))) \notag \\
-           &amp;= cov(u,y^T) * var(y)^{-1} * E(y-E(y)) \notag \\
-           &amp;= cov(u,y^T) * var(y)^{-1} * (E(y) - E(y)) = 0 \notag
-\end{align}\]</span>
-<ul>
-<li>With <span class="math inline">\(E(u) = 0\)</span>, it follows <span class="math inline">\(E(\hat{u}) = E(u) = 0\)</span></li>
-</ul>
-</section>
-<section id="variance" class="level2">
-<h2 class="anchored" data-anchor-id="variance">Variance</h2>
-<ul>
-<li><span class="math inline">\(var(\hat{u})\)</span> and <span class="math inline">\(cov(u, \hat{u})\)</span> important for quality of prediction</li>
-</ul>
-<span class="math display">\[\begin{align}
-var(\hat{u})    &amp;= var(cov(u,y^T) * var(y)^{-1} * (y - E(y))) \notag \\
-                &amp;= cov(u,y^T) * var(y)^{-1} * var(y - E(y)) \notag \\
-                &amp;  * var(y)^{-1} * cov(y,u^T) \notag \\
-                &amp;= cov(u,y^T) * var(y)^{-1}  * cov(y,u^T) \notag \\
-cov(u, \hat{u}) &amp;= cov(u, (cov(u,y^T) * var(y)^{-1} * (y - E(y)))^T) \notag \\
-                &amp;= cov(u, (y-E(y))^T) * var(y)^{-1} * cov(y,u^T) \notag \\
-                &amp;= cov(u,y^T)  * var(y)^{-1} * cov(y,u^T) = var(\hat{u}) \notag
-\end{align}\]</span>
-</section>
-<section id="accuracy" class="level2">
-<h2 class="anchored" data-anchor-id="accuracy">Accuracy</h2>
-<ul>
-<li>Measured by <span class="math inline">\(r_{u,\hat{u}}\)</span></li>
-<li>Recall <span class="math inline">\(cov(u, \hat{u}) = var(\hat{u})\)</span></li>
-</ul>
-<span class="math display">\[\begin{align}
-r_{u,\hat{u}} &amp;= \frac{cov(u, \hat{u})}{\sqrt{var(u)*var(\hat{u})}} \notag \\
-              &amp;= \sqrt{\frac{var(\hat{u})}{var(u)}} \notag
-\end{align}\]</span>
-<ul>
-<li>Reliability (“Bestimmtheitsmass”): <span class="math inline">\(B = r_{u,\hat{u}}^2\)</span></li>
-</ul>
-</section>
-<section id="prediction-error-variance-pev" class="level2">
-<h2 class="anchored" data-anchor-id="prediction-error-variance-pev">Prediction Error Variance (PEV)</h2>
-<ul>
-<li>Variability of prediction error: <span class="math inline">\(u - \hat{u}\)</span></li>
-</ul>
-<span class="math display">\[\begin{align}
-var(u - \hat{u}) &amp;=  var(u) - 2cov(u,\hat{u}) + var(\hat{u}) = var(u) - var(\hat{u}) \notag \\
-                 &amp;= var(u) * \left[1 - \frac{var(\hat{u})}{var(u)} \right] \notag \\
-                 &amp;= var(u) * \left[1 - r_{u,\hat{u}}^2 \right] \notag
-\end{align}\]</span>
-<ul>
-<li>Obtained from coefficient matrix of mixed model equations</li>
-<li>Used to compute reliability</li>
-</ul>
-</section>
-<section id="conditional-density" class="level2">
-<h2 class="anchored" data-anchor-id="conditional-density">Conditional Density</h2>
-<ul>
-<li>Assessment of risk when using animals with predicted breeding values with different reliabilities quantified by <span class="math inline">\(f(u|\hat{u})\)</span></li>
-<li>Multivariate normal density with mean <span class="math inline">\(E(u|\hat{u})\)</span> and variance <span class="math inline">\(var(u|\hat{u})\)</span></li>
-</ul>
-<span class="math display">\[\begin{align}
-E(u |\hat{u})   &amp;= E(u) + cov(u, \hat{u}^T) * var(\hat{u})^{-1} * (\hat{u} - E(\hat{u})) = \hat{u} \notag \\
-var(u |\hat{u}) &amp;= var(u) - cov(u, \hat{u}^T) * var(\hat{u})^{-1} * cov(\hat{u}, u^T) \notag \\
-                &amp;= var(u) * \left[ 1 - \frac{cov(u, \hat{u}^T)^2}{var(u) * var(\hat{u})}\right] \notag \\
-                &amp;= var(u) * \left[ 1 - r_{u,\hat{u}}^2 \right] \notag
-\end{align}\]</span>
-</section>
-<section id="confidence-intervals-ci" class="level2">
-<h2 class="anchored" data-anchor-id="confidence-intervals-ci">Confidence Intervals (CI)</h2>
-<ul>
-<li>Assume an error level <span class="math inline">\(\alpha\)</span>, this results in <span class="math inline">\(100 * (1-\alpha)\%\)</span>-CI</li>
-<li>Typical values of <span class="math inline">\(\alpha\)</span> <span class="math inline">\(0.05\)</span> or <span class="math inline">\(0.01\)</span></li>
-<li>With <span class="math inline">\(\alpha = 0.05\)</span>, the <span class="math inline">\(95\%\)</span>-CI gives interval around mean which covers a surface of <span class="math inline">\(0.95\)</span></li>
-</ul>
-</section>
-<section id="ci-plot" class="level2">
-<h2 class="anchored" data-anchor-id="ci-plot">CI-Plot</h2>
-<div class="cell" data-hook_convert_odg="true" data-fig_path="odg">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="odg/gel-pb-cond-density-plot.png" class="img-fluid figure-img" style="width:10cm" data-fig-pos="!H"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="ci-limits" class="level2">
-<h2 class="anchored" data-anchor-id="ci-limits">CI Limits</h2>
-<ul>
-<li>lower limit <span class="math inline">\(l\)</span> and upper limit <span class="math inline">\(m\)</span> are given by</li>
-</ul>
-<span class="math display">\[\begin{align}
-l &amp;= \hat{u} - z * SEP \notag \\
-m &amp;= \hat{u} + z * SEP
-\end{align}\]</span>
-<ul>
-<li><span class="math inline">\(z\)</span> corresponds to quantile value to cover a surface of <span class="math inline">\((1-\alpha)\)</span></li>
-<li>Use R-function <code>qnorm()</code> to get value of <span class="math inline">\(z\)</span></li>
-</ul>
-</section>
-<section id="linear-mixed-effects-model" class="level2">
-<h2 class="anchored" data-anchor-id="linear-mixed-effects-model">Linear Mixed Effects Model</h2>
-<ul>
-<li>Use more realistic model for prediction of breeding values</li>
-</ul>
-<span class="math display">\[\begin{equation}
-y = Xb + Zu + e \notag
-\end{equation}\]</span>
-</section>
-<section id="expected-values-and-variances" class="level2">
-<h2 class="anchored" data-anchor-id="expected-values-and-variances">Expected Values and Variances</h2>
-<span class="math display">\[\begin{equation}
-E \left[\begin{array}{c} y \\ u \\ e \end{array} \right] = \left[\begin{array}{c} Xb \\ 0 \\ 0 \end{array} \right] \notag
-\end{equation}\]</span>
-<span class="math display">\[\begin{equation}
-var \left[\begin{array}{c} y \\ u \\ e \end{array} \right]
-=
-\left[\begin{array}{rrr}
-ZGZ^T + R  &amp;  ZG  &amp;  0  \\
-GZ^T       &amp;  G   &amp;  0  \\
-0          &amp;  0   &amp;  R
-\end{array} \right] \notag
-\end{equation}\]</span>
-</section>
-<section id="solutions" class="level2">
-<h2 class="anchored" data-anchor-id="solutions">Solutions</h2>
-<ul>
-<li>Same as for simple model</li>
-</ul>
-<span class="math display">\[\begin{equation}
-\hat{u} = E(u | y) = GZ^TV^{-1}(y - X\hat{b}) \notag
-\end{equation}\]</span>
-<p>with</p>
-<span class="math display">\[\begin{equation}
-\hat{b} = (X^TV^{-1}X)^{-}X^TV^{-1}y \notag
-\end{equation}\]</span>
-<p>corresponding to the general least squares solution of <span class="math inline">\(b\)</span></p>
-</section>
-<section id="problem" class="level2">
-<h2 class="anchored" data-anchor-id="problem">Problem</h2>
-<ul>
-<li>Solution for <span class="math inline">\(\hat{u}\)</span> contains <span class="math inline">\(V^{-1}\)</span> which is large and difficult to compute</li>
-<li>Use mixed model equations</li>
-</ul>
-<span class="math display">\[\begin{equation}
-\left[
-\begin{array}{lr}
-X^TR^{-1}X  &amp;  X^TR^{-1}Z \\
-Z^TR^{-1}X  &amp;  Z^TR^{-1}Z + G^{-1}
-\end{array}
-\right]
-\left[
-\begin{array}{c}
-\hat{b} \\
-\hat{u}
-\end{array}
-\right]
-=
-\left[
-\begin{array}{c}
-X^TR^{-1}y \\
-Z^TR^{-1}y
-\end{array}
-\right] \notag
-\end{equation}\]</span>
-</section>
-<section id="sire-model" class="level2">
-<h2 class="anchored" data-anchor-id="sire-model">Sire Model</h2>
-<span class="math display">\[\begin{equation}
-y = Xb + Zs + e \notag
-\end{equation}\]</span>
-<p>where <span class="math inline">\(s\)</span> is a vector of length <span class="math inline">\(q_s\)</span> with all sire effects.</p>
-<span class="math display">\[\begin{equation}
-var(s) = A_s * \sigma_s^2 \notag
-\end{equation}\]</span>
-<p>where <span class="math inline">\(A_s\)</span>: numerator relationship considering only sires</p>
-</section>
-<section id="animal-model" class="level2">
-<h2 class="anchored" data-anchor-id="animal-model">Animal Model</h2>
-<span class="math display">\[\begin{equation}
-y = Xb + Za + e \notag
-\end{equation}\]</span>
-<p>where <span class="math inline">\(a\)</span> is a vector of length <span class="math inline">\(q_a\)</span> containing the breeding values</p>
-<span class="math display">\[\begin{equation}
-var(a) = A \sigma_a^2 \notag
-\end{equation}\]</span>
-<p>where <span class="math inline">\(A\)</span> is the numerator relationship matrix</p>
-</section>
-<section id="genomic-blup-gblup" class="level2">
-<h2 class="anchored" data-anchor-id="genomic-blup-gblup">Genomic BLUP (GBLUP)</h2>
-<ol type="1">
-<li>marker-effect models: SNP-loci as random effects (MEM)</li>
-<li>breeding value based models: genomic breeding values as random effects (BVM)</li>
-</ol>
-</section>
-<section id="mem-and-bvm" class="level2">
-<h2 class="anchored" data-anchor-id="mem-and-bvm">MEM and BVM</h2>
-<div class="cell" data-hook_convert_odg="true" data-fig_path="odg">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="odg/mem-vs-bvm.png" class="img-fluid figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="marker-effect-model-mem" class="level2">
-<h2 class="anchored" data-anchor-id="marker-effect-model-mem">Marker Effect Model (MEM)</h2>
-<ul>
-<li>Marker effects (<span class="math inline">\(a\)</span>) as random in a linear mixed effects model</li>
-</ul>
-<span class="math display">\[\begin{equation}
-y = X \beta + M a + e \notag
-\end{equation}\]</span>
-<ul>
-<li>Solution of marker effects via mixed model equations</li>
-</ul>
-<span class="math display">\[\begin{equation}
-\left[
-  \begin{array}{lr}
-  X^TR^{-1}X  &amp;  X^TR^{-1}M \\
-  M^TR^{-1}X  &amp;  M^TR^{-1}M + I * \sigma_a^{-2}
-  \end{array}
-\right]
-\left[
-  \begin{array}{c}
-  \hat{\beta} \\
-  \hat{a}
-  \end{array}
-\right]
-=
-\left[
-  \begin{array}{c}
-  X^TR^{-1}y \\
-  M^TR^{-1}y
-  \end{array}
-\right] \notag
-\end{equation}\]</span>
-<p>where <span class="math inline">\(\sigma_a^2\)</span> is the SNP-effect variance component.</p>
-<ul>
-<li>Genomic breeding value for animal <span class="math inline">\(i\)</span> is computed as sum over appropriate values of <span class="math inline">\(\hat{a}\)</span> given by genotype of animal <span class="math inline">\(i\)</span></li>
-</ul>
-</section>
-<section id="breeding-value-based-model" class="level2">
-<h2 class="anchored" data-anchor-id="breeding-value-based-model">Breeding Value Based Model</h2>
-<ul>
-<li>Genomic breeding values (<span class="math inline">\(u\)</span>) as random effects in linear mixed effects model</li>
-</ul>
-<span class="math display">\[\begin{equation}
-y = X \beta + W u + e \notag
-\end{equation}\]</span>
-<ul>
-<li>Solutions</li>
-</ul>
-<span class="math display">\[\begin{equation}
-\left[
-  \begin{array}{lr}
-  X^TR^{-1}X  &amp;  X^TR^{-1}W \\
-  W^TR^{-1}X  &amp;  W^TR^{-1}W + G^{-1}* \sigma_u^{-2}
-  \end{array}
-\right]
-\left[
-  \begin{array}{c}
-  \hat{\beta} \\
-  \hat{u}
-  \end{array}
-\right]
-=
-\left[
-  \begin{array}{c}
-  X^TR^{-1}y \\
-  W^TR^{-1}y
-  \end{array}
-\right] \notag
-\end{equation}\]</span>
-<ul>
-<li>Genomic breeding values correspond to solutions for <span class="math inline">\(\hat{u}\)</span></li>
-</ul>
-</section>
-<section id="how-does-gblup-work" class="level2">
-<h2 class="anchored" data-anchor-id="how-does-gblup-work">How Does GBLUP Work</h2>
-<p><span class="math display">\[\begin{equation}
-\begin{bmatrix} X^TX &amp; X^TZ &amp; 0 \\Z^TX &amp; Z^TZ + G^{(11)} &amp; G^{(12)} \\0 &amp; G^{(21)} &amp; G^{(22)}\end{bmatrix}
-\begin{bmatrix} \hat{b} \\\hat{g}_1 \\\hat{g}_2\end{bmatrix}
-=
-\begin{bmatrix} X^Ty \\Z^Ty \\0\end{bmatrix} \notag
-\end{equation}\]</span></p>
-<ul>
-<li><span class="math inline">\(G^{(11)}\)</span>: animals with phenotypic observations</li>
-<li><span class="math inline">\(G^{(22)}\)</span>: animals without phenotypic observations</li>
-</ul>
-<span class="math display">\[\begin{equation}
-\hat{g}_2 = -\left( G^{22}\right)^{-1}G^{21}\hat{g}_1 \notag
-\end{equation}\]</span>
-</section>
 <section id="summary-for-one-trait" class="level2">
 <h2 class="anchored" data-anchor-id="summary-for-one-trait">Summary for One Trait</h2>
 <ul>
@@ -673,7 +219,7 @@ y = X \beta + W u + e \notag
 <li>Selection for one trait changes also other traits via correlated selection response</li>
 </ul></li>
 </ul>
-<p><span class="math inline">\(\rightarrow\)</span> see genetic trends at: https://1-htz.quagzws.com/shiny/users/zws/genTrendHolstein_DE/index.Rmd</p>
+<p><span class="math inline">\(\rightarrow\)</span> see genetic trends at: https://1-htz.quagzws.com/shiny/users/zws/genTrendHO/DE/2024/</p>
 </section>
 <section id="example-fertility-and-production" class="level2">
 <h2 class="anchored" data-anchor-id="example-fertility-and-production">Example Fertility and Production</h2>
@@ -757,6 +303,13 @@ var(I-H) &amp;= var(I) - 2*cov(I,H) + var(H) \notag \\
 <li>Then it follows</li>
 </ul>
 <p><span class="math display">\[b = P^{-1}Cv = var(\hat{u})^{-1}\cdot cov(\hat{u}, u^T) \cdot v = v\]</span></p>
+</section>
+<section id="method-works" class="level2">
+<h2 class="anchored" data-anchor-id="method-works">Method Works …</h2>
+<p>Studies like</p>
+<ul>
+<li>Berry, D. P., Kearney, J. F., Twomey, K., &amp; Evans, R. D. (2012). Genetics of reproductive performance in seasonal calving dairy cattle production systems. Irish Journal of Agricultural and Food Research, 52(1), 1–16.</li>
+</ul>
 
 
 </section>

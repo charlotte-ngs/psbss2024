@@ -11,9 +11,10 @@ This website provides links to
 #| echo: false
 #| results: asis
 s_sl_url <- "https://charlotte-ngs.github.io/psbss2024/slides/"
-tbl_sl <- tibble::tibble(Nr = c(1, 2),
+tbl_sl <- tibble::tibble(Nr = c(1, 2, 3),
                          Date = c("2024-04-24",
-                                  "2024-04-24"),
+                                  "2024-04-24",
+                                  "2024-05-15"),
                          Topic = c(
                            paste0("[Introduction](", 
                                   s_sl_url, 
@@ -22,6 +23,10 @@ tbl_sl <- tibble::tibble(Nr = c(1, 2),
                            paste0("[Genetic Evaluation](",
                                   s_sl_url,
                                   "l02_psb_gen_eval.pdf)",
+                                  collapse = ""),
+                           paste0("[Aggregate Genotype](",
+                                  s_sl_url,
+                                  "l03_psb_pbv.pdf)",
                                   collapse = "")
                          ))
 knitr::kable(tbl_sl)

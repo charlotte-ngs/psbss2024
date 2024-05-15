@@ -32,7 +32,7 @@
     "href": "index.html#license",
     "title": "Welcome to the Website of",
     "section": "License",
-    "text": "License\nThis work is licensed under a Creative Commons Attribution 4.0 International License.\n\nLatest Changes: 2024-05-14 17:58:53 CEST (pvr)"
+    "text": "License\nThis work is licensed under a Creative Commons Attribution 4.0 International License.\n\nLatest Changes: 2024-05-15 07:20:30 CEST (pvr)"
   },
   {
     "objectID": "solutions.html",
@@ -51,9 +51,9 @@
   {
     "objectID": "NEWS.html",
     "href": "NEWS.html",
-    "title": "psbss2024 0.2.0",
+    "title": "psbss2024 0.2.1",
     "section": "",
-    "text": "psbss2024 0.2.0\n\nData BW-BC-Regression\n\n\n\npsbss2024 0.1.1\n\nOverhead ohp_l01\n\n\n\npsbss2024 0.1.0\n\nSlides l02_gen_eval\n\n\n\npsbss2024 0.0.5\n\nSlides l01_psb_intro\n\n\n\npsbss2024 0.0.4\n\nCourse notes Pig Science - Breeding Part\n\n\n\npsbss2024 0.0.3\n\nAdd rendered output of subpages\n\n\n\npsbss2024 0.0.2\n\nAdded subpages for\n\ncourse notes\nexercises\nsolutions\n\n\n\n\npsbss2024 0.0.1\n\nStart with initial version"
+    "text": "psbss2024 0.2.1\n\nSlides l03_psb_pbv\n\n\n\npsbss2024 0.2.0\n\nData BW-BC-Regression\n\n\n\npsbss2024 0.1.1\n\nOverhead ohp_l01\n\n\n\npsbss2024 0.1.0\n\nSlides l02_gen_eval\n\n\n\npsbss2024 0.0.5\n\nSlides l01_psb_intro\n\n\n\npsbss2024 0.0.4\n\nCourse notes Pig Science - Breeding Part\n\n\n\npsbss2024 0.0.3\n\nAdd rendered output of subpages\n\n\n\npsbss2024 0.0.2\n\nAdded subpages for\n\ncourse notes\nexercises\nsolutions\n\n\n\n\npsbss2024 0.0.1\n\nStart with initial version"
   },
   {
     "objectID": "vignettes/quarto_create_course_website/quarto_create_course_website.html",
@@ -499,9 +499,9 @@
   {
     "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html",
     "href": "slides/l03_psb_pbv/l03_psb_pbv.html",
-    "title": "Prediction of Breeding Values",
+    "title": "Prediction of Breeding Values and Aggregate Genotype",
     "section": "",
-    "text": "Capture uncertainty due to stochastic relationship\nComponents:\n\nresponse variable \\(y\\)\npredictor variables \\(x_1, x_2, \\ldots, x_k\\)\nerror term \\(e\\)\nfunction \\(m(x)\\)"
+    "text": "Predicted breeding values with or without genomic information\nAnimals can be ranked according to predicted breeding values\nProblems:\n\nNot only one trait should be improved\nSelection for one trait changes also other traits via correlated selection response\n\n\n\\(\\rightarrow\\) see genetic trends at: https://1-htz.quagzws.com/shiny/users/zws/genTrendHO/DE/2024/"
   },
   {
     "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#recap-statistical-modelling",
@@ -709,49 +709,49 @@
   {
     "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#summary-for-one-trait",
     "href": "slides/l03_psb_pbv/l03_psb_pbv.html#summary-for-one-trait",
-    "title": "Prediction of Breeding Values",
-    "section": "Summary for One Trait",
-    "text": "Summary for One Trait\n\nPredicted breeding values with or without genomic information\nAnimals can be ranked according to predicted breeding values\nProblems:\n\nNot only one trait should be improved\nSelection for one trait changes also other traits via correlated selection response\n\n\n\\(\\rightarrow\\) see genetic trends at: https://1-htz.quagzws.com/shiny/users/zws/genTrendHolstein_DE/index.Rmd"
+    "title": "Prediction of Breeding Values and Aggregate Genotype",
+    "section": "",
+    "text": "Predicted breeding values with or without genomic information\nAnimals can be ranked according to predicted breeding values\nProblems:\n\nNot only one trait should be improved\nSelection for one trait changes also other traits via correlated selection response\n\n\n\\(\\rightarrow\\) see genetic trends at: https://1-htz.quagzws.com/shiny/users/zws/genTrendHO/DE/2024/"
   },
   {
     "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#example-fertility-and-production",
     "href": "slides/l03_psb_pbv/l03_psb_pbv.html#example-fertility-and-production",
-    "title": "Prediction of Breeding Values",
+    "title": "Prediction of Breeding Values and Aggregate Genotype",
     "section": "Example Fertility and Production",
     "text": "Example Fertility and Production"
   },
   {
     "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#multi-trait-selection",
     "href": "slides/l03_psb_pbv/l03_psb_pbv.html#multi-trait-selection",
-    "title": "Prediction of Breeding Values",
+    "title": "Prediction of Breeding Values and Aggregate Genotype",
     "section": "Multi-Trait Selection",
     "text": "Multi-Trait Selection"
   },
   {
     "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#types-of-multi-trait-selection",
     "href": "slides/l03_psb_pbv/l03_psb_pbv.html#types-of-multi-trait-selection",
-    "title": "Prediction of Breeding Values",
+    "title": "Prediction of Breeding Values and Aggregate Genotype",
     "section": "Types of Multi-Trait Selection",
     "text": "Types of Multi-Trait Selection\n\nTandem selection\n\nselect for one trait at the time\nafter goal has been reached change to different trait\n\nIndependent selection limits\n\nselect only animals which fullfill criteria in all traits\n\nSelection according to aggregate genotype\n\ncombine traits into aggregate genotype \\(H\\)\ndefine \\(H\\) as weighted sum of true breeding values and economic values\nuse selection index \\(I\\) to estimate \\(H\\)"
   },
   {
     "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#aggregate-genotype",
     "href": "slides/l03_psb_pbv/l03_psb_pbv.html#aggregate-genotype",
-    "title": "Prediction of Breeding Values",
+    "title": "Prediction of Breeding Values and Aggregate Genotype",
     "section": "Aggregate Genotype",
     "text": "Aggregate Genotype\nDefinition in vector notation: \\(H = v^T \\cdot u\\)\nwhere\n\n\\(u\\): vector of true breeding values\n\\(v\\) vector of economic values which are marginal changes in profit for a small change in the population mean of the trait\n\nEstimate \\(H\\) via index \\(I\\), hence \\(\\hat{H} = I = b^T x\\)\nwith\n\n\\(x\\): a vector of information sources\n\\(b\\): a vector of unknown weights.\n\nDetermine \\(b\\) such that \\(var(I-H)\\) is minimal."
   },
   {
     "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#find-b",
     "href": "slides/l03_psb_pbv/l03_psb_pbv.html#find-b",
-    "title": "Prediction of Breeding Values",
+    "title": "Prediction of Breeding Values and Aggregate Genotype",
     "section": "Find \\(b\\) …",
     "text": "Find \\(b\\) …\n… such that \\(var(I-H)\\)\n\\[\\begin{align}\nvar(I-H) &= var(I) - 2*cov(I,H) + var(H) \\notag \\\\\n         &= var(b^T x) - 2 * cov(b^T x, v^Tu) + var(v^Tu) \\notag \\\\\n         &= b^Tvar(x)b - 2 * b^Tcov(x,u^T)v + v^Tvar(u)v \\notag \\\\\n         &= b^TPb - 2 * b^TCv + v^TGv \\notag\n\\end{align}\\]\nSetting \\(\\frac{\\partial\\ var(I-H)}{\\partial b} = 0\\) leads to\n\\[Pb = Cv\\]\nHence\n\\[b = P^{-1}Cv\\]"
   },
   {
     "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#special-case",
     "href": "slides/l03_psb_pbv/l03_psb_pbv.html#special-case",
-    "title": "Prediction of Breeding Values",
+    "title": "Prediction of Breeding Values and Aggregate Genotype",
     "section": "Special Case",
     "text": "Special Case\n\nSame traits in \\(H\\) and in \\(I\\)\nUse predicted breeding values \\(\\hat{u}\\) from multivariate BLUP animal model as information source \\(x\\)\nThen it follows\n\n\\[b = P^{-1}Cv = var(\\hat{u})^{-1}\\cdot cov(\\hat{u}, u^T) \\cdot v = v\\]"
   },
@@ -921,14 +921,14 @@
     "href": "add_info.html#slides",
     "title": "Additional Information",
     "section": "Slides",
-    "text": "Slides\n\n\n\nNr\nDate\nTopic\n\n\n\n\n1\n2024-04-24\nIntroduction\n\n\n2\n2024-04-24\nGenetic Evaluation"
+    "text": "Slides\n\n\n\nNr\nDate\nTopic\n\n\n\n\n1\n2024-04-24\nIntroduction\n\n\n2\n2024-04-24\nGenetic Evaluation\n\n\n3\n2024-05-15\nAggregate Genotype"
   },
   {
     "objectID": "add_info.html#overhead",
     "href": "add_info.html#overhead",
     "title": "Additional Information",
     "section": "Overhead",
-    "text": "Overhead\n\n\n\nNr\nDate\nTopic\n\n\n\n\n1\n2024-04-24\nIntroduction\n\n\n\n\nLatest Changes: 2024-04-24 14:06:11 CEST (pvr)"
+    "text": "Overhead\n\n\n\nNr\nDate\nTopic\n\n\n\n\n1\n2024-04-24\nIntroduction\n\n\n\n\nLatest Changes: 2024-05-15 07:20:36 CEST (pvr)"
   },
   {
     "objectID": "index.html#exercise-platform",
@@ -991,7 +991,7 @@
     "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#statistical-model",
     "title": "Genetic Evaluation",
     "section": "Statistical Model",
-    "text": "Statistical Model\n\nstochastic systems contains many sources of uncertainty\nstatistical models can handle uncertainty\ncomponents of a statistical model\n\nresponse variable \\(y\\)\npredictor variables \\(x_1, x_2, \\ldots, x_k\\)\nerror term \\(e\\)\nfunction \\(m(x)\\)"
+    "text": "Statistical Model\n\nstochastic systems contains many sources of uncertainty\nstatistical models can handle uncertainty\ncomponents of a statistical model\n\nresponse variable \\(y\\)\npredictor variables \\(x_1, x_2, \\ldots, x_k\\) (fixed), \\(u\\) (random)\nerror term \\(e\\)\nfunction \\(m(x)\\)"
   },
   {
     "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#how-does-a-statistical-model-work",
@@ -1012,7 +1012,7 @@
     "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#which-predictor-variables",
     "title": "Genetic Evaluation",
     "section": "Which predictor variables?",
-    "text": "Which predictor variables?\n\nIn genetic evaluation large variety of information can be used as predictors\nQuestion, about which predictor variables to use is answered by model selection"
+    "text": "Which predictor variables?\n\nIn genetic evaluation a large variety of information is available which could be used as predictors\nQuestion, about which predictor variables to use is answered by model selection"
   },
   {
     "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#why-model-selection",
@@ -1131,7 +1131,7 @@
     "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#genetic-variation",
     "title": "Genetic Evaluation",
     "section": "Genetic Variation",
-    "text": "Genetic Variation\n\nRequirement for trait to be considered in breeding goal\nBreeding means improvement of next generation via selection and mating\nOnly genetic (additive) components are passed to offspring\nSelection should be based on genetic component of trait\nSelection only possible with genetic variation\n\n\\(\\rightarrow\\) genetic variation indicates how good characteristics are passed from parents to offspring\n\\(\\rightarrow\\) measured by heritability \\(h^2 = \\frac{\\sigma_a^2}{\\sigma_p^2}\\)"
+    "text": "Genetic Variation\n\nConcerns random effects of model, usually given as breeding values\nRequirement for trait to be considered in breeding goal\nBreeding means improvement of next generation via selection and mating\nOnly genetic (additive) components are passed to offspring\nSelection should be based on genetic component of trait\nSelection only possible with genetic variation\n\n\\(\\rightarrow\\) genetic variation indicates how good characteristics are passed from parents to offspring\n\\(\\rightarrow\\) measured by heritability \\(h^2 = \\frac{\\sigma_a^2}{\\sigma_p^2}\\)"
   },
   {
     "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#two-traits",
@@ -1180,21 +1180,21 @@
     "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#estimates-and-predictions",
     "title": "Genetic Evaluation",
     "section": "Estimates and Predictions",
-    "text": "Estimates and Predictions\n\nsolution leading to estimates of fixed effects\n\n\\[\\hat{b} = (X^TV^{-1}X)^{-}X^TV^{-1}y\\]\n\npredictions for random effects\n\n\\[\\hat{u} = GZ^TV^{-1}(y - X\\hat{b})\\]\nwith\n\n\\(G = var(u)\\)\n\\(V = var(y)\\)"
+    "text": "Estimates and Predictions\n\nsolution leading to estimates of fixed effects\n\n\\[\\hat{b} = (X^TV^{-1}X)^{-}X^TV^{-1}y\\]\n\npredictions for random effects\n\n\\[\\hat{u} = UZ^TV^{-1}(y - X\\hat{b})\\]\nwith\n\n\\(U = var(u)\\)\n\\(V = var(y)\\)"
   },
   {
     "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#mixed-model-equations",
     "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#mixed-model-equations",
     "title": "Genetic Evaluation",
     "section": "Mixed Model Equations",
-    "text": "Mixed Model Equations\nEquivalent solutions are obtained via\n\\[\\left[\n  \\begin{array}{lr}\n  X^T R^{-1} X  &  X^T R^{-1} Z \\\\\n  Z^T R^{-1} X  &  Z^T R^{-1} Z + G^{-1}\n  \\end{array}\n\\right]\n\\left[\n  \\begin{array}{c}\n  \\hat{\\beta} \\\\\n  \\hat{u}\n  \\end{array}\n\\right]\n=\n\\left[\n  \\begin{array}{c}\n  X^T R^{-1} y \\\\\n  Z^T R^{-1} y\n  \\end{array}\n\\right]\\]\nwith\n\n\\(G = A * \\sigma_u^2\\)\n\nwhere \\(A\\) is pedigree-based relationship matrix and \\(\\sigma_u^2\\) the genetic additive variance"
+    "text": "Mixed Model Equations\nEquivalent solutions are obtained via\n\\[\\left[\n  \\begin{array}{lr}\n  X^T R^{-1} X  &  X^T R^{-1} Z \\\\\n  Z^T R^{-1} X  &  Z^T R^{-1} Z + U^{-1}\n  \\end{array}\n\\right]\n\\left[\n  \\begin{array}{c}\n  \\hat{\\beta} \\\\\n  \\hat{u}\n  \\end{array}\n\\right]\n=\n\\left[\n  \\begin{array}{c}\n  X^T R^{-1} y \\\\\n  Z^T R^{-1} y\n  \\end{array}\n\\right]\\]\nwith\n\n\\(U = A * \\sigma_u^2\\)\n\nwhere \\(A\\) is pedigree-based relationship matrix and \\(\\sigma_u^2\\) the genetic additive variance"
   },
   {
     "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#single-step-genomic-breeding-values",
     "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#single-step-genomic-breeding-values",
     "title": "Genetic Evaluation",
     "section": "Single-Step Genomic Breeding Values",
-    "text": "Single-Step Genomic Breeding Values\n\nAssume all animals have genotypes\n\n\\[y = Xb + Zu + e\\]\n\\[\\left[\n  \\begin{array}{lr}\n  X^T R^{-1} X  &  X^T R^{-1} Z \\\\\n  Z^T R^{-1} X  &  Z^T R^{-1} Z + H^{-1}\n  \\end{array}\n\\right]\n\\left[\n  \\begin{array}{c}\n  \\hat{\\beta} \\\\\n  \\hat{u}\n  \\end{array}\n\\right]\n=\n\\left[\n  \\begin{array}{c}\n  X^T R^{-1} y \\\\\n  Z^T R^{-1} y\n  \\end{array}\n\\right]\\]\n\n\\(H = A_G * \\sigma_u^2\\)\n\nwhere \\(A_G\\) is the genomic relationship matrix and \\(\\sigma_u^2\\) the genetic additive variance"
+    "text": "Single-Step Genomic Breeding Values\n\nAssume all animals have genotypes\n\n\\[y = Xb + Zg + e\\]\n\\[\\left[\n  \\begin{array}{lr}\n  X^T R^{-1} X  &  X^T R^{-1} Z \\\\\n  Z^T R^{-1} X  &  Z^T R^{-1} Z + H^{-1}\n  \\end{array}\n\\right]\n\\left[\n  \\begin{array}{c}\n  \\hat{\\beta} \\\\\n  \\hat{g}\n  \\end{array}\n\\right]\n=\n\\left[\n  \\begin{array}{c}\n  X^T R^{-1} y \\\\\n  Z^T R^{-1} y\n  \\end{array}\n\\right]\\]\n\n\\(H = G * \\sigma_u^2\\)\n\nwhere \\(G\\) is the genomic relationship matrix and \\(\\sigma_u^2\\) the genetic additive variance"
   },
   {
     "objectID": "add_info.html#data",
@@ -1258,5 +1258,61 @@
     "title": "psbss2024 | 0.1.0",
     "section": "OHP Picture 9",
     "text": "OHP Picture 9"
+  },
+  {
+    "objectID": "slides/l03_psb_pbv/l03_psb_pbv.html#method-works",
+    "href": "slides/l03_psb_pbv/l03_psb_pbv.html#method-works",
+    "title": "Prediction of Breeding Values and Aggregate Genotype",
+    "section": "Method Works …",
+    "text": "Method Works …\nStudies like\n\nBerry, D. P., Kearney, J. F., Twomey, K., & Evans, R. D. (2012). Genetics of reproductive performance in seasonal calving dairy cattle production systems. Irish Journal of Agricultural and Food Research, 52(1), 1–16."
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#selection-criterion",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#selection-criterion",
+    "title": "Genetic Evaluation",
+    "section": "Selection Criterion",
+    "text": "Selection Criterion\n\nQuantify value of alleles passed from parent to offspring\nRequires decomposition of effect of genotype on phenotype"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#model-based-on-decomposition-of-genotype",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#model-based-on-decomposition-of-genotype",
+    "title": "Genetic Evaluation",
+    "section": "Model Based on Decomposition of Genotype",
+    "text": "Model Based on Decomposition of Genotype\n\nGenotype is decomposed"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#alternative-model-selection-criteria",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#alternative-model-selection-criteria",
+    "title": "Genetic Evaluation",
+    "section": "Alternative Model Selection Criteria",
+    "text": "Alternative Model Selection Criteria\n\nAIC or BIC, requires distributional assumptions.\nAIC is implemented in MASS::stepAIC()\nAdjusted \\(R^2\\) is a measure of goodness of fit, but sometimes is not conclusive when comparing two models\nTry in exercise"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#genomic-relationship",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#genomic-relationship",
+    "title": "Genetic Evaluation",
+    "section": "Genomic Relationship",
+    "text": "Genomic Relationship\n\nBreeding value model uses genomic breeding values \\(g\\) as random effects\nVariance-covariance matrix of \\(g\\) are proposed to be proportional to matrix \\(G\\)\n\n\\[var(g) = H = G * \\sigma_g^2\\]\nwhere \\(G\\) is called genomic relationship matrix (GRM)"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#desired-properties-of-g",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#desired-properties-of-g",
+    "title": "Genetic Evaluation",
+    "section": "Desired Properties of \\(G\\)",
+    "text": "Desired Properties of \\(G\\)\n\ngenomic breeding values \\(g\\) are linear combinations of SNP-effects \\(q\\): \\(g = Z_{SNP} \\cdot q\\)\n\\(g\\) as deviations, that means \\(E(g) = 0\\)\n\\(var(g)\\) as product between \\(G\\) and \\(\\sigma_g^2\\) where \\(G\\) is the genomic relationship matrix\n\\(G\\) should be similar to \\(A\\)"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#change-of-identity-concept",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#change-of-identity-concept",
+    "title": "Genetic Evaluation",
+    "section": "Change of Identity Concept",
+    "text": "Change of Identity Concept\n\\(G\\) based on IBS, where \\(A\\) is based on IBD"
+  },
+  {
+    "objectID": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#result",
+    "href": "slides/l02_psb_gen_eval/l02_psb_gen_eval.html#result",
+    "title": "Genetic Evaluation",
+    "section": "Result",
+    "text": "Result\nCombining all properties:\n\nLinear combination\n\n\\[var(g) = var(W \\cdot q) = W \\cdot var(q) \\cdot W^T = WW^T \\sigma_q^2 \\] with \\(W = Z_{SNP} - S\\) where \\(S\\) contains corrections of \\(2p-1\\) and \\(p\\) is the minor allele frequency\n\nGenetic variance \\(var(g)\\) explained by marker effects\n\n\\[var(g) = WW^T \\sigma_q^2 = G * \\sigma_q^2 * \\sum_{j=1}^k(1-2p_j(1-p_j)) \\]\n\nSolve for \\(G\\)\n\n\\[G = \\frac{WW^T}{\\sum_{j=1}^k(1-2p_j(1-p_j))} \\]"
   }
 ]

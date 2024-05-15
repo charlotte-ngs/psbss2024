@@ -64,13 +64,41 @@ knitr::include_graphics(path = "odg/geno_and_pheno.png")
 * Instead: use statistical model to predict breeding value
 
 
+## Selection Criterion
+
+* Quantify value of alleles passed from parent to offspring
+* Requires decomposition of effect of genotype on phenotype
+
+```{r}
+#| label: basicmodelrearrterm
+#| echo: false
+#| hook_convert_odg: true
+#| fig_path: "odg"
+#| out-width: "80%"
+#rmddochelper::use_odg_graphic(ps_path = "odg/basicmodelrearrterm.odg")
+knitr::include_graphics(path = "odg/basicmodelrearrterm.png")
+```
+
+
+## Model Based on Decomposition of Genotype
+
+* Genotype is decomposed 
+
+```{r}
+#| label: model-based-on-genotype-decomp
+#| echo: false
+#| out-width: "100%"
+#rmdhelp::use_odg_graphic(ps_path = "odg/model-based-on-genotype-decomp.odg")
+knitr::include_graphics(path = "odg/model-based-on-genotype-decomp.png")
+```
+
 ## Statistical Model
 
 * stochastic systems contains many sources of uncertainty
 * statistical models can handle uncertainty
 * components of a statistical model
     + response variable $y$
-    + predictor variables $x_1, x_2, \ldots, x_k$
+    + predictor variables $x_1, x_2, \ldots, x_k$ (fixed), $u$ (random) 
     + error term $e$
     + function $m(x)$ 
 
@@ -94,7 +122,7 @@ $$y_i = b_0 + b_1 * x_i + e_i$$
 
 ## Which predictor variables?
 
-* In genetic evaluation large variety of information can be used as predictors
+* In genetic evaluation a large variety of information is available which could be used as predictors
 * Question, about which predictor variables to use is answered by model selection
 
 
@@ -246,7 +274,7 @@ $\rightarrow$ results in sequence $\mathcal{M}_0 \supseteq \mathcal{M}_1 \supset
 * If $p \geq n$, only forward is possible, but then consider LASSO
 
 
-## Alternative Selection Criteria
+## Alternative Model Selection Criteria
 * AIC or BIC, requires distributional assumptions. 
 * AIC is implemented in `MASS::stepAIC()` 
 * Adjusted $R^2$ is a measure of goodness of fit, but sometimes is not conclusive when comparing two models
@@ -255,6 +283,7 @@ $\rightarrow$ results in sequence $\mathcal{M}_0 \supseteq \mathcal{M}_1 \supset
 
 ## Genetic Variation
 
+* Concerns random effects of model, usually given as breeding values
 * Requirement for trait to be considered in breeding goal
 * Breeding means improvement of next generation via selection and mating
 * Only genetic (additive) components are passed to offspring
@@ -364,11 +393,11 @@ $$\hat{b} = (X^TV^{-1}X)^{-}X^TV^{-1}y$$
 
 * predictions for random effects
 
-$$\hat{u} = GZ^TV^{-1}(y - X\hat{b})$$
+$$\hat{u} = UZ^TV^{-1}(y - X\hat{b})$$
 
 with 
 
-* $G = var(u)$
+* $U = var(u)$
 * $V = var(y)$
 
 
@@ -379,7 +408,7 @@ Equivalent solutions are obtained via
 $$\left[
   \begin{array}{lr}
   X^T R^{-1} X  &  X^T R^{-1} Z \\
-  Z^T R^{-1} X  &  Z^T R^{-1} Z + G^{-1}
+  Z^T R^{-1} X  &  Z^T R^{-1} Z + U^{-1}
   \end{array}
 \right]
 \left[
@@ -398,7 +427,7 @@ $$\left[
 
 with 
 
-* $G = A * \sigma_u^2$ 
+* $U = A * \sigma_u^2$ 
 
 where $A$ is pedigree-based relationship matrix and $\sigma_u^2$ the genetic additive variance
 
@@ -407,7 +436,7 @@ where $A$ is pedigree-based relationship matrix and $\sigma_u^2$ the genetic add
 
 * Assume all animals have genotypes
 
-$$y = Xb + Zu + e$$
+$$y = Xb + Zg + e$$
 
 $$\left[
   \begin{array}{lr}
@@ -418,7 +447,7 @@ $$\left[
 \left[
   \begin{array}{c}
   \hat{\beta} \\
-  \hat{u}
+  \hat{g}
   \end{array}
 \right]
 =
@@ -429,6 +458,51 @@ $$\left[
   \end{array}
 \right]$$
 
-* $H = A_G * \sigma_u^2$ 
+* $H = G * \sigma_u^2$ 
 
-where $A_G$ is the genomic relationship matrix and $\sigma_u^2$ the genetic additive variance
+where $G$ is the genomic relationship matrix and $\sigma_u^2$ the genetic additive variance
+
+
+## Genomic Relationship
+
+* Breeding value model uses genomic breeding values $g$ as random effects
+* Variance-covariance matrix of $g$ are proposed to be proportional to matrix $G$
+
+$$var(g) = H = G * \sigma_g^2$$
+
+where $G$ is called __genomic relationship matrix__ (GRM)
+
+
+## Desired Properties of $G$
+* genomic breeding values $g$ are linear combinations of SNP-effects $q$: $g = Z_{SNP} \cdot q$
+* $g$ as deviations, that means $E(g) = 0$
+* $var(g)$ as product between $G$ and $\sigma_g^2$ where $G$ is the genomic relationship matrix
+* $G$ should be similar to $A$
+
+
+## Change of Identity Concept
+
+$G$ based on IBS, where $A$ is based on IBD
+
+```{r ibdvsibs, echo=FALSE, hook_convert_odg=TRUE, fig_path="odg", out.width='80%'}
+#rmddochelper::use_odg_graphic(ps_path = "odg/ibdvsibs.odg")
+knitr::include_graphics(path = "odg/ibdvsibs.png")
+```
+
+
+## Result
+
+Combining all properties: 
+
+* Linear combination
+
+$$var(g) = var(W \cdot q) = W \cdot var(q) \cdot W^T = WW^T \sigma_q^2 $$
+with $W = Z_{SNP} - S$ where $S$ contains corrections of $2p-1$ and $p$ is the minor allele frequency
+
+* Genetic variance $var(g)$ explained by marker effects
+
+$$var(g) = WW^T \sigma_q^2 = G * \sigma_q^2 * \sum_{j=1}^k(1-2p_j(1-p_j)) $$
+
+* Solve for $G$
+
+$$G = \frac{WW^T}{\sum_{j=1}^k(1-2p_j(1-p_j))} $$

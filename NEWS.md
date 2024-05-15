@@ -1,5 +1,7 @@
 # psbss2024 0.2.1
 
+* Slides [l03_psb_pbv](https://charlotte-ngs.github.io/psbss2024/slides/l03_psb_pbv.pdf)
+
 # psbss2024 0.2.0
 
 * Data [BW-BC-Regression](https://charlotte-ngs.github.io/psbss2024/data/psb_rand_pred.csv)
