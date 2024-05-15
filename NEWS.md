@@ -1,5 +1,8 @@
 # psbss2024 0.2.2
 
+* Dataset [beef_data_blup](https://charlotte-ngs.github.io/psbss2024/data/beef_data_blup.csv)
+* Dataset [geno_data](https://charlotte-ngs.github.io/psbss2024/data/geno_data.csv)
+
 # psbss2024 0.2.1
 
 * Slides [l03_psb_pbv](https://charlotte-ngs.github.io/psbss2024/slides/l03_psb_pbv.pdf)
