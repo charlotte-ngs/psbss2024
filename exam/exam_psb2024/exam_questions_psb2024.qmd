@@ -1,0 +1,67 @@
+---
+title: "Exam Questions in Pig Science -- Breeding Part"
+author: "Peter von Rohr"
+format: docx
+---
+
+```{r}
+#| echo: false
+n_points_q1 <- 6
+n_points_q2 <- 6
+n_points_q3 <- 8
+n_points_q4 <- 0
+n_points_q5 <- 0
+n_points_q6 <- 0
+n_nr_q <- 3
+n_points_total <- n_points_q1 + n_points_q2 + n_points_q3 + n_points_q4 + n_points_q5
+tbl_points <- tibble::tibble(Question = c(as.character(1:n_nr_q), "Total"),
+                             `Maximum Points` = c(n_points_q1,
+                                                  n_points_q2,
+                                                  n_points_q3,
+                                                  n_points_total))
+knitr::kable(tbl_points,
+             booktabs = TRUE,
+             longtable = TRUE)
+
+```
+
+
+# Question 1
+a) What are the two types of breeding programs and what are their main focus? 
+
+_Wie lauten die zwei Typen von Zuchtprogrammen und was ist jeweilen deren hauptsächlicher Focus?_
+
+b) In which geographic regions do these types of breeding programs mainly occur?
+
+_In welchen geographischen Regionen treten diese Zuchtprogramme auf?_
+
+```{r}
+#| echo: false
+#| results: asis
+cat("__", n_points_q1, "__", "\n", sep = "")
+```
+
+
+
+# Question 2
+What are the six components of a breeding program?
+  
+_Wie lauten die sechs Komponenten eines Zuchtprogramms?_
+
+```{r}
+#| echo: false
+#| results: asis
+cat("__", n_points_q2, "__", "\n", sep = "")
+```
+
+
+
+# Question 3
+What are the main goals of livestock breeding? Compare these goals to the main goals of livestock production. What potential conflicts might occur between breeding and production? How can these conflicts be resolved?
+
+_Was sind die hauptsächlichen Ziele der Nutztierzucht? Vergleichen Sie diese Ziel mit den Zielen der Nutztierproduktion. Welches sind potenzielle Konflikte, welche zwischen Zucht und Produktion auftreten können? Wie können diese Konflikte gelöst werden?_
+
+```{r, echo=FALSE, results='asis'}
+cat("__", n_points_q3, "__", "\n", sep = "")
+```
+

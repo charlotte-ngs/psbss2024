@@ -1,0 +1,102 @@
+---
+title: "Solutions to Exam Questions in Pig Science -- Breeding Part"
+author: "Peter von Rohr"
+format: docx
+---
+
+```{r}
+#| echo: false
+n_points_q1 <- 6
+n_points_q2 <- 6
+n_points_q3 <- 8
+n_points_q4 <- 0
+n_points_q5 <- 0
+n_points_q6 <- 0
+n_nr_q <- 3
+n_points_total <- n_points_q1 + n_points_q2 + n_points_q3 + n_points_q4 + n_points_q5
+tbl_points <- tibble::tibble(Question = c(as.character(1:n_nr_q), "Total"),
+                             `Maximum Points` = c(n_points_q1,
+                                                  n_points_q2,
+                                                  n_points_q3,
+                                                  n_points_total))
+knitr::kable(tbl_points,
+             booktabs = TRUE,
+             longtable = TRUE)
+
+```
+
+
+# Question 1
+a) What are the two types of breeding programs and what are their main focus? 
+
+_Wie lauten die zwei Typen von Zuchtprogrammen und was ist jeweilen deren hauptsächlicher Focus?_
+
+b) In which geographic regions do these types of breeding programs mainly occur?
+
+_In welchen geographischen Regionen treten diese Zuchtprogramme auf?_
+
+```{r}
+#| echo: false
+#| results: asis
+cat("__", n_points_q1, "__", "\n", sep = "")
+```
+
+## Solution
+
+1. Breeding programs which focus on selection response. Their main focus is to use the scarce resources as efficiently as possible.
+2. Breeding programs which focus on providing optimal services to the members of the respective breeding organisation. Such programs are implemented by organisations which behave like service companies which treat their members as customers and the main focus is directed according to the whishes of the members of the breeding organisation.
+
+Geographic regions:
+
+1. Regions with poor or scarce resources (Africa). Regions with large farms (Eastern Europe, Australia, New Zealand)
+2. Western Europe
+
+
+# Question 2
+What are the six components of a breeding program?
+  
+_Wie lauten die sechs Komponenten eines Zuchtprogramms?_
+
+```{r}
+#| echo: false
+#| results: asis
+cat("__", n_points_q2, "__", "\n", sep = "")
+```
+
+## Solution
+
+1. Breeding goal
+2. Performance test
+3. Prediction of breeding values
+4. Reproduction technologies
+5. Selection and Mating
+6. Selection Response
+
+
+# Question 3
+What are the main goals of livestock breeding? Compare these goals to the main goals of livestock production. What potential conflicts might occur between breeding and production? How can these conflicts be resolved?
+
+_Was sind die hauptsächlichen Ziele der Nutztierzucht? Vergleichen Sie diese Ziel mit den Zielen der Nutztierproduktion. Welches sind potenzielle Konflikte, welche zwischen Zucht und Produktion auftreten können? Wie können diese Konflikte gelöst werden?_
+
+```{r, echo=FALSE, results='asis'}
+cat("__", n_points_q3, "__", "\n", sep = "")
+```
+
+## Solution
+
+* Main goals of livestock breeding
+    + change a population at the genetic level by selection and mating
+    + efficient transmission of genetic potential from parents to offspring
+    
+* Main goals of livestock production
+    + efficient production of goods produced by livestock animals
+    + use farm resources as efficiently as possible to produce a marketable product
+    
+* Conflicts between breeding and production
+    + in breeding young animals are the most valuable, because they are required for an efficient transmission of genetic potential. New technologies have to be used because they allow for a more efficient transmission of genetic potential from parents to offspring
+    + in production older animal become more valuable, because their higher production revenue covers more of the fixed costs and make them more profitable. Production system is largely determined by economic efficiency and are only used if they generated extra profitability
+    
+* Resolution of conflicts
+    + In cattle: split herds in to younger breeding animals and older production animals. Use systems such as beef-on-dairy
+    + In pigs: separate herds for breeding and production
+
